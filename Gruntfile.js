@@ -144,6 +144,7 @@ module.exports = function(grunt) {
               }
           }
       },
+      // команда "grunt bake"
       bake: {
           build: {
               options: {
