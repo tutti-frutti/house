@@ -1,39 +1,1050 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <title>Канадские дома</title>
+    </head>
+<body>
+    <header class="header">
+        <div class="header__logo"><a href=""><img src="" alt="logo"></a></div>
+        <div class="header__slogan">Производим и строим Канадские дома<br>
+        из sip-панелей в Новосибирске и НСО</div>
+        <div class="header__tel">
+            <div class="header__phone">+7 (383) 207-82-05</div>
+            <a class="header__order" href="#">Заказать звонок</a>
+        </div>
+    </header>
     
-    <!--Первоначальный css-->
-    <link rel="stylesheet" href="css/style-prev.css" type="text/css" media="screen" />
+    <section class="first-screen">
+        <h1>
+            Как построить<br>эко-дом для круглогодичного проживания<br>по цене однушки?
+        </h1>
+        
+        <p>
+            Каждому покупателю дарим разнообразные и изумительные подарки!
+        </p>
+        
+        <a href="#" class="btn btn-red">Посмотреть подарки</a>
+        
+        <h3>Почему у нас такая низкая цена?</h3>
+    </section>
     
-    <!--Текущий css-->
-    <link rel="stylesheet" href="css/style.css">
+    <section class="main-benefits">
+        <div class="main-benefits__left">
+            <h3>Завод ЛСП</h3>
+            <p>Значительный бонус<br>кажому</p>
+            <p>Проект дома в подарок</p>
+            <p>Строит дома дешевле</p>
+            <p>Без скидок и <br> псевдобесплатных &quot;плюшек&quot;</p>
+        </div>
+        
+        <div class="main-benefits__right">
+            <h3>Другие компании</h3>
+            <p>Делают скидки</p>
+            <p>Предлагают проект дома в подарок</p>
+            <p>НИЧЕГО</p>
+            <p>За счет дополнительной наценки</p>
+        </div>
+        
+        <div class="main-benefits__list">
+            <div class="main-benefits__list-first">
+                1 Низкая себестоимость работ
+            </div>
+            <div class="main-benefits__list-second">
+                2 Используем экономное проектирование оптимальные планировки с минимальными отходами
+            </div>
+            <div class="main-benefits__list-third">
+                3 Вы Выигрываете<br>заказывая у завода производителя
+            </div>
+        </div>
+    </section>
     
-    <!--Шрифты-->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <section class="manufacture">
+        <h2 class="section-title">Познакомьтесь с производством завода ЛСП</h2>
+        <ul class="manufacture__list">
+            <li class="manufacture__item">
+                <img src="img/manufacture-1.png" alt="manufacture">
+                <p>Линия по производству slp- панелей</p>
+            </li>
+            <li class="manufacture__item">
+                <img src="img/manufacture-2.png" alt="manufacture">
+                <p>Материал, применяемый в производстве панелей OSB (ОСП)</p>
+            </li>
+            <li class="manufacture__item">
+                <img src="img/manufacture-3.png" alt="manufacture">
+                <p>Станция нанесения клея под прессом</p>
+            </li>
+            <li class="manufacture__item">
+                <img src="img/manufacture-4.png" alt="manufacture">
+                <p>Покрытие половых панелей водоотталкивающей мастикой</p>
+            </li>
+            <li class="manufacture__item">
+                <img src="img/manufacture-5.png" alt="manufacture">
+                <p>Складирование готовой продукции</p>
+            </li>
+            <li class="manufacture__item">
+                <img src="img/manufacture-6.png" alt="manufacture">
+                <p>Перевозка домокомплектов собственным транспортом, за счет чего минимизируется Ваши затраты</p>
+            </li>
+        </ul>
+        <div class="manufacture__quote">
+            ...У Вас есть возможность поучаствовать в производстве сип-понелей для дома своей мечты на нашем заводе...
+        </div>
+    </section>
     
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <section class="sip-details">
+        <h2 class="section-title">Приятная неожиданность для вас</h2>
+        <p>Производство сип-панелей по технологии ноу-хау в &quot;тёплый стык&quot;</p>
+        <div class="sip-details__img-scheme">
+            <div class="sip-details__left">
+                За счет прокладки бруса
+            </div>
+            <div class="sip-details__center">
+                <img src="img/shceme.jpg" alt="scheme">
+            </div>
+            <div class="sip-details__right">
+                ... исключается возможность сквоз- няков и неплотной установки
+            </div>
+        </div>
+        
+        <div class="sip-details__block-green">
+            <p>Так строит<br>Завод ЛСП</p>
+        </div>
+        
+        <div class="sip-details__block-red">
+            <p>Так строят другие компании</p>
+        </div>
+        
+        <div class="sip-details__foto">
+            <img src="img/sip-panels.jpg" alt="panels">
+        </div>
+    </section>
     
-    <!--SlickNav-->
-    <link href="css/slicknav.css" rel="stylesheet" />
-    <script src="js/jquery.slicknav.min.js"></script>
+    <section class="house-complement">
+        <h2 class="section-title">Комплектации строительства дома</h2>
+        <!--TABs-->
+        <div class="tabs">
+    <input type="radio" name="tab" id="tab-1" checked>
+    <label for="tab-1">Эконом</label>
+    <input type="radio" name="tab" id="tab-2">
+    <label for="tab-2">Эконом +</label>
+    <input type="radio" name="tab" id="tab-3">
+    <label for="tab-3">Стандарт</label>
+
+    <div class="content">
+        <article class="tab-1">
+           <img src="img/tab-img.jpg" alt="house-comlect">
+            <h3>Эконом</h3>
+            <ul class="house-complement__list">
+                <li class="house-complement__item">Фундамент на винтовых сваях</li>
+                <li class="house-complement__item">Домокомплект</li>
+                <li class="house-complement__item">Обвязочный брус естественной влажности  (180х180мм) с антисептированием;</li>
+                <li class="house-complement__item">Перекрытие (пол) – СИП панель 224мм;</li>
+                <li class="house-complement__item">Перекрытие (между этажами) - каркасное;</li>
+                <li class="house-complement__item">Внешние, несущие стены – СИП панель 174мм;</li>
+                <li class="house-complement__item">Внутренние стены – каркасные;</li>
+                <li class="house-complement__item">Пиломатериал для каркаса 12-14% влажности;</li>
+                <li class="house-complement__item">Плита OSB-3 (12мм);</li>
+                <li class="house-complement__item">Пенополистирол ПСБ-С-25;</li>
+                <li class="house-complement__item">Пиломатериал естественной влажности;</li>
+                <li class="house-complement__item">Стропильная система (без кровельного покрытия);</li>
+                <li class="house-complement__item">Крепежный комплект;</li>
+                <li class="house-complement__item">Монтаж</li>
+            </ul>
+        </article>
+        <article class="tab-2">
+            <h3>Эконом +</h3>
+            <ul class="house-complement__list">
+                <li class="house-complement__item">Фундамент на винтовых сваях</li>
+                <li class="house-complement__item">Домокомплект</li>
+                <li class="house-complement__item">Обвязочный брус естественной влажности  (180х180мм) с антисептированием;</li>
+                <li class="house-complement__item">Перекрытие (пол) – СИП панель 224мм;</li>
+                <li class="house-complement__item">Перекрытие (между этажами) - каркасное;</li>
+                <li class="house-complement__item">Внешние, несущие стены – СИП панель 174мм;</li>
+                <li class="house-complement__item">Внутренние стены – каркасные;</li>
+                <li class="house-complement__item">Пиломатериал для каркаса 12-14% влажности;</li>
+                <li class="house-complement__item">Плита OSB-3 (12мм);</li>
+                <li class="house-complement__item">Пенополистирол ПСБ-С-25;</li>
+                <li class="house-complement__item">Пиломатериал естественной влажности;</li>
+                <li class="house-complement__item">Стропильная система (без кровельного покрытия);</li>
+                <li class="house-complement__item">Крепежный комплект;</li>
+                <li class="house-complement__item">Монтаж</li>
+            </ul>
+            <img src="img/tab-img.jpg" alt="house-comlect">
+        </article>
+        <article class="tab-3">
+            <img src="img/tab-img.jpg" alt="house-comlect">
+            <h3>Эконом</h3>
+            <ul class="house-complement__list">
+                <li class="house-complement__item">Фундамент на винтовых сваях</li>
+                <li class="house-complement__item">Домокомплект</li>
+                <li class="house-complement__item">Обвязочный брус естественной влажности  (180х180мм) с антисептированием;</li>
+                <li class="house-complement__item">Перекрытие (пол) – СИП панель 224мм;</li>
+                <li class="house-complement__item">Перекрытие (между этажами) - каркасное;</li>
+                <li class="house-complement__item">Внешние, несущие стены – СИП панель 174мм;</li>
+                <li class="house-complement__item">Внутренние стены – каркасные;</li>
+                <li class="house-complement__item">Пиломатериал для каркаса 12-14% влажности;</li>
+                <li class="house-complement__item">Плита OSB-3 (12мм);</li>
+                <li class="house-complement__item">Пенополистирол ПСБ-С-25;</li>
+                <li class="house-complement__item">Пиломатериал естественной влажности;</li>
+                <li class="house-complement__item">Стропильная система (без кровельного покрытия);</li>
+                <li class="house-complement__item">Крепежный комплект;</li>
+                <li class="house-complement__item">Монтаж</li>
+            </ul>
+        </article>
+      </div>
+    </div>
     
-    <!--ArcticModal + Feedback-->
-    <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+    <div class="add-services">
+        <div class="add-services__nomenclature">
+            <h3>Дополнительные услуги</h3>
+            <ul class="add-services__list">
+                <li class="add-services__item">Кровля</li>
+                <li class="add-services__item">Входные двери</li>
+                <li class="add-services__item">Межкомнатные двери</li>
+                <li class="add-services__item">Пластиковые окна</li>
+                <li class="add-services__item">Электрика</li>
+                <li class="add-services__item">Отопление</li>
+                <li class="add-services__item">Водоснабжение</li>
+                <li class="add-services__item">Вентиляция</li>
+                <li class="add-services__item">Внутренняя отделка</li>
+                <li class="add-services__item">Внешняя отделка</li>
+                <li class="add-services__item">Электрика Канализация</li>
+                <li class="add-services__item">Септики</li>
+            </ul>
+        </div>
+        <div class="add-services__form">
+            <form action="" method="get">
+                <p>
+                    <span class="add-services__yellow">Закажите расчет</span> экслкюзивного проекта 
+                    <span class="add-services__underline">20 000</span> рублей 
+                    <span class="add-services__yellow">бесплатно</span>
+                </p>
+                <div class="add-services__inputs">
+                    <input type="tel" name="phone" id="tel" placeholder="Ваш телефон *">
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарии *"></textarea>
+                </div>
+                <button type="submit" class="btn btn-form">Получить проект дома</button>
+                <span class="add-services__notice">*Полученные контакты не будут переданы третьим лицам</span>   
+            </form>
+        </div>
+    </div>
+    <div class="add-services__resume">
+        <p>Если у Вас уже имеется идея проекта своего дома, наши архитекторы помогут превратить</p>
+        <div class="add-services__wrapper">
+            <div class="add-services__block  add-services__block--yellow">почти идеальный</div>
+            <div class="add-services__block">в проект</div>
+            <div class="add-services__block  add-services__block--green">идеальный</div>
+        </div>
+    </div>
+    </section>
     
-    <title>Чертежи проектов ковки</title>
-  </head>
-  <body>
-  
-  <header class="">лрщшрщшр</header>
-  
-  <main></main>
-  
-  <footer></footer>
-  
-  <script src="js/script.js"></script>
-  </body>
+    <section class="top-projects">
+        <h2 class="section-title">ТОП проектов уютных домов</h2>
+        <h4>В которых есть всё для комфортной жизни</h4>
+        <p>Представьте, что Вы уже живете в теплом доме со всеми коммуникациями, с современным фасадом и интерьером</p>
+        <div class="top-projects__sub-title">
+            Вас не волнуют эти проблемы:
+        </div>
+        <ul class="top-projects__list">
+            <li class="top-projects__item">Как расставить мебель, чтобы она не занимала всю комнату?</li>
+            <li class="top-projects__item">Куда поставить холодильник, если кухня совсем маленькая?</li>
+        </ul>
+        
+        <!--separate block house-preview layout-->
+        <ul class="house-preview">
+            <li class="house-preview__item">
+                <img src="img/layout-1.png" alt="house">
+                <h5>Дом Вероника</h5>
+                <span class="house-preview__detail">Размеры:<span>6 x 6м</span></span>
+                <span class="house-preview__detail">Площадь:<span>60 м 2</span></span>
+                <span class="house-preview__detail">Цена:<span>от 318 000 р</span></span>
+                <a href="#" class="btn btn-watch">Смотреть планировку</a>
+            </li>
+            
+            <li class="house-preview__item">
+                <img src="img/layout-2.jpg" alt="house">
+                <h5>Дом Виктория</h5>
+                <span class="house-preview__detail">Размеры:<span>6 x 6м</span></span>
+                <span class="house-preview__detail">Площадь:<span>60 м 2</span></span>
+                <span class="house-preview__detail">Цена:<span>от 318 000 р</span></span>
+                <a href="#" class="btn btn-watch">Смотреть планировку</a>
+            </li>
+            
+            <li class="house-preview__item">
+                <img src="img/layout-3.jpg" alt="house">
+                <h5>Дом Кристина</h5>
+                <span class="house-preview__detail">Размеры:<span>6 x 6м</span></span>
+                <span class="house-preview__detail">Площадь:<span>60 м 2</span></span>
+                <span class="house-preview__detail">Цена:<span>от 318 000 р</span></span>
+                <a href="#" class="btn btn-watch">Смотреть планировку</a>
+            </li>
+            
+            <li class="house-preview__item">
+                <img src="img/layout-4.jpg" alt="house">
+                <h5>Дом Габи</h5>
+                <span class="house-preview__detail">Размеры:<span>6 x 6м</span></span>
+                <span class="house-preview__detail">Площадь:<span>60 м 2</span></span>
+                <span class="house-preview__detail">Цена:<span>от 318 000 р</span></span>
+                <a href="#" class="btn btn-watch">Смотреть планировку</a>
+            </li>
+            
+            <li class="house-preview__item">
+                <img src="img/layout-5.jpg" alt="house">
+                <h5>Дом Анжелика</h5>
+                <span class="house-preview__detail">Размеры:<span>6 x 6м</span></span>
+                <span class="house-preview__detail">Площадь:<span>60 м 2</span></span>
+                <span class="house-preview__detail">Цена:<span>от 318 000 р</span></span>
+                <a href="#" class="btn btn-watch">Смотреть планировку</a>
+            </li>
+            
+            <li class="house-preview__item">
+                <img src="img/layout-6.jpg" alt="house">
+                <h5>Дом Алиса</h5>
+                <span class="house-preview__detail">Размеры:<span>6 x 6м</span></span>
+                <span class="house-preview__detail">Площадь:<span>60 м 2</span></span>
+                <span class="house-preview__detail">Цена:<span>от 318 000 р</span></span>
+                <a href="#" class="btn btn-watch">Смотреть планировку</a>
+            </li>
+        </ul>
+        <!--separate block end-->
+        
+        <!--separate block all-project form-->
+        <div class="projects-form">
+            <form action="" method="get">
+                <p>Введите мобильный номер телефона и получите доступ ко всем типовым проектам</p>
+                <div class="projects-form__inputs-wrapper">
+                    <input type="text" name="phone" id="your-phone">
+                </div>
+                <button type="submit" class="btn btn-form">Смотреть все проекты</button>
+                <span class="projects-form__notice">Открыть и скачать можно сразу после заполнения формы</span>
+            </form>
+        </div>
+        <!--separate block all-project form end-->
+    </section>
+    
+    <!--comparison house vs flat-->
+    <section class="comparison">
+        <h2 class="section-title">Сравните многоквартирный дом и собственный</h2>
+        <div class="comparison__estate">
+            <p>100м2 = 33 м2</p>
+            <p>Цена своего дома с площадью</p>
+            <p>Цена 1 комн. квартире с площадью</p>
+        </div>
+        <div class="comparison__img"><img src="img/comparison-estate.png" alt="comparison">
+            <p>Стоимость одна, а жилой площади в 3-4 раза больше!</p>
+        </div>
+        <div class="comparison__text">
+            <p>Зачем платить 1 500 000 рублей за 33 м2 в</p>
+            <p>многоквартирном доме, если можно</p>
+            <p>вложить те же деньги в собственный дом на 100 м2</p>
+        </div>
+    </section>
+    
+    <!--big list with images-->
+    <section class="top-reason">
+        <h2 class="section-title">Как стало возможным построить новый дом площадью 100 м2 и уложиться в стоимость однушки?</h2>
+        <span>А ещё:</span>
+        <ul class="top-reason__list">
+            <li class="top-reason__right">
+                <p>Сэкономить на времени по поиску бригад и организации строительства</p>
+                <span>1</span>
+                <div class="img-right">
+                    <img src="img/list-img-1.jpg" alt="reason">
+                </div>
+            </li>
+            <li class="top-reason__left">
+               <div class="img-left">
+                    <img src="img/list-img-2.jpg" alt="reason">
+                </div>
+                <p>Обогнать инфляцию. Фиксируем итоговую цену в смете без дополнительных затрат</p>
+                <span>2</span>
+            </li>
+            <li class="top-reason__right">
+                <p>Получить гарантию 5 лет, обезопасив себя от бракоделов</p>
+                <span>3</span>
+                <div class="img-right">
+                    <img src="img/list-img-3.jpg" alt="reason">
+                </div>
+            </li>
+            <li class="top-reason__left">
+               <div class="img-left">
+                    <img src="img/list-img-4.jpg" alt="reason">
+                </div>
+                <p>Сэкономить деньги на коммунальных услугах и содержании дома по сравнению со счетами за квартиру</p>
+                <span>4</span>
+            </li>
+            <li class="top-reason__right">
+                <p>Разместить детей в разных комнатах</p>
+                <span>5</span>
+                <div class="img-right">
+                    <img src="img/list-img-5.jpg" alt="reason">
+                </div>
+            </li>
+            <li class="top-reason__left">
+               <div class="img-left">
+                    <img src="img/list-img-6.jpg" alt="reason">
+                </div>
+                <p>Дышать свежим воздухом</p>
+                <span>6</span>
+            </li>
+            <li class="top-reason__right">
+                <p>Иметь собственную парковку</p>
+                <span>7</span>
+                <div class="img-right">
+                    <img src="img/list-img-7.jpg" alt="reason">
+                </div>
+            </li>
+            <li class="top-reason__left">
+               <div class="img-left">
+                    <img src="img/list-img-8.jpg" alt="reason">
+                </div>
+                <p>Не раздражаться от шума соседского молотка</p>
+                <span>8</span>
+            </li>
+            <li class="top-reason__right">
+                <p>Избежать провожающих взоров соседей на лавочке и чувствовать себя полноценным хозяином или хозяйкой</p>
+                <span>9</span>
+                <div class="img-right">
+                    <img src="img/list-img-9.jpg" alt="reason">
+                </div>
+            </li>
+        </ul>
+    </section>
+    
+    <!--grand images with blocks-->
+    <section class="grand-img">
+        <div class="grand-img__left">
+           <img src="img/grand-img-1.png" alt="grand">
+            <div class="grand-img__text">
+                <div class="grand-img__title">Будем говорить прямо</div>
+                <p>Когда Вы расскажите каму-либо о своей идее переезда в собственный дом из тесной квартиры, они скорее всего начнут Вас отговаривать...</p>
+            </div>
+        </div>
+            
+            <div class="grand-img__right">
+              <img src="img/grand-img-2.png" alt="grand">
+                <div class="grand-img__text">
+                <div class="grand-img__title">Хотите правду?</div>
+                    <p>Когда все эти люди придут к Вам в гости в новый дом, построенный "Заводом ЛСП", они тоже захотят подобный дом!</p>
+                </div>
+        </div>
+    </section>
+    
+    <!--compare benefits-->
+    <section class="compare-benefits">
+        <h2 class="section-title">Сравните выгоду вложений</h2>
+        <p>Для чистоты эксперимента берём стоимость одного и того же дома &quot;под ключ&quot;, но за вычетом        внутренней отделки, для круглогодичного проживания со всеми коммуникациями общей площадью .....
+        </p>
+        
+    <!--separated block-->
+       <ul class="compare__list">
+           <li class="compare__item">
+              
+               <div class="compare__left">
+                   <p>Канадский дом<br>с отделкой - имитация бруса</p>
+                   <img src="img/compare-1.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+               
+               <div class="compare__center">
+                   <img src="img/scales.jpg" alt="scales">
+               </div>
+               
+               <div class="compare__right">
+                   <p>Дом из бруса</p>
+                   <img src="img/compare-1.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+           </li>
+           
+           <li class="compare__item">
+              
+               <div class="compare__left">
+                   <p>Канадский дом<br>с отделкой - кирпичом</p>
+                   <img src="img/compare-2.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+               
+               <div class="compare__center">
+                   <img src="img/scales.jpg" alt="scales">
+               </div>
+               
+               <div class="compare__right">
+                   <p>Кирпичный дом</p>
+                   <img src="img/compare-2.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+           </li>
+           
+           <li class="compare__item">
+              
+               <div class="compare__left">
+                   <p>Канадский дом<br>с отделкой - под камень</p>
+                   <img src="img/compare-3.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+               
+               <div class="compare__center">
+                   <img src="img/scales.jpg" alt="scales">
+               </div>
+               
+               <div class="compare__right">
+                   <p>Дом из газобетона</p>
+                   <img src="img/compare-3.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+           </li>
+           
+           <li class="compare__item">
+              
+               <div class="compare__left">
+                   <p>Канадский дом<br>с отделкой - виниловым сайдингом</p>
+                   <img src="img/compare-4.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+               
+               <div class="compare__center">
+                   <img src="img/scales.jpg" alt="scales">
+               </div>
+               
+               <div class="compare__right">
+                   <p>Дом из оцилиндрованного бревна</p>
+                   <img src="img/compare-4.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+           </li>
+           
+           <li class="compare__item">
+              
+               <div class="compare__left">
+                   <p>Канадский дом<br>с отделкой - декоративной штукатуркой</p>
+                   <img src="img/compare-5.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+               
+               <div class="compare__center">
+                   <img src="img/scales.jpg" alt="scales">
+               </div>
+               
+               <div class="compare__right">
+                   <p>Дом из пенобетона</p>
+                   <img src="img/compare-5.jpg" alt="house">
+                   <p>
+                       Цена:<span>1 900 000 руб.</span>
+                   </p>
+               </div>
+           </li>
+       </ul>
+    </section>
+    
+    <!--get consult-->
+    <section class="get-consult">
+        <div class="get-consult__form">
+            <h3>Остались вопросы?</h3>
+            <p>Получите консультацию прямо сейчас</p>
+            <form action="" method="">
+                <div class="get-consult__input-wrapper">
+                    <input type="text" name="consult" id="get-consult">
+                    <button type="submit" class="btn btn-form">Получить консультацию</button>
+                    <span class="get-consult__notice">
+                        * Полученные контактные данные не будут переданы третьим лицам
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!--houses of our clients-->
+    <section class="our-clients">
+        <h2 class="section-title">В таких домах живут наши клиенты</h2>
+        <ul class="our-clients__list">
+            <li class="our-clients__items">
+                <p>Проект Вероника</p>
+                <img src="img/client-house-1.jpg" alt="house">
+            </li>
+            <li class="our-clients__items">
+                <p>Проект Марина</p>
+                <img src="img/client-house-2.jpg" alt="house">
+            </li>
+            <li class="our-clients__items">
+                <p>Проект Елизавета</p>
+                <img src="img/client-house-3.jpg" alt="house">
+            </li>
+            <li class="our-clients__items">
+                <p>Проект Александра</p>
+                <img src="img/client-house-4.jpg" alt="house">
+            </li>
+            <li class="our-clients__items">
+                <p>Проект Виолетта</p>
+                <img src="img/client-house-5.jpg" alt="house">
+            </li>
+            <li class="our-clients__items">
+                <p>Проект Людмила</p>
+                <img src="img/client-house-6.jpg" alt="house">
+            </li>
+        </ul>
+    </section>
+    
+    <section class="characteristics">
+        <h2 class="section-title">Технические характеристики канадских домов завода ЛСП</h2>
+        <div class="characteristics__img">
+            <img src="img/characteristics.jpg" alt="tech">
+        </div>
+        <p>Закажите <span class="characteristics__color">бесплатный расчет проекта дома</span> своей мечты прямо сейчас</p>
+        <a href="#" class="btn btn-red">Заказать расчет</a>
+    </section>
+    
+    <section class="plant-lcp">
+        <p>что общего между строительной компанией</p>
+        <h2 class="section-title">Завод ЛСП</h2>
+        <p>и многофункциональным комбайном?</p>
+        <img src="img/plant-lcp.jpg" alt="plant-lcp">
+        
+        <ul class="plant-lcp__list">
+            <li class="plant-lcp__item">
+                <h5>Функция №1<br>Разрабатываем проект дома</h5>
+                <img src="img/function-1.jpg" alt="functions">
+                <p>С учетом всех пожеланий и состава семьи. Проектирование включает в себя архитектурно-строительную и инженерную части</p>
+            </li>
+            
+            <li class="plant-lcp__item">
+                <h5>Функция №2<br>Составляем смету по Вашему бюджету</h5>
+                <img src="img/function-2.jpg" alt="functions">
+                <p>Наши проектировщики готовят смету, исходя из Ваших пожеланий и возможностей. Конечная стоимость фиксируется в договоре, после чего никаких доплат</p>
+            </li>
+            
+            <li class="plant-lcp__item">
+                <h5>Функция №3<br>Подбираем Вам участок</h5>
+                <img src="img/function-3.jpg" alt="functions">
+                <p>Если у Вас нет участка, то мы совершенно бесплатно находим его для Вас, как если бы это делал риэлтор. Регистрацию прав собственности тоже берем на себя</p>
+            </li>
+            
+            <li class="plant-lcp__item">
+                <h5>Функция №4<br>Помогаем продать имущество</h5>
+                <img src="img/function-4.jpg" alt="functions">
+                <p>Содействие в быстрой продаже Вашей квартиры, старого дома или земельного участка. Помогаем собрать полный пакет документов для оформления кредита</p>
+            </li>
+            
+            <li class="plant-lcp__item">
+                <h5>Функция №5<br>Подбираем стройматериалы</h5>
+                <img src="img/function-5.jpg" alt="functions">
+                <p>Выбираем качественные материалы, учитывая Ваши пожелания и вкус.</p>
+            </li>
+            
+            <li class="plant-lcp__item">
+                <h5>Функция №6<br>Строим дом Вашей мечты</h5>
+            </li>
+        </ul>
+        
+    <!--separated block, "right" - img to right / "left" - img to left-->
+        <div class="function-six">
+           
+    <!--FIRST BLOCK-right-->
+            <div class="function-six__right">
+                <div class="function-six__enumeration">
+                   <h5>Устанавливаем фундамент на винтовых сваях</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Быстрый монтаж  (1-3 дня )</li>
+                        <li class="function-six__item">Высокая несущая способность</li>
+                        <li class="function-six__item">Возможность монтажа на любом рельефе и вблизи инженерных коммуникаций</li>
+                        <li class="function-six__item">Не дают усадки</li>
+                        <li class="function-six__item">Установка в любое время года</li>
+                        <li class="function-six__item">Долговечность не менее 100 лет</li>
+                    </ul>
+                </div>
+                <!--IMG-->
+                <div class="function-six__img">
+                    <img src="img/f-six-1.png" alt="function">
+                </div>
+                <!--IMG end-->
+            </div>
+            
+            <!--FIRST BLOCK-left-->
+            <div class="function-six__left">
+                <!--IMG-->
+               <div class="function-six__img">
+                    <img src="img/f-six-2.png" alt="function">
+               </div>
+                <!--IMG end-->
+                <div class="function-six__enumeration">
+                   <h5>Монтаж автономной канализации</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Высокая скорость установки (3-5 дней)</li>
+                        <li class="function-six__item">Отсутствие прощелин</li>
+                        <li class="function-six__item">Легкость подсоединения трубопровода к бетонной конструкции</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--SECOND BLOCK-right-->
+            <div class="function-six__right">
+                <div class="function-six__enumeration">
+                   <h5>Защитная обработка панелей перекрытия</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Резинобитумная мастика отражает влажные испарения земли</li>
+                    </ul>
+                </div>
+                <!--IMG-->
+                <div class="function-six__img">
+                    <img src="img/f-six-3.png" alt="function">
+                </div>
+                <!--IMG end-->
+            </div>
+            
+            <!--SECOND BLOCK-left-->
+            <div class="function-six__left">
+                <!--IMG-->
+               <div class="function-six__img">
+                    <img src="img/f-six-4.png" alt="function">
+               </div>
+                <!--IMG end-->
+                <div class="function-six__enumeration">
+                   <h5>Монтаж автономной канализации</h5>
+                   <p>Необходимо в следующих случаях:</p>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Вы решили изменить проект вследствие чего произошло увеличение нагрузок</li>
+                        <li class="function-six__item">Планируется надстроить мансандру или полноценный этаж</li>
+                        <li class="function-six__item">Высота фундамента превышает м над уровнем земли</li>
+                        <li class="function-six__item">Подвижного грунта</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--THIRD BLOCK-right-->
+            <div class="function-six__right">
+                <div class="function-six__enumeration">
+                   <h5>Сборка стеновых панелей</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Пол, потолок- СИП-панель 224мм</li>
+                        <li class="function-six__item">Внешние несущие стены - СИП-панель 174мм</li>
+                        <li class="function-six__item">Внутренние перегородки - СИП-панель 124мм</li>
+                    </ul>
+                </div>
+                <!--IMG-->
+                <div class="function-six__img">
+                    <img src="img/f-six-5.png" alt="function">
+                </div>
+                <!--IMG end-->
+            </div>
+            
+            <!--THIRD BLOCK-left-->
+            <div class="function-six__left">
+                <!--IMG-->
+               <div class="function-six__img">
+                    <img src="img/f-six-6.png" alt="function">
+               </div>
+                <!--IMG end-->
+                <div class="function-six__enumeration">
+                   <h5>Монтаж окон и устройство крыши</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Окна пластиковые</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--FOURTH BLOCK-right-->
+            <div class="function-six__right">
+                <div class="function-six__enumeration">
+                   <h5>Интерьерная лестница</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Срок исполнения 3-5 дней</li>
+                    </ul>
+                </div>
+                <!--IMG-->
+                <div class="function-six__img">
+                    <img src="img/f-six-7.png" alt="function">
+                </div>
+                <!--IMG end-->
+            </div>
+            
+            <!--FOURTH BLOCK-left-->
+            <div class="function-six__left">
+                <!--IMG-->
+               <div class="function-six__img">
+                    <img src="img/f-six-8.png" alt="function">
+               </div>
+                <!--IMG end-->
+                <div class="function-six__enumeration">
+                   <h5>Интерьерная лестница</h5>
+                    <p>Рабочий модуль состоит из пластикового цилиндра, в котором размещен цилиндр меньшего диаметра. Между ними относительно центра оси закреплены медные пластинчатые теплообменники (рекуператоры), по краям которых противоположно расположены два вентилятора центробежного типа, на входе и выходе, одновременно обеспечивающие нагнетание приточного и вытяжного воздуха с разных концов в систему воздушных каналов. При этом воздушные потоки не перемешиваются между собой</p>
+                </div>
+            </div>
+            
+            <!--FIFTH BLOCK-right-->
+            <div class="function-six__right">
+                <div class="function-six__enumeration">
+                   <h5>Отопление</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Радиаторное</li>
+                        <li class="function-six__item">Инфакрасный теплый пол</li>
+                    </ul>
+                </div>
+                <!--IMG-->
+                <div class="function-six__img">
+                    <img src="img/f-six-9.png" alt="function">
+                </div>
+                <!--IMG end-->
+            </div>
+            
+            <!--FIFTH BLOCK-left-->
+            <div class="function-six__left">
+                <!--IMG-->
+               <div class="function-six__img">
+                    <img src="img/f-six-10.png" alt="function">
+               </div>
+                <!--IMG end-->
+                <div class="function-six__enumeration">
+                   <h5>Водоснабжение</h5>
+                    <p>Разводка горячей и холодной воды из полипропиленовой трубы, разводка канализации из пластиковой трубы до точек водозабора (раковины, унитаза,ванна, душевая кабина, стиральная машина), водонагреватели, шаровые краны</p>
+                </div>
+            </div>
+            
+            <!--SIX BLOCK-right-->
+            <div class="function-six__right">
+                <div class="function-six__enumeration">
+                   <h5>Электроснабжение</h5>
+                    <p>Монтаж электро проводки открытым способом в ПВХ-коробах, гофре; сборка электрического щита; установка розеток, выключателей, люстр; монтаж контура заземления; монтаж электросчетчика</p>
+                </div>
+                <!--IMG-->
+                <div class="function-six__img">
+                    <img src="img/f-six-11.png" alt="function">
+                </div>
+                <!--IMG end-->
+            </div>
+            
+            <!--SEVENTH BLOCK-left-->
+            <div class="function-six__left">
+                <!--IMG-->
+               <div class="function-six__img">
+                    <img src="img/f-six-12.png" alt="function">
+               </div>
+                <!--IMG end-->
+                <div class="function-six__enumeration">
+                   <h5>Внутренняя отделка (типовая)</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Потолок натяжной белый</li>
+                        <li class="function-six__item">Стены гипсокартон</li>
+                        <li class="function-six__item">Стены в санузлах ГВЛ (гипсоволокнистый лист)</li>
+                        <li class="function-six__item">Обои белые под покраску</li>
+                        <li class="function-six__item">Ламинат эконом-класс</li>
+                        <li class="function-six__item">Пол и стены в санузлах - кафель</li>
+                        <li class="function-six__item">Техпомещение: стены и потолок ПВХ панель, пол-кафель</li>
+                        <li class="function-six__item">Межкомнатные двери- МНФ</li>
+                        <li class="function-six__item">Окна пластиковые белые (трехкамерный профиль)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--SEVENTH BLOCK-right-->
+            <div class="function-six__right">
+                <div class="function-six__enumeration">
+                   <h5>Внешняя отделка (типовая)</h5>
+                    <ul class="function-six__list">
+                        <li class="function-six__item">Стены - сайдинг виниловый</li>
+                        <li class="function-six__item">Цокольный сайдинг</li>
+                        <li class="function-six__item">Дверь входная металлическая утепленная</li>
+                        <li class="function-six__item">Водостоки</li>
+                        <li class="function-six__item">Подшивка софитов</li>
+                    </ul>
+                </div>
+                <!--IMG-->
+                <div class="function-six__img">
+                    <img src="img/f-six-13.png" alt="function">
+                </div>
+                <!--IMG end-->
+            </div>
+        </div>
+    </section>
+    
+    <section class="object-video">
+        <h2 class="section-title">Видео наших объектов</h2>
+        <div class="object-video__wrapper">
+            <div class="object-video__left">
+                <div class="object-video__form">
+                    <p>Запишитесь на бесплатную консультацию у нас в офисе прямо сейчас и получите уникальное предложение в ближайшие 5 минут</p>
+                    <form action="" method="get">
+                        <div class="object-video__input-wrapper">
+                            <input type="text" name="phone" id="tel">
+                            <button type="submit" class="btn btn-form">Записаться на консультацию</button>
+                            <span class="object-video__notice">* Полученные контакты не будут переданы третьим лицам</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="object-video__right">EMPTY FOR SIGN</div>
+        </div>
+    </section>
+    
+    <section class="adv-slider">
+        <h2 class="section-title">Видео наших объектов</h2>
+    <!--SLIDER HERE-->
+    <div class="slider-content">
+        <div style="background-image: url(img/sea/sea-large.jpg)" class="slider-content__img">
+            <div class="slider-content__caption">
+                <h4>Название</h4>
+                <p>это скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя. а потом получить их в обработчик с остальными полями формы, получить можно через $_POST или $_GET в зависимости от того что вы указали в тегеэто скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя.</p>
+            </div>
+        </div>
+        
+        <div style="background-image: url(img/sea/sea-large2.jpg)" class="slider-content__img">
+            <div class="slider-content__caption">
+                <h4>Название</h4>
+<!--                <div class="slider-content__wrapper">-->
+                <p>это скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя. а потом получить их в обработчик с остальными полями формы, получить можно через $_POST или $_GET в зависимости от того что вы указали в тегеэто скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя.</p>
+                
+                <p> это скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя. а потом получить их в обработчик с остальными полями формы, получить можно через $_POST или $_GET в зависимости от того что вы указали в тегеэто скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя.</p>
+<!--                </div>-->
+            </div>
+        </div>
+        
+        <div style="background-image: url(img/sea/sea-large4.jpg)" class="slider-content__img">
+            <div class="slider-content__caption">
+                <h4>Название</h4>
+                <p>это скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя. а потом получить их в обработчик с остальными полями формы, получить можно через $_POST или $_GET в зависимости от того что вы указали в тегеэто скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!.</p>
+            </div>
+        </div>
+        
+        <div style="background-image: url(img/sea/sea-large5.jpg)" class="slider-content__img">
+            <div class="slider-content__caption  slider-content__caption--right">
+                <h4>Название</h4>
+                <p>это скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя. а потом получить их в обработчик с остальными полями формы, получить можно через $_POST или $_GET в зависимости от того что вы указали в тегеэто скрытые поля, в которые можно подставить данные при помощи php или js незаметно для пользователя.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section class="certificates">
+        <h2 class="section-title">Наши документы и сертификаты</h2>
+        <!--SLIDER HERE-->
+    </section>
+    
+    <section class="guarantee">
+        <h2 class="section-title">Наши документы и сертификаты</h2>
+        <!--SLIDER HERE-->
+    </section>
+    
+    <section class="reviews">
+        <h2 class="section-title">Отзывы</h2>
+        <!--FANCYBOX VIDEO-->
+    </section>
+    
+    <section class="question-answer">
+        <h2 class="section-title">Вопрос-ответ</h2>
+        <!--ACCORDION-->
+    </section>
+    
+    <section class="steps">
+        <h2 class="section-title">Шаги навстречу мечте</h2>
+        <div class="steps__list-wrapper">
+        <ul class="steps__list">
+            <li class="steps__item  steps__item--icon-1">
+                <p>Оставьте заявку на сайте или звоните</p>
+            </li>
+            <li class="steps__item  steps__item--icon-2">
+                <p>Встречаемся в офисе</p>
+            </li>
+            <li class="steps__item  steps__item--icon-3">
+                <p>Если нет земельного участка:</p>
+                <span>омогаем Вам найти подходящий участок и оформляем его</span>
+                <span>покупаете участок сами</span>
+            </li>
+            <li class="steps__item  steps__item--icon-4">
+                <p>Монтируем винтовой фундамент</p>
+            </li>
+            <li class="steps__item  steps__item--icon-5">
+                <p>Оформляем договор</p>
+            </li>
+            <li class="steps__item  steps__item--icon-6">
+                <p>Согласовываем смету, разрабатываем индивидуальный проект будущего дома</p>
+            </li>
+        </ul>
+        </div>
+        <div class="steps__list-wrapper-2">
+            <ul class="steps__list">
+                <li class="steps__item  steps__item--icon-7">
+                    <p>Строим канадский дом</p>
+                </li>
+                <li class="steps__item  steps__item--icon-7">
+                    <p>Дом готов:</p>
+                    <p>Вручаем вам ключи<br>Получаете сюрприз<br>Можно заезжать и растовлять мебель</p>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="btn btn-red">Оформить заявку</a>
+    </section>
+    
+    <section class="dreams">
+        <div class="dreams__text">Мечты становятся реальностью, когда мысли превращаются в действие</div>
+    </section>
+    
+    <section class="map">
+        <h2 class="section-title">Встречаемся в нашем офисе продаж</h2>
+    <!--MAP HERE-->
+    </section>
+    
+    <section class="arrange">
+        <h3>Сделай шаг к готовому дому!</h3>
+        <p>запишись на индивидуальный подбор проекта у нас в офисе прямо сейчас</p>
+        <span>8 (383) 207-82-05</span>
+        <div class="arrange__form">
+            <form action="" method="get">
+                <div class="arrange__inputs">
+                    <input type="text" name="your-tel" id="phone-1" placeholder="Ваш телефон">
+                    <input type="text" name="your-tel" id="phone-2" placeholder="Ваш телефон">
+                </div>
+                    <button type="submit" class="btn btn-form">Записаться на встречу</button>
+                    <span class="arrange__form">* Полученные контакты не будут переданы третьим лицам</span>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer__requisites">
+            <p>
+                ООО "Завод  ЛСП"<br>ИНН5410058772<br>КПП 541001001<br>
+            </p>
+        </div>
+        <div class="footer__logo">
+            <a href="#"><img src="" alt=""></a>
+            <a href="#" class="">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__copy">
+            <a href="#" class="btn btn-gray">Заказать звонок</a>
+            <p>&copy; 20016, Строительная компания Завод  ЛСП</p>
+            <p>Все права защищены</p>
+        </div>
+    </footer>
+    
+    
+
+
+
+
+
+<script src="js/script.js"></script>    
+</body>
 </html>

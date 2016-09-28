@@ -31,9 +31,9 @@ module.exports = function(grunt) {
                 "build/css/style.min.css": ["build/css/style.css"],
                 // файлы css из плагинов для минификации и объеденения
                 "build/css/library.min.css": [
-                    "js/library-css/timelify.css",
-                    "js/library-css/slicknav.css",
-                    "js/library-css/selectric.css"
+//                    "js/library-css/timelify.css",
+//                    "js/library-css/slicknav.css",
+//                    "js/library-css/selectric.css"
                 ]
             }
         }

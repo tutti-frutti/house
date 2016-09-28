@@ -1,0 +1,56 @@
+.first-screen-wrapper {
+    display: table;
+    width: 100%;
+	height: 100%;
+}
+.first-screen {
+    height: 465px;
+    margin-bottom: 30px;
+    border-top: 1px solid transparent;
+	background: url("../img/first-screen-bg.jpg") center center no-repeat;
+    background-size: cover;
+    h1 {
+        @include rob-bold(44px, 46px);
+        margin-top: 55px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+    }
+    p {
+        @include rob-reg(23px, 27px);
+        position: relative;
+        margin: 40px auto 35px;
+        padding: 18px 5px 0;
+        width: 570px;
+        height: 95px;
+        border-radius: 50px;
+        text-align: center;
+        background: #5eba27;
+        color: #fff;
+        text-shadow: 0 2px 1px #5f5e5e;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 8px;
+            left: 8px;
+            width: 550px;
+            height: 75px;
+            border: 2px dashed #fff;
+            border-radius: 50px;
+        }
+    }
+    &__inner {
+        display: table-row;
+    }
+    &__low-price {
+        @include rob-bold(40px, 33px);
+        position: relative;
+        color: #202020;
+        text-align: center;
+    }
+    &__ic-down {
+        display: block;
+        margin: 0 auto;
+        width: 47px;
+    }
+}

@@ -1,9 +1,14 @@
-//@import "mixins.scss";
+@import "mixins.scss";
+@import "variables.scss";
 //@import "variables.scss";
 
-@import "blocks/tab";
+
+@import "blocks/header.scss";
+@import "blocks/first-screen.scss";
+@import "blocks/main-benefits.scss";
+@import "blocks/tab.scss";
 
 @import "global/scaffolding.scss";
+@import "global/btn.scss";
 //@import "global/fonts.scss";
-//@import "global/btn.scss";
 //@import "global/input.scss";

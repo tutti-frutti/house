@@ -1,0 +1,15 @@
+@mixin rob-reg($font-size, $line-height) {
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin rob-bold($font-size, $line-height) {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}

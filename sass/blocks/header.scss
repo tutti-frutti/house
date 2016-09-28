@@ -1,0 +1,50 @@
+.header {
+	height: 125px;
+    line-height: 125px;
+    &__logo {
+        display: inline-block;
+        margin-right: 25px;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__slogan {
+        @include rob-bold(24px, 28px);
+        display: inline-block;
+        margin-right: 100px;
+        width: 400px;
+        line-height: normal;
+        vertical-align: middle;
+        color: #505050;
+    }
+    &__tel {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__phone {
+        @include rob-reg(25px, 30px);
+        position: relative;
+        margin-bottom: 20px;
+        color: #505050;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 5px;
+            left: -35px;
+            width: 23px;
+            height: 23px;
+            background: url("../img/tel-icon.png") 0 0 no-repeat;
+            z-index: 1;
+        }
+    }
+    &__order {
+        @include rob-bold(15px, 30px);
+        display: block;
+        width: 190px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        background: #505050;
+        color: #fff;
+    }
+}
