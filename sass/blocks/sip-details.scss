@@ -1,0 +1,103 @@
+.sip-details {
+    position: relative;
+    margin-bottom: 80px;
+    &::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 8px;
+            background: url("../img/ic-bg-line.png") 0 0 repeat;
+        }
+    p {
+        @include rob-bold(24px, 46px);
+        text-transform: uppercase;
+        text-align: center;
+        color: #494949;
+    }
+    &__img-scheme {
+        margin-bottom: 30px;
+        height: 522px;
+        line-height: 522px;
+    }
+    &__left {
+        @include rob-bold(21px, 23px);
+        display: inline-block;
+        width: 230px;
+        height: 80px;
+        padding: 13px 20px;
+        border: 3px solid #848484;
+        border-radius: 10px;
+        line-height: normal;
+        vertical-align: middle;
+        color: #5c5c5c;
+    }
+    &__right {
+        @include rob-bold(21px, 23px);
+        display: inline-block;
+        width: 230px;
+        height: 131px;
+        padding: 13px 20px;
+        border: 3px solid #848484;
+        border-radius: 10px;
+        line-height: normal;
+        vertical-align: middle;
+        color: #5c5c5c;
+    }
+    &__center {
+        display: inline-block;
+        width: 463px;
+        height: 522px;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__block-green {
+        position: relative;
+        float: left;
+        margin-left: 45px;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 5px;
+            width: 47px;
+            height: 45px;
+            background: url("../img/ic-yes.jpg") 0 0 no-repeat;
+        }
+        p {
+            @include rob-bold(27px, 25px);
+            padding-left: 70px;
+            text-transform: none;
+            color: #71b540;
+        }
+    }
+    &__wrapper-blocks {
+        margin-bottom: 50px;
+    }
+    &__block-red {
+        position: relative;
+        float: right;
+        margin-right: 45px;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 5px;
+            width: 47px;
+            height: 45px;
+            background: url("../img/ic-no.jpg") 0 0 no-repeat;
+        }
+        p {
+            @include rob-bold(27px, 25px);
+            padding-left: 70px;
+            text-align: left;
+            text-transform: none;
+            color: #b54040;
+        }
+    }
+    &__foto {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+}

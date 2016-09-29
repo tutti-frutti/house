@@ -1,20 +1,99 @@
 .manufacture {
+    position: relative;
+    padding-bottom: 85px;
+    margin-bottom: 65px;
     text-align: center;
+    &::before {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 8px;
+            background: url("../img/ic-bg-line.png") 0 0 repeat;
+        }
     &__item {
+        position: relative;
         display: inline-block;
-        margin-right: 4px;
+        margin-right: 38px;
         margin-bottom: 100px;
-        width: 308px;
+        width: 270px;
         text-align: center;
         vertical-align: top;
         font-size: 0;
+        z-index: 10;
+        &:nth-child(2) {
+            width: 311px;
+        }
         &:nth-child(3n) {
             margin-right: 0;
+            content: none;
         }
+        &:nth-child(5) {
+            width: 311px;
+        }
+        &--ic-1 {
+            &::before {
+            position: absolute;
+            content: '';
+            top: 90px;
+            right: -68px;
+            width: 70px;
+            height: 20px;
+            background: url("../img/ic-line-arrow.png") 0 0 no-repeat;
+        }
+    }
+        &--ic-2 {
+            &::before {
+            position: absolute;
+            content: '';
+            top: 90px;
+            right: -46px;
+            width: 70px;
+            height: 20px;
+            background: url("../img/ic-line-arrow.png") 0 0 no-repeat;
+        }
+    }
+        &--ic-3 {
+            &::before {
+            position: absolute;
+            content: '';
+            bottom: -80px;
+            right: 130px;
+            width: 689px;
+            height: 73px;
+            background: url("../img/ic-line-long-arrow.png") 0 0 no-repeat;
+        }
+    }
+        
         p {
             @include rob-bold(21px, 25px);
-//            width: 315px;
+            padding-top: 35px;
             color: #282828;
+        }
+    }
+    &__quote {
+        @include rob-bold(27px, 25px);
+        position: relative;
+        text-align: center;
+        color: #85bc3d;
+        &::before {
+            position: absolute;
+            content: '';
+            top: -50px;
+            left: -30px;
+            width: 50px;
+            height: 50px;
+            background: url("../img/ic-quote-1.jpg") 0 0 no-repeat;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: -40px;
+            right: -35px;
+            width: 50px;
+            height: 50px;
+            background: url("../img/ic-quote-2.jpg") 0 0 no-repeat;
         }
     }
 }

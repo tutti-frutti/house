@@ -30,3 +30,30 @@
         opacity: .85;
     }
 }
+
+.btn-form {
+	width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #f64242, #ce2a2a);
+    box-shadow: 0 3px 0 0 #ae2323;
+    &:hover {
+        opacity: .85;
+    }
+}
+
+.btn-watch {
+    @include rob-bold(18px, 40px);
+    display: block;
+    margin: 0 auto;
+	width: 260px;
+    height: 40px;
+    background-image: linear-gradient(to bottom, #f64242, #ce2a2a);
+    box-shadow: 
+        0 2px 0 0 #ae2323,
+        0 4px 0 0 #c2c2c2;
+    &:hover {
+        opacity: .85;
+    }
+}

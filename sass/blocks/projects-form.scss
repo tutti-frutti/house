@@ -1,0 +1,38 @@
+.projects-form {
+    height: 516px;
+    line-height: 516px;
+    background: url("../img/bg-house-2.png") center no-repeat;
+    &__wrapper {
+        display: inline-block;
+        width: 940px;
+        line-height: normal;
+        vertical-align: middle;
+        background: rgba(121, 156, 75, .8);
+        p {
+            @include rob-bold(34px, 34px);
+            padding: 20px 50px;
+            color: #fff;
+        }
+    }
+    &__inputs-wrapper {
+        width: 685px;
+        margin: 0 auto;
+        input {
+            display: inline-block;
+            width: 330px;
+            height: 65px;
+            border: 1px solid #5e8031;
+            border-radius: 3px;
+        }
+        button {
+            display: inline-block;
+            width: 330px;
+        }
+    }
+    &__notice {
+        @include rob-l(18px, 46px);
+        display: block;
+        text-align: center;
+        color: #fff;
+    }
+}

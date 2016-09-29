@@ -1,0 +1,35 @@
+.house-preview {
+    margin-bottom: 50px;
+    &__item {
+        display: inline-block;
+        width: 300px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #d9d9d9;
+        border-radius: 3px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        img {
+            display: block;
+            margin: 7px auto 0;
+        }
+        h5 {
+            @include rob-bold(22px, 30px);
+            padding: 20px 0 20px 20px;
+            color: #2d2d2d;
+        }
+        .btn-watch {
+	    margin: 15px auto 20px;
+    }
+}
+    &__detail {
+        @include rob-reg(17px, 30px);
+        display: block;
+        padding-left: 20px;
+        color: #da9928;
+        span {
+            color: #2d2d2d;
+        }
+    }
+}

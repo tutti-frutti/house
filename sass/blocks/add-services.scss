@@ -1,0 +1,195 @@
+.add-services {
+    position: relative;
+    margin-bottom: 100px;
+    padding-top: 115px;
+    background: url("../img/bg-house.png") 582px 0 no-repeat;
+    background-size: contain;
+    &::before {
+        position: absolute;
+        content: '';
+        bottom: -70px;
+        left: 0;
+        width: 100%;
+        border: 1px solid #e4e4e4;
+        transform: rotate(-10deg);
+        box-shadow: 0 4px 5px 0 #f1f1f1;
+    }
+    &__list {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: -90px;
+            right: -130px;
+            width: 80px;
+            height: 522px;
+            background: url("../img/brackets.png") 0 0 no-repeat;
+        }
+    }
+    &__nomenclature {
+        display: inline-block;
+        vertical-align: top;
+        h3 {
+            @include rob-bold(30px,
+            46px);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #373737;
+        }
+        li {
+            @include rob-reg(20px,
+            36px);
+            color: #739941;
+        }
+    }
+    &__yellow {
+        color: #ffcc43;
+    }
+    &__underline {
+        text-decoration: line-through;
+    }
+    &__notice {
+        @include rob-l(13px,
+        46px);
+        color: #fff;
+    }
+    &__form {
+        position: relative;
+        float: right;
+        margin-top: 10px;
+        width: 400px;
+        vertical-align: top;
+        border-radius: 5px 5px 0 0;
+        background: #739941;
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -50px;
+            left: 0;
+            width: 400px;
+            height: 51px;
+            background: url("../img/ic-form-bottom.png") 0 0 no-repeat;
+            z-index: 1;
+        }
+        p {
+            @include rob-bold(20px,
+            36px);
+            padding: 20px 0 40px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        form {
+            width: 330px;
+            margin: 0 auto;
+        }
+        input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 60px;
+            outline: none;
+            border: 1px solid #5e8031;
+            border-radius: 4px;
+        }
+        textarea {
+            width: 100%;
+            height: 105px;
+            margin-bottom: 10px;
+            resize: none;
+            outline: none;
+            border: 1px solid #5e8031;
+            border-radius: 4px;
+        }
+    }
+    &__resume {
+        float: right;
+        margin-bottom: 110px;
+        width: 530px;
+        p {
+            @include rob-reg(20px,
+            27px);
+            padding-left: 30px;
+            margin-bottom: 50px;
+            color: #303030;
+        }
+    }
+    &__block {
+        @include rob-reg(20px,
+        50px);
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        border-radius: 4px;
+        color: #606060;
+        &--yellow {
+            margin-right: 10px;
+            width: 210px;
+            height: 50px;
+            background: #dbaf38;
+            transform: skewX(-25deg);
+            p {
+                @include rob-reg(20px,
+                50px);
+                padding-left: 0;
+                transform: skewX(25deg);
+                color: #fff;
+            }
+        }
+        &--green {
+            margin-left: 10px;
+            width: 210px;
+            height: 50px;
+            background: #739941;
+            color: #fff;
+            transform: skewX(-25deg);
+            p {
+                @include rob-reg(20px,
+                50px);
+                padding-left: 0;
+                transform: skewX(25deg);
+                color: #fff;
+            }
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    @include rob-reg(15px,
+    46px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #b9b9b9;
+}
+
+::-moz-placeholder {
+    color: #b9b9b9;
+    @include rob-reg(15px,
+    46px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #b9b9b9;
+}
+
+
+/* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #b9b9b9;
+    @include rob-reg(15px,
+    46px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #b9b9b9;
+}
+
+
+/* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #b9b9b9;
+    @include rob-reg(15px,
+    46px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #b9b9b9;
+}
