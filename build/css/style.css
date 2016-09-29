@@ -118,6 +118,7 @@
 
 .main-benefits {
   position: relative;
+  margin-bottom: 90px;
   background-image: linear-gradient(to bottom, #fff, #eef5f8); }
   .main-benefits::before {
     position: absolute;
@@ -361,6 +362,42 @@
       line-height: normal;
       vertical-align: middle;
       color: #1f1f1f; }
+
+.section-title {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 46px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 20px 35px;
+  border-radius: 50px;
+  background: #83592c;
+  color: #fff; }
+  .section-title--width-1 {
+    width: 940px;
+    margin-bottom: 90px; }
+
+.manufacture {
+  text-align: center; }
+  .manufacture__item {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 100px;
+    width: 308px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 0; }
+    .manufacture__item:nth-child(3n) {
+      margin-right: 0; }
+    .manufacture__item p {
+      font-family: "Roboto Condensed";
+      font-weight: 700;
+      font-style: normal;
+      font-size: 21px;
+      line-height: 25px;
+      color: #282828; }
 
 * {
   box-sizing: border-box; }
