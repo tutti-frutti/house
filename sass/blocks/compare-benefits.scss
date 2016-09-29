@@ -1,0 +1,13 @@
+.compare-benefits {
+    .section-title {
+        width: 780px;
+        margin-bottom: 30px;
+    }
+    &__descr {
+        @include rob-bold(20px, 30px);
+        margin-bottom: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #474747;
+    }
+}

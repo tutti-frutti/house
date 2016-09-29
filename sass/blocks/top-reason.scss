@@ -1,0 +1,139 @@
+.top-reason {
+    .section-title {
+        width: 995px;
+        margin: 0 auto 30px;
+        border-radius: 100px;
+        text-transform: uppercase;
+    }
+    &__else {
+        @include rob-bold(25px, 46px);
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        color: #3c3c3c;
+    }
+    &__right {
+        position: relative;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        height: 250px;
+        text-align: right;
+        &:nth-child(5) {
+            p {
+                padding: 0 15px;
+                line-height: 80px;
+            }
+        }
+        &:nth-child(7) {
+            p {
+                padding: 0 15px;
+                line-height: 80px;
+            }
+        }
+        &:nth-child(9) {
+            p {
+                height: 100px;
+                top: 25%;
+            }
+        }
+        p {
+            @include rob-bold(25px, 25px);
+            position: absolute;
+            display: inline-block;
+            padding: 15px 20px;
+            top: 35%;
+            left: 0;
+            width: 560px;
+            height: 80px;
+            text-align: left;
+            border-radius: 5px;
+            background: #7ab948;
+            color: #fff;
+            z-index: 10;
+        }
+        .img-right {
+            position: relative;
+            display: inline-block;
+            line-height: normal;
+            vertical-align: middle;
+            &::before {
+                position: absolute;
+                content: '';
+                top: -25px;
+                left: -25px;
+                width: 58px;
+                height: 58px;
+                background: url("../img/bingo.png") 0 0 no-repeat;
+            }
+        }
+        span {
+            @include rob-bold(86px, 25px);
+            display: inline-block;
+            margin-bottom: 35px;
+            vertical-align: bottom;
+            color: #e5e5e5;
+        }
+    }
+    &__left {
+        position: relative;
+        height: 250px;
+        text-align: left;
+        &:nth-child(4) {
+            p {
+                top: 23%;
+                height: 100px;
+            }
+        }
+        &:nth-child(6) {
+            p {
+                padding: 0 15px;
+                line-height: 80px;
+            }
+        }
+        &:nth-child(8) {
+            p {
+                padding: 0 15px;
+                line-height: 80px;
+            }
+        }
+        
+        p {
+            @include rob-bold(25px, 25px);
+            position: absolute;
+            display: inline-block;
+            padding: 15px 20px;
+            top: 35%;
+            right: 0;
+            width: 560px;
+            height: 80px;
+            text-align: left;
+            border-radius: 5px;
+            background: #7ab948;
+            color: #fff;
+            z-index: 10;
+        }
+        .img-left {
+            position: relative;
+            display: inline-block;
+            line-height: normal;
+            vertical-align: middle;
+            &::before {
+                position: absolute;
+                content: '';
+                top: -25px;
+                right: -25px;
+                width: 58px;
+                height: 58px;
+                background: url("../img/bingo.png") 0 0 no-repeat;
+            }
+        }
+        span {
+            @include rob-bold(86px, 25px);
+            display: inline-block;
+            margin-bottom: 35px;
+            vertical-align: bottom;
+            color: #e5e5e5;
+        }
+    }
+    
+}

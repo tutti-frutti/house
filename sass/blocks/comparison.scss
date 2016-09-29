@@ -1,9 +1,92 @@
 .comparison {
+    margin-bottom: 30px;
     height: 900px;
+    border-top: 1px solid transparent;
     background: url("../img/bg-compr.png") center no-repeat;
     .section-title {
         width: 940px;
+        margin-top: 140px;
         font-size: 42px;
 	    background: #3c5376;
-}
+    }
+    &__estate {
+        @include rob-bold(22px, 26px);
+        color: #fff;
+        p {
+            &:nth-child(1) {
+                margin: 15px 0 10px;
+                text-align: center;
+            }
+            &:nth-child(2) {
+                position: relative;
+                margin-left: 135px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 10px;
+                    left: 310px;
+                    width: 47px;
+                    height: 33px;
+                    background: url("../img/ic-sign.png") 0 0 no-repeat;
+                } 
+            }
+            &:nth-child(3) {
+                float: right;
+                margin-right: 90px;
+            }
+        }
+    }
+    &__img {
+        position: relative;
+        top: -25px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            @include rob-bold(22px, 45px);
+            position: absolute;
+            display: block;
+            padding: 0 15px;
+            left: 50%;
+            bottom: 110px;
+            margin-left: -290px;
+            width: 615px;
+            height: 45px;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 5px;
+            background: #7ab948;
+            color: #fff;
+        }
+    }
+    &__text {
+        @include rob-bold(22px, 40px);
+        padding: 0 15px;
+        height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        p {
+            &:nth-child(1) {
+                margin-left: 145px;
+                margin-top: 10px;
+                width: 470px;
+                background: #df8c2a;
+                border-radius: 4px 4px 4px 0;
+            }
+            &:nth-child(2) {
+                margin-left: 115px;
+                width: 425px;
+                background: #df8c2a;
+                border-radius: 4px 0 0 4px;
+            }
+            &:nth-child(3) {
+                margin-left: 180px;
+                width: 580px;
+                background: #df8c2a;
+                border-radius: 0 4px 4px 4px;
+            }
+        }
+    }
 }
