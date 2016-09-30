@@ -34,7 +34,7 @@
         </p>
         </div>
         
-        <a href="#" class="btn btn-red">Посмотреть подарки</a>
+        <a href="#" class="btn btn-red  btn-red--icon">Посмотреть подарки</a>
         
     </section>
        <div class="first-screen__inner">
@@ -599,68 +599,81 @@
     </section>
     
     <!--get consult-->
-    <section class="get-consult">
+    <section class="get-consult clearfix">
+       <div class="center">
         <div class="get-consult__form">
             <h3>Остались вопросы?</h3>
             <p>Получите консультацию прямо сейчас</p>
             <form action="" method="">
                 <div class="get-consult__input-wrapper">
-                    <input type="text" name="consult" id="get-consult">
+                    <input type="text" name="consult" id="get-consult" placeholder="Ваш телефон*">
                     <button type="submit" class="btn btn-form">Получить консультацию</button>
+                </div>
                     <span class="get-consult__notice">
                         * Полученные контактные данные не будут переданы третьим лицам
                     </span>
-                </div>
             </form>
         </div>
+      </div>
     </section>
     
     <!--houses of our clients-->
-    <section class="our-clients">
+    <section class="our-clients center">
         <h2 class="section-title">В таких домах живут наши клиенты</h2>
         <ul class="our-clients__list">
             <li class="our-clients__items">
                 <p>Проект Вероника</p>
-                <img src="img/client-house-1.jpg" alt="house">
+                <a href="#"><img src="img/client-house-1.jpg" alt="house"><span>Планировка</span></a>
             </li>
             <li class="our-clients__items">
                 <p>Проект Марина</p>
-                <img src="img/client-house-2.jpg" alt="house">
+                <a href="#"><img src="img/client-house-2.jpg" alt="house"><span>Планировка</span></a>
             </li>
             <li class="our-clients__items">
                 <p>Проект Елизавета</p>
-                <img src="img/client-house-3.jpg" alt="house">
+                <a href="#"><img src="img/client-house-3.jpg" alt="house"><span>Планировка</span></a>
             </li>
             <li class="our-clients__items">
                 <p>Проект Александра</p>
-                <img src="img/client-house-4.jpg" alt="house">
+                <a href="#"><img src="img/client-house-4.jpg" alt="house"><span>Планировка</span></a>
             </li>
             <li class="our-clients__items">
                 <p>Проект Виолетта</p>
-                <img src="img/client-house-5.jpg" alt="house">
+                <a href="#"><img src="img/client-house-5.jpg" alt="house"><span>Планировка</span></a>
             </li>
             <li class="our-clients__items">
                 <p>Проект Людмила</p>
-                <img src="img/client-house-6.jpg" alt="house">
+                <a href="#"><img src="img/client-house-6.jpg" alt="house"><span>Планировка</span></a>
             </li>
         </ul>
     </section>
     
-    <section class="characteristics">
+    <section class="characteristics center">
         <h2 class="section-title">Технические характеристики канадских домов завода ЛСП</h2>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-1">Экологичный</p></a>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-2">Просторный</p></a>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-3">Пожаробезопасный</p></a>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-4">Долговечный</p></a>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-5">Современный</p></a>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-6">Экономичный</p></a>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-7">Теплый</p></a>
+        <a href="#"><p class="characteristics__details  characteristics__details--abs-8">Быстровозводимый</p></a>
         <div class="characteristics__img">
             <img src="img/characteristics.jpg" alt="tech">
         </div>
-        <p>Закажите <span class="characteristics__color">бесплатный расчет проекта дома</span> своей мечты прямо сейчас</p>
-        <a href="#" class="btn btn-red">Заказать расчет</a>
+        <p class="characteristics__text">Закажите <span class="characteristics__color">бесплатный расчет проекта дома</span> своей мечты прямо сейчас</p>
+        <a href="#" class="btn btn-red  btn-red--wide">Заказать расчет</a>
     </section>
     
-    <section class="plant-lcp">
-        <p>что общего между строительной компанией</p>
+    <section class="plant-concept">
+        <p>Что общего между строительной компанией</p>
         <h2 class="section-title">Завод ЛСП</h2>
-        <p>и многофункциональным комбайном?</p>
-        <img src="img/plant-lcp.jpg" alt="plant-lcp">
+        <p>И многофункциональным комбайном?</p>
+        <img src="img/plant-lcp-bg.png" alt="plant-lcp">
+    </section>
         
+    <section class="plant-lcp">
+       <div class="center">
         <ul class="plant-lcp__list">
             <li class="plant-lcp__item">
                 <h5>Функция №1<br>Разрабатываем проект дома</h5>
@@ -692,14 +705,17 @@
                 <p>Выбираем качественные материалы, учитывая Ваши пожелания и вкус.</p>
             </li>
             
+<!--
             <li class="plant-lcp__item">
                 <h5>Функция №6<br>Строим дом Вашей мечты</h5>
             </li>
+-->
         </ul>
+      </div>
+    </section>
         
     <!--separated block, "right" - img to right / "left" - img to left-->
-        <div class="function-six">
-           
+        <section class="function-six">
     <!--FIRST BLOCK-right-->
             <div class="function-six__right">
                 <div class="function-six__enumeration">
@@ -914,7 +930,6 @@
                 </div>
                 <!--IMG end-->
             </div>
-        </div>
     </section>
     
     <section class="object-video">

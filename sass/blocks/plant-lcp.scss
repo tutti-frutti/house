@@ -1,0 +1,24 @@
+.plant-lcp {
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: 0 75px 75px 0;
+        width: 260px;
+        text-align: left;
+        vertical-align: top;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        h5 {
+            @include rob-reg(18px, 24px);
+            height: 70px;
+            text-align: center;
+            color: #373737;
+        }
+        p {
+            @include rob-l(15px, 18px);
+            margin-top: 15px;
+            color: #050505;
+        }
+    }
+}

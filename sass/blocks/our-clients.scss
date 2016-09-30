@@ -1,0 +1,78 @@
+.our-clients {
+    margin-bottom: 100px!important;
+    .section-title {
+	    width: 781px;
+        margin-bottom: 80px;
+  }
+    li {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        height: 215px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        p {
+            @include rob-reg(20px, 45px);
+            margin-bottom: 15px;
+            text-align: center;
+            color: #3e3e3e;
+        }
+        a {
+            position: relative;
+            display: block;
+            
+            border-radius: 4px;
+            span {
+                @include rob-bold(20px, 45px);
+                position: absolute;
+                opacity: 0;
+                top: 50%;
+                left: 50%;
+                margin-left: -100px;
+                margin-top: -22px;
+                width: 200px;
+                height: 45px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                border-radius: 4px;
+                background-image: linear-gradient(to bottom, #efbf4f, #e2992b);
+                text-shadow: 0 1px 1px #7f7f7f;
+                box-shadow: 0 2px 0 0 #b97b22;
+                
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 98%;
+                top: 0;
+                left: 0;
+                background: #000;
+                z-index: 1;
+                opacity: 0;
+                transition: all .3s;
+            }
+            &:hover {
+                 &::before {
+                    opacity: .5;
+                }
+                span {
+                    opacity: 1;
+                    z-index: 2;
+                }
+                img {
+                    border: 2px solid #eebb41;
+                    border-radius: 4px;
+                    z-index: 5;
+                }
+            }
+            img {
+                display: inline-block;
+                border: 2px solid #e7e7e7;
+                border-radius: 4px;
+            }
+        }
+    }
+}
