@@ -21,7 +21,6 @@
         a {
             position: relative;
             display: block;
-            
             border-radius: 4px;
             span {
                 @include rob-bold(20px, 45px);

@@ -1,0 +1,244 @@
+.function-six {
+    margin-bottom: 85px!important;
+    &__right {
+        position: relative;
+        margin-bottom: 50px;
+        &--ic-1 {
+            position: relative;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: 5px;
+            right: 305px;
+            width: 397px;
+            height: 3px;
+            transform: rotate(-23deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-2 {
+            position: relative;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: 3px;
+            right: 297px;
+            width: 403px;
+            height: 3px;
+            transform: rotate(-23deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-3 {
+            position: relative;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: 3px;
+            right: 302px;
+            width: 398px;
+            height: 3px;
+            transform: rotate(-23deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-4 {
+            position: relative;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: 3px;
+            right: 296px;
+            width: 408px;
+            height: 3px;
+            transform: rotate(-23deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-5 {
+            position: relative;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: 3px;
+            right: 296px;
+            width: 408px;
+            height: 3px;
+            transform: rotate(-23deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-6 {
+            position: relative;
+            margin-bottom: 0;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: 14px;
+            right: 296px;
+            width: 414px;
+            height: 3px;
+            transform: rotate(-23deg);
+            background: #a6cc8f;
+        }
+    }
+        &--indent {
+            margin-top: 50px;
+        }
+        ul {
+            text-align: left;
+            margin-left: 15px;
+        }
+    }
+    &__left {
+        margin-bottom: 50px;
+        text-align: left;
+        &--ic-1 {
+            position: relative;
+            margin-bottom: 0;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: -10px;
+            right: 278px;
+            width: 374px;
+            height: 3px;
+            transform: rotate(29deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-2 {
+            position: relative;
+            margin-bottom: 0;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: -10px;
+            right: 278px;
+            width: 374px;
+            height: 3px;
+            transform: rotate(29deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-3 {
+            position: relative;
+            margin-bottom: 0;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: -10px;
+            right: 278px;
+            width: 374px;
+            height: 3px;
+            transform: rotate(29deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-4 {
+            position: relative;
+            margin-bottom: 0;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: -10px;
+            right: 278px;
+            width: 374px;
+            height: 3px;
+            transform: rotate(29deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-5 {
+            position: relative;
+            margin-bottom: 0;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: -10px;
+            right: 278px;
+            width: 374px;
+            height: 3px;
+            transform: rotate(29deg);
+            background: #a6cc8f;
+        }
+    }
+        &--ic-6 {
+            position: relative;
+            margin-bottom: 0;
+            &:before {
+            position: absolute;
+            content: '';
+            bottom: -30px;
+            right: 278px;
+            width: 434px;
+            height: 3px;
+            transform: rotate(29deg);
+            background: #a6cc8f;
+        }
+    }
+        ul {
+            text-align: left;
+            margin-left: 15px;
+        }
+    }
+    &__enumeration-right {
+        display: inline-block;
+        margin-right: 100px;
+        width: 485px;
+        vertical-align: middle;
+        
+        h5 {
+            @include rob-reg(24px, 25px);
+            margin: 30px 0;
+            text-align: left;
+            color: #6db03c;
+        }
+        p {
+            @include rob-bold(17px, 17px);
+            width: 350px;
+            margin-bottom: 15px;
+        }
+        li {
+            @include rob-reg(17px, 17px);
+            margin-bottom: 15px;
+            width: 350px;
+            list-style-image: url("../img/ic-check.jpg");
+            color: #373737;
+        }
+    }
+    &__enumeration-left {
+        display: inline-block;
+        margin-left: 110px;
+        vertical-align: middle;
+        h5 {
+            @include rob-reg(24px, 25px);
+            margin: 30px 0;
+            text-align: left;
+            color: #6db03c;
+        }
+        p {
+            @include rob-bold(17px, 17px);
+            margin: 0 0 15px 15px;
+        }
+        li {
+            @include rob-reg(17px, 20px);
+            margin-bottom: 15px;
+            width: 350px;
+            list-style-image: url("../img/ic-check.jpg");
+            color: #373737;
+        }
+    }
+    &__img {
+        display: inline-block;
+        width: 350px;
+        vertical-align: middle;
+    }
+    &__descr {
+        font-weight: 300!important;
+        display: inline-block;
+        margin-left: 0!important;
+        width: 455px;
+        text-align: left;
+    }
+}

@@ -9,6 +9,10 @@
         &:nth-child(3n) {
             margin-right: 0;
         }
+        &:last-child {
+            display: block;
+            margin: 0 auto;
+        }
         h5 {
             @include rob-reg(18px, 24px);
             height: 70px;
