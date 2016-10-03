@@ -1,0 +1,46 @@
+.footer {
+    height: 150px;
+    line-height: 150px;
+    &__requisites {
+        @include rob-l(16px, 25px);
+        display: inline-block;
+        margin-right: 220px;
+        width: 125px;
+        line-height: normal;
+        vertical-align: middle;
+        color: #232323;
+    }
+    &__logo {
+        display: inline-block;
+        margin-right: 90px;
+        width: 200px;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__conf {
+        @include rob-l(13px, 25px);
+        text-decoration: underline;
+        color: #4a79ae;
+    }
+    &__copy {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+        text-align: right;
+        p {
+            @include rob-l(16px, 25px);
+            color: #232323;
+        }
+    }
+    &__order {
+        @include rob-bold(15px, 30px);
+        display: block;
+        margin-left: 100px;
+        width: 190px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50px;
+        background: #505050;
+        color: #fff;
+    }
+}

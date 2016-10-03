@@ -1,0 +1,38 @@
+.certificates {
+    position: relative;
+    padding-top: 50px;
+    height: 710px;
+    background: url("../img/certificates-bg.jpg") center -95px no-repeat;
+    background-size: cover;
+    .section-title {
+        width: 705px;
+    }
+    .cert-prev {
+        position: absolute;
+        left: -100px;
+        top: 35%;
+        cursor: pointer;
+        &:hover {
+            opacity: .7;
+        }
+    }
+    .cert-next {
+        position: absolute;
+        right: -100px;
+        top: 35%;
+        cursor: pointer;
+        &:hover {
+            opacity: .7;
+        }
+    }
+    &__multiple {
+        width: 690px;
+        margin: 100px auto 0;
+        text-align: center;
+        div {
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+}

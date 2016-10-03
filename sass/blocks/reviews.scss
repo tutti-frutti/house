@@ -1,0 +1,22 @@
+.reviews {
+    height: 575px;
+    margin-bottom: 80px;
+    border-top: 1px solid transparent;
+    text-align: center;
+    background: url("../img/bg-reviews.png") 0 0 no-repeat;
+    background-size: cover;
+    .section-title {
+        width: 260px;
+        margin: 155px auto 100px;
+        background: #c8b355;
+    }
+    &__list {
+        li {
+            display: inline-block;
+            margin-right: 30px;
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.adv-slider {
+    position: relative;
+    .section-title {
+        width: 635px;
+        margin: 0 auto 50px;
+    }
+    .adv-button-left {
+        position: absolute;
+        top: 230px;
+        left: 60px;
+        cursor: pointer;
+        z-index: 100;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    .adv-button-right {
+        position: absolute;
+        top: 230px;
+        right: 60px;
+        cursor: pointer;
+        z-index: 100;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    .slider-content {
+        height: 550px;
+        background: url("../img/slider-bg.png") center no-repeat;
+        background-size: cover;
+            overflow: hidden;
+        &__img {
+            height: 468px;
+            width: 917px;
+            margin: 40px auto 0;
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}

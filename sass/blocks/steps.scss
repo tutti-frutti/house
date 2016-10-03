@@ -1,0 +1,323 @@
+.steps {
+    position: relative;
+    border-top: 1px solid transparent;
+    background: #f5f5f5;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 240px;
+        left: 200px;
+        width: 151px;
+        height: 147px;
+        background: url("../img/steps-tree-sm.png") 0 0 no-repeat;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 100px;
+        right: 290px;
+        width: 335px;
+        height: 298px;
+        background: url("../img/steps-tree-lg.png") 0 0 no-repeat;
+    }
+    .section-title {
+        width: 490px;
+        margin: 70px auto 100px;
+    }
+    &__list {
+        margin-top: 20px;
+        li {
+            @include rob-l(15px, 23px);
+            list-style-image: url("../img/ic-dot-yellow.jpg");
+        }
+    }
+    &__item {
+        display: inline-block;
+        width: 230px;
+        margin: 0 20px 40px 0;
+        padding-top: 150px;
+        text-align: center;
+        vertical-align: top;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-child(1) {
+            margin-left: 200px;
+        }
+        &:nth-child(4) {
+            margin-left: 200px;
+        }
+        &--ic-right-1 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 170px;
+                top: 55px;
+                width: 143px;
+                height: 22px;
+                background: url("../img/steps-ic-arr-right.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-left-1 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 170px;
+                top: 55px;
+                width: 143px;
+                height: 22px;
+                background: url("../img/steps-ic-arr-left.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-down {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                right: -74px;
+                top: 54px;
+                width: 133px;
+                height: 345px;
+                background: url("../img/steps-ic-arr-down.png") 0 0 no-repeat;
+            }
+        }
+    }
+    &__item-2 {
+        display: inline-block;
+        width: 230px;
+        padding-top: 150px;
+        margin: 0 53px 0 -41px;
+        text-align: center;
+        vertical-align: top;
+        p {
+            margin-bottom: 20px;
+        }
+        &--ic-left-down {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 101px;
+                top: -247px;
+                width: 193px;
+                height: 265px;
+                background: url("../img/steps-ic-arr-left-down.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-right-1 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: -74px;
+                top: 60px;
+                width: 143px;
+                height: 22px;
+                background: url("../img/steps-ic-arr-right.png") 0 0 no-repeat;
+            }
+        }
+    }
+    &__text {
+        @include rob-reg(20px, 23px);
+        color: #393939;
+        &--icon-1 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -112px;
+                left: 81px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-1.png") 0 0 no-repeat;
+            }
+        }
+        &--icon-2 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -112px;
+                left: 81px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-2.png") 0 0 no-repeat;
+            }
+        }
+        &--icon-3 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -112px;
+                left: 81px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-3.png") 0 0 no-repeat;
+            }
+        }
+        &--icon-4 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -112px;
+                left: 81px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-4.png") 0 0 no-repeat;
+            }
+        }
+        &--icon-5 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -114px;
+                left: 90px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-5.png") 0 0 no-repeat;
+            }
+        }
+        &--icon-6 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -114px;
+                left: 83px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-6.png") 0 0 no-repeat;
+            }
+        }
+        &--icon-7 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -114px;
+                left: 83px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-7.png") 0 0 no-repeat;
+            }
+        }
+        &--icon-8 {
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: -140px;
+                left: 50%;
+                margin-left: -57.5px;
+                width: 115px;
+                height: 115px;
+                border-radius: 100px;
+                background: #51a40d;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -114px;
+                left: 83px;
+                width: 65px;
+                height: 65px;
+                background: url("../img/steps-ic-8.png") 0 0 no-repeat;
+            }
+        }
+    }
+    &__bottom {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -160px;
+            left: -120px;
+            width: 1190px;
+            height: 162px;
+            background: url("../img/steps-bottom.png") 0 0 no-repeat;
+            z-index: 10;
+        }
+    }
+}

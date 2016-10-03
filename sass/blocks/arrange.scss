@@ -1,0 +1,38 @@
+.arrange {
+    height: 460px;
+    border-top: 1px solid transparent;
+    text-align: center;
+    background: url("../img/arrange-bg.jpg") center no-repeat;
+    background-size: cover;
+    h3 {
+        @include rob-bold(44px, 46px);
+        margin: 30px 0 5px;
+        color: #fff;
+    }
+    p {
+        @include rob-reg(25px, 46px);
+        color: #fff;
+    }
+    &__tel {
+        @include rob-reg(55px, 55px);
+        display: block;
+        margin: 15px 0 25px;
+        color: #fff;
+    }
+    &__inputs {
+        width: 675px;
+        margin: 0 auto;
+        input {
+            display: inline-block;
+            width: 330px;
+            height: 60px;
+            outline: none;
+            border: 1px solid #5e8031;
+            border-radius: 4px;
+        }
+    }
+    &__notice {
+        @include rob-l(16px, 46px);
+        color: #fff;
+    }
+}

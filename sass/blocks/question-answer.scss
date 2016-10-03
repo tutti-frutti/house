@@ -1,0 +1,27 @@
+.question-answer {
+    .section-title {
+        width: 330px;
+        margin: 0 auto 80px;
+    }
+    &__accordion {
+        .accordion-link {
+            @include rob-reg(24px, 50px);
+            display: block;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            height: 50px;
+            border-radius: 5px;
+            color: #59634e;
+            background: #c1d7a8;
+        }
+        .accordion-descr {
+            @include rob-reg(18px, 27px);
+            padding: 30px;
+            color: #000;
+        }
+    }
+}
+
+.active {
+    background: red!important;
+}

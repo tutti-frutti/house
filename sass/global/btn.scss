@@ -46,10 +46,14 @@
     border-radius: 4px;
     cursor: pointer;
     background-image: linear-gradient(to bottom, #f64242, #ce2a2a);
-    box-shadow: 
-        0 3px 0 0 #ae2323;
+    box-shadow: 0 3px 0 0 #ae2323;
     &:hover {
         opacity: .85;
+    }
+    &--width {
+        display: block;
+        width: 330px;
+        margin: 20px auto;
     }
 }
 
