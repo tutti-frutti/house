@@ -27,4 +27,13 @@
             background: url("../img/house-ic.png") 0 0 no-repeat;
         }
     }
+    .section-title {
+	    position: absolute;
+        width: 775px;
+        margin: 80px auto 0;
+        margin-left: -387.5px;
+        bottom: -160px;
+        left: 50%;
+        z-index: 10;
+}
 }

@@ -2155,7 +2155,7 @@
     position: absolute;
     content: '';
     top: 240px;
-    left: 200px;
+    left: 360px;
     width: 151px;
     height: 147px;
     background: url("../img/steps-tree-sm.png") 0 0 no-repeat; }
@@ -2461,6 +2461,14 @@
       width: 44px;
       height: 29px;
       background: url("../img/house-ic.png") 0 0 no-repeat; }
+  .dreams .section-title {
+    position: absolute;
+    width: 775px;
+    margin: 80px auto 0;
+    margin-left: -387.5px;
+    bottom: -160px;
+    left: 50%;
+    z-index: 10; }
 
 .arrange {
   height: 460px;
@@ -2565,6 +2573,174 @@
     border-radius: 50px;
     background: #505050;
     color: #fff; }
+
+.map {
+  position: relative;
+  height: 705px;
+  text-align: center; }
+  .map .section-title {
+    width: 775px;
+    margin: 80px auto 0;
+    margin-left: -387.5px;
+    top: 0;
+    left: 50%;
+    z-index: 1000; }
+
+.our-houses {
+  width: 940px;
+  margin: 0 auto; }
+  .our-houses__descr {
+    display: inline-block;
+    width: 385px;
+    margin-right: 60px;
+    vertical-align: top; }
+  .our-houses__header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8; }
+    .our-houses__header h3 {
+      font-family: "Roboto Condensed";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 20px;
+      color: #232323; }
+    .our-houses__header p {
+      font-family: "Roboto Condensed";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 21px;
+      position: relative;
+      padding-left: 50px;
+      margin-bottom: 30px;
+      color: #232323; }
+      .our-houses__header p::before {
+        position: absolute;
+        content: '';
+        top: -10px;
+        left: 0;
+        width: 39px;
+        height: 38px;
+        background: url("../img/fancy-ic-1.jpg") 0 0 no-repeat; }
+  .our-houses__body {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8; }
+    .our-houses__body h5 {
+      font-family: "Roboto Condensed";
+      font-weight: 700;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      color: #000; }
+    .our-houses__body li {
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 14px;
+      margin-bottom: 10px; }
+  .our-houses__list {
+    margin-bottom: 30px; }
+  .our-houses__footer p {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px; }
+  .our-houses__slider {
+    display: inline-block;
+    width: 445px; }
+    .our-houses__slider .slider-nav div img {
+      margin: 0 auto; }
+    .our-houses__slider .slider-for {
+      margin-bottom: 20px; }
+
+.modal-projects__slider {
+  display: inline-block;
+  margin-right: 45px;
+  width: 445px; }
+
+.modal-projects__descr {
+  display: inline-block;
+  width: 385px;
+  margin-right: 60px;
+  vertical-align: top; }
+
+.modal-projects__header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8; }
+  .modal-projects__header h3 {
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    color: #232323; }
+  .modal-projects__header p {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #232323; }
+    .modal-projects__header p:last-child {
+      margin-bottom: 20px; }
+
+.modal-projects__descr-1 {
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 30px; }
+  .modal-projects__descr-1 h5 {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    color: #000; }
+  .modal-projects__descr-1 p {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #232323; }
+    .modal-projects__descr-1 p:last-child {
+      margin-bottom: 20px; }
+    .modal-projects__descr-1 p span {
+      font-weight: bold;
+      color: #5a9947; }
+
+.modal-projects__descr-2 {
+  margin-bottom: 20px; }
+  .modal-projects__descr-2 p {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px; }
+
+.modal-projects__form {
+  background: #f3f3f3; }
+  .modal-projects__form p {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px;
+    text-align: center;
+    color: #000; }
+
+.modal-projects__inputs-wrapper {
+  width: 264px;
+  margin: 0 auto; }
+  .modal-projects__inputs-wrapper input {
+    display: block;
+    width: 100%; }
 
 * {
   box-sizing: border-box; }
@@ -2718,6 +2894,11 @@ img {
       background-image: url("../img/ic-gift.png"); }
     .btn-red--icon:hover {
       opacity: .85; }
+  .btn-red--decor {
+    width: 260px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 42px; }
 
 .btn-form {
   width: 100%;

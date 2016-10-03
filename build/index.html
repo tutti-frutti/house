@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="js/slick/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="js/fancy/source/jquery.fancybox.css">
+    
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Канадские дома</title>
@@ -18,7 +20,7 @@
     <div class="first-screen-wrapper">
         <header class="header center">
             <div class="header__logo">
-                <a href="#"><img src="img/logo.jpg" alt="logo"></a>
+                <a href="windows.html"><img src="img/logo.jpg" alt="logo"></a>
             </div>
             <div class="header__slogan">Производим и строим Канадские дома из sip-панелей в Новосибирске и НСО</div>
             <div class="header__tel">
@@ -1215,11 +1217,10 @@
 
     <section class="dreams">
         <div class="dreams__text">Мечты становятся реальностью, когда мысли превращаются в действие</div>
+        <h2 class="section-title">Встречаемся в нашем офисе продаж</h2>
     </section>
 
-    <section class="map">
-        <h2 class="section-title">Встречаемся в нашем офисе продаж</h2>
-        <!--MAP HERE-->
+    <section class="map" id="map">
     </section>
 
     <section class="arrange">
@@ -1261,14 +1262,31 @@
     </footer>
 
 
-
-
-
-
-
     <script src="js/slick/slick/slick.min.js"></script>
     <script src="js/fancy/source/jquery.fancybox.pack.js"></script>
     <script src="js/fancy/source/helpers/jquery.fancybox-media.js"></script>
+    <script>
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 55.038396, lng: 82.913436},
+    zoom: 16,
+    scrollwheel: false
+  });
+    
+    var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-YOfc0uWVC8vRXzIZDqMZ0lnkIitgwU&callback=initMap">
+    </script>
+    
     <script src="js/script.js"></script>
 </body>
 

@@ -1,0 +1,72 @@
+.modal-projects {
+    &__slider {
+        display: inline-block;
+        margin-right: 45px;
+        width: 445px;
+    }
+    &__descr {
+        display: inline-block;
+        width: 385px;
+        margin-right: 60px;
+        vertical-align: top;
+    }
+    &__header {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e8e8e8;
+        h3 {
+            @include rob-reg(21px, 21px);
+            margin-bottom: 20px;
+            color: #232323;
+        }
+        p {
+            @include rob-l(16px, 21px);
+            color: #232323;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__descr-1 {
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 30px;
+        h5 {
+            @include rob-bold(14px, 14px);
+            margin-bottom: 10px;
+            color: #000;
+        }
+        p {
+            @include rob-l(16px, 21px);
+            color: #232323;
+            &:last-child {
+                margin-bottom: 20px;
+            }
+            span {
+                font-weight: bold;
+                color: #5a9947;
+            }
+        }
+    }
+    &__descr-2 {
+        margin-bottom: 20px;
+        p {
+            @include rob-l(16px, 24px);
+        }
+    }
+    &__form {
+        background: #f3f3f3;
+        p {
+            @include rob-bold(16px, 20px);
+            padding: 15px;
+            text-align: center;
+            color: #000;
+        }
+    }
+    &__inputs-wrapper {
+        width: 264px;
+        margin: 0 auto;
+        input {
+            display: block;
+            width: 100%;
+        }
+    }
+}

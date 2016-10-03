@@ -1,0 +1,71 @@
+.our-houses {
+    width: 940px;
+    margin: 0 auto;
+    &__descr {
+        display: inline-block;
+        width: 385px;
+        margin-right: 60px;
+        vertical-align: top;
+    }
+    &__header {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e8e8e8;
+        h3 {
+            @include rob-reg(21px, 21px);
+            margin-bottom: 20px;
+            color: #232323;
+        }
+        p {
+            @include rob-reg(18px, 21px);
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 30px;
+            color: #232323;
+            &::before {
+                position: absolute;
+                content: '';
+                top: -10px;
+                left: 0;
+                width: 39px;
+                height: 38px;
+                background: url("../img/fancy-ic-1.jpg") 0 0 no-repeat;
+            }
+        }
+    }
+    &__body {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e8e8e8;
+        h5 {
+            @include rob-bold(14px, 14px);
+            margin-bottom: 10px;
+            color: #000;
+        }
+        li {
+            @include rob-l(16px, 14px);
+            margin-bottom: 10px;
+        }
+    }
+    &__list {
+        margin-bottom: 30px;
+    }
+    &__footer {
+        p {
+            @include rob-l(16px, 24px);
+            margin-bottom: 50px;
+        }
+    }
+    &__slider {
+        display: inline-block;
+        width: 445px;
+        .slider-nav {
+            div {
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+        .slider-for {
+	    margin-bottom: 20px;
+}
+    }
+}
