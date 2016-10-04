@@ -45,6 +45,7 @@
     &__low-price {
         @include rob-bold(40px, 33px);
         position: relative;
+        margin-bottom: 30px;
         color: #202020;
         text-align: center;
     }

@@ -1,4 +1,6 @@
 .modal-gift {
+    padding-top: 30px;
+    display: none;
     &__left-column {
         display: inline-block;
         margin-right: 35px;
@@ -29,8 +31,9 @@
         color: #000;
     }
     &__number {
-        @include rob-bold(200px, 150px);
+        @include rob-bold(215px, 150px);
         display: inline-block;
+        padding-top: 30px;
         color: #bc1721;
     }
     &__text {
@@ -43,7 +46,7 @@
         text-transform: uppercase;
     }
     &__presents {
-        @include rob-bold(50px, 50px);
+        @include rob-bold(48px, 50px);
         display: block;
         text-transform: uppercase;
         color: #bd1721;
@@ -53,7 +56,7 @@
         color: #7f8084;
     }
     &__discount {
-        @include rob-bold(50px, 50px);
+        @include rob-bold(48px, 50px);
         text-transform: uppercase;
         color: #bd1721;
     }

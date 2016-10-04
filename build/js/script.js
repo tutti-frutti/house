@@ -70,9 +70,42 @@ $(document).ready(function(){
         findArticle.slideDown();
     }
   });
-    
-    
-    
+    // smooth scrolling
+    $(".anchor").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+    $(".various").click(function (event) {
+        event.preventDefault();
+    $(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '340px',
+		height		: '280px',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+        padding     : false,
+        scroll      : 'no'
+	});
+    });
+    $(".present").fancybox({
+//		maxWidth	: 800,
+//		maxHeight	: 600,
+		fitToView	: false,
+		width		: '60%',
+		height		: '80%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+        padding     : false,
+        scroll      : 'no',
+	});
     
 });
 

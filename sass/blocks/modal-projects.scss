@@ -12,7 +12,8 @@
             vertical-align: middle;
             a {
                 text-decoration: underline;
-                color: #5c94b4;
+//                color: #5c94b4;
+                color: $link;
                 &:hover {
                     text-decoration: none;
                 }

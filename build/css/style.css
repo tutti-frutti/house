@@ -54,6 +54,8 @@
     border-radius: 50px;
     background: #505050;
     color: #fff; }
+    .header__order:hover {
+      opacity: .75; }
 
 .first-screen-wrapper {
   display: table;
@@ -110,6 +112,7 @@
     font-size: 40px;
     line-height: 33px;
     position: relative;
+    margin-bottom: 30px;
     color: #202020;
     text-align: center; }
   .first-screen__ic-down {
@@ -860,6 +863,9 @@
     margin-bottom: 20px;
     border: 1px solid #d9d9d9;
     border-radius: 3px; }
+    @media (max-width: 767px) {
+      .house-preview__item {
+        width: 100px; } }
     .house-preview__item:nth-child(3n) {
       margin-right: 0; }
     .house-preview__item img {
@@ -2841,144 +2847,136 @@
   text-align: center;
   color: #5b5b5b; }
 
-.modal-gift__left-column {
-  display: inline-block;
-  margin-right: 35px;
-  width: 405px;
-  vertical-align: top; }
-
-.modal-gift__inner {
-  display: inline-block;
-  margin: 0 auto;
-  width: 315px;
-  height: 315px;
-  line-height: normal;
-  vertical-align: middle; }
-  .modal-gift__inner p {
-    font-family: "Roboto Condensed";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 15px;
-    text-align: center;
-    color: #696768; }
-    .modal-gift__inner p span {
-      color: #bc1721; }
-
-.modal-gift__remain {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 60px;
-  line-height: 50px;
-  text-transform: uppercase;
-  color: #000; }
-
-.modal-gift__number {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 200px;
-  line-height: 150px;
-  display: inline-block;
-  color: #bc1721; }
-
-.modal-gift__text {
-  display: inline-block;
-  vertical-align: top; }
-
-.modal-gift__days {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 100px;
-  line-height: 105px;
-  display: block;
-  text-transform: uppercase; }
-
-.modal-gift__presents {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 50px;
-  display: block;
-  text-transform: uppercase;
-  color: #bd1721; }
-
-.modal-gift__union {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 50px;
-  color: #7f8084; }
-
-.modal-gift__discount {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 50px;
-  text-transform: uppercase;
-  color: #bd1721; }
-
-.modal-gift__center-block {
-  width: 405px;
-  height: 405px;
-  line-height: 405px;
-  text-align: center;
-  background-image: radial-gradient(#fff, #d8d8d8); }
-
-.modal-gift__right-column {
-  display: inline-block;
-  width: 445px; }
-  .modal-gift__right-column h3 {
-    font-family: "Roboto Condensed";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    color: #232323; }
-  .modal-gift__right-column p {
-    font-family: "Roboto Condensed";
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 21px;
-    margin-bottom: 20px;
-    color: #232323; }
-  .modal-gift__right-column h5 {
+.modal-gift {
+  padding-top: 30px;
+  display: none; }
+  .modal-gift__left-column {
+    display: inline-block;
+    margin-right: 35px;
+    width: 405px;
+    vertical-align: top; }
+  .modal-gift__inner {
+    display: inline-block;
+    margin: 0 auto;
+    width: 315px;
+    height: 315px;
+    line-height: normal;
+    vertical-align: middle; }
+    .modal-gift__inner p {
+      font-family: "Roboto Condensed";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 15px;
+      text-align: center;
+      color: #696768; }
+      .modal-gift__inner p span {
+        color: #bc1721; }
+  .modal-gift__remain {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 10px;
+    font-size: 60px;
+    line-height: 50px;
+    text-transform: uppercase;
     color: #000; }
-
-.modal-gift__list li {
-  font-family: "Roboto Condensed";
-  font-weight: 300;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 21px;
-  margin-left: 15px;
-  margin-bottom: 10px;
-  list-style-image: url("../img/ic-dot-yellow.jpg"); }
-
-.modal-gift__form p {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 15px 45px 0;
-  text-align: center;
-  overflow: hidden;
-  color: #000; }
+  .modal-gift__number {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 215px;
+    line-height: 150px;
+    display: inline-block;
+    padding-top: 30px;
+    color: #bc1721; }
+  .modal-gift__text {
+    display: inline-block;
+    vertical-align: top; }
+  .modal-gift__days {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    line-height: 105px;
+    display: block;
+    text-transform: uppercase; }
+  .modal-gift__presents {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 50px;
+    display: block;
+    text-transform: uppercase;
+    color: #bd1721; }
+  .modal-gift__union {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    color: #7f8084; }
+  .modal-gift__discount {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #bd1721; }
+  .modal-gift__center-block {
+    width: 405px;
+    height: 405px;
+    line-height: 405px;
+    text-align: center;
+    background-image: radial-gradient(#fff, #d8d8d8); }
+  .modal-gift__right-column {
+    display: inline-block;
+    width: 445px; }
+    .modal-gift__right-column h3 {
+      font-family: "Roboto Condensed";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 20px;
+      color: #232323; }
+    .modal-gift__right-column p {
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 20px;
+      color: #232323; }
+    .modal-gift__right-column h5 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      color: #000; }
+  .modal-gift__list li {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    list-style-image: url("../img/ic-dot-yellow.jpg"); }
+  .modal-gift__form p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 45px 0;
+    text-align: center;
+    overflow: hidden;
+    color: #000; }
 
 .modal-general {
   padding-bottom: 45px; }
@@ -3005,7 +3003,7 @@
       .modal-general__header--ic-1::before {
         position: absolute;
         content: '';
-        left: 18%;
+        left: 138px;
         top: -16px;
         width: 55px;
         height: 55px;
@@ -3016,7 +3014,7 @@
       .modal-general__header--ic-2::before {
         position: absolute;
         content: '';
-        left: 20%;
+        left: 151px;
         top: -16px;
         width: 55px;
         height: 55px;
@@ -3027,7 +3025,7 @@
       .modal-general__header--ic-3::before {
         position: absolute;
         content: '';
-        left: 23%;
+        left: 180px;
         top: -16px;
         width: 55px;
         height: 55px;
@@ -3038,7 +3036,7 @@
       .modal-general__header--ic-4::before {
         position: absolute;
         content: '';
-        left: 16%;
+        left: 120px;
         top: -16px;
         width: 55px;
         height: 55px;
@@ -3060,7 +3058,7 @@
       .modal-general__header--ic-6::before {
         position: absolute;
         content: '';
-        left: 230px;
+        left: 215px;
         top: -16px;
         width: 55px;
         height: 55px;
@@ -3071,7 +3069,7 @@
       .modal-general__header--ic-7::before {
         position: absolute;
         content: '';
-        left: 230px;
+        left: 220px;
         top: -16px;
         width: 55px;
         height: 55px;
@@ -3082,7 +3080,7 @@
       .modal-general__header--ic-8::before {
         position: absolute;
         content: '';
-        left: 130px;
+        left: 103px;
         top: -16px;
         width: 55px;
         height: 55px;
@@ -3165,14 +3163,17 @@
     color: #0075a2; }
 
 .modal-form {
+  display: none;
   width: 847px;
   padding-bottom: 40px;
   border: 3px solid #349225;
   border-radius: 7px; }
   .modal-form--narrow {
     width: 340px;
+    padding-bottom: 30px;
     margin: 0 auto;
-    border: none; }
+    border: none;
+    background: #fff; }
   .modal-form__wrapper {
     margin-top: 30px; }
     .modal-form__wrapper p {
@@ -3343,6 +3344,7 @@ button {
   margin: 0 auto;
   width: 320px;
   height: 60px;
+  cursor: pointer;
   border-radius: 4px;
   background-image: linear-gradient(to bottom, #f64242, #ce2a2a);
   box-shadow: 0 3px 0 0 #ae2323; }
