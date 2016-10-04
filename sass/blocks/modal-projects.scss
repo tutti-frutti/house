@@ -1,8 +1,86 @@
 .modal-projects {
+    &__list {
+        margin: 0 0 20px 5px;
+        height: 32px;
+        line-height: 32px;
+        li {
+            @include rob-l(14px, 14px);
+            display: inline-block;
+            margin: 0 3px 0 30px;
+            width: 80px;
+            line-height: normal;
+            vertical-align: middle;
+            a {
+                text-decoration: underline;
+                color: #5c94b4;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__ic-1 {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 2px;
+            left: -40px;
+            width: 34px;
+            height: 28px;
+            background: url("../img/modal-ic1.jpg") 0 0 no-repeat;
+        }
+    }
+    &__ic-2 {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: -6px;
+            left: -40px;
+            width: 34px;
+            height: 28px;
+            background: url("../img/modal-ic2.jpg") 0 0 no-repeat;
+        }
+    }
+    &__ic-3 {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: -6px;
+            left: -40px;
+            width: 34px;
+            height: 28px;
+            background: url("../img/modal-ic3.jpg") 0 0 no-repeat;
+        }
+    }
+    &__ic-4 {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: -7px;
+            left: -40px;
+            width: 34px;
+            height: 28px;
+            background: url("../img/modal-ic4.jpg") 0 0 no-repeat;
+        }
+    }
     &__slider {
         display: inline-block;
         margin-right: 45px;
         width: 445px;
+        .modal-slider-for {
+            margin-bottom: 20px;
+        }
+        .modal-slider-nav {
+            div {
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
     }
     &__descr {
         display: inline-block;
@@ -54,6 +132,7 @@
     }
     &__form {
         background: #f3f3f3;
+        padding-bottom: 15px;
         p {
             @include rob-bold(16px, 20px);
             padding: 15px;
@@ -62,11 +141,32 @@
         }
     }
     &__inputs-wrapper {
-        width: 264px;
+        width: 260px;
         margin: 0 auto;
         input {
+            @include rob-reg(16px, 20px);
+            color: #7b7b7b;
             display: block;
-            width: 100%;
+            margin-bottom: 10px;
+            width: 260px;
+            height: 40px;
+            text-align: center;
+            outline: none;
+            border: 1px solid #b8b8b8;
+            border-radius: 3px;
+            box-shadow: inset 0 2px 5px 0 #dcdcdc;
         }
+        button {
+            width: 260px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+    &__notice {
+        @include rob-l(12px, 20px);
+        display: block;
+        text-align: center;
+        color: #5b5b5b;
     }
 }

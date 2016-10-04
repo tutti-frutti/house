@@ -1,0 +1,54 @@
+.modal-general {
+    padding-bottom: 45px;
+    &__wrapper {
+        width: 875px;
+        margin: 0 auto;
+    }
+    &__header {
+        @include rob-reg(20px, 22px);
+        margin: 50px 0;
+        text-align: center;
+        color: #000;
+        &--ic-1 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 210px;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-terms-ic-1.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+    }
+    &__img {
+        display: inline-block;
+        width: 405px;
+        margin-right: 30px;
+        vertical-align: top;
+    }
+    &__descr {
+        display: inline-block;
+        width: 430px;
+        vertical-align: top;
+        h3 {
+            @include rob-bold(18px, 20px);
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 4px;
+            background: #719c61;
+            color: #fff;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        p {
+            @include rob-l(17px, 24px);
+        }
+    }
+}

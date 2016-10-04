@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="js/slick/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="js/fancy/source/jquery.fancybox.css">
@@ -17,8 +16,6 @@
 </head>
 
 <body>
-    
-    
     <div class="our-houses">
         <div class="our-houses__wrapper">
             <div class="our-houses__descr">
@@ -59,12 +56,20 @@
         </div>
     </div>
     
-    <div class="divider"><hr></div>
+    <hr>
     
     <!--MODAL 2 ----------------------------------------------------------------->
     
     <div class="modal-projects center">
         <div class="modal-projects__wrapper">
+           <div class="modal-projects__links">
+               <ul class="modal-projects__list">
+                   <li class="modal-projects__ic-1"><a href="#">Фото и планировки</a></li>
+                   <li class="modal-projects__ic-2"><a href="#">3D проекция</a></li>
+                   <li  class="modal-projects__ic-3"><a href="#">Интерьер</a></li>
+                   <li class="modal-projects__ic-4"><a href="#">Экстерьер</a></li>
+               </ul>
+           </div>
             <div class="modal-projects__slider">
                 <div class="modal-slider-for">
                     <div><img src="img/fancy-sl-1-big.jpg" alt="house"></div>
@@ -98,7 +103,7 @@
                    <p>Введите номер мобильного телефона и получите доступ к смете и описанию комплектаций</p>
                    <div class="modal-projects__inputs-wrapper">
                       <form action="" method="get">
-                       <input type="text" name="tel" id="tel">
+                       <input type="text" name="tel" id="tel" placeholder="Ваш телефон*">
                        <button type="submit" class="btn btn-red  btn-red--decor">Получить доступ</button>
                       </form>
                    </div>
@@ -109,7 +114,75 @@
         </div>
     </div>
     
+    <hr>
+    <!--MODAL 2 ----------------------------------------------------------------->
     
+    <div class="modal-gift center">
+        <div class="modal-gift__wrapper">
+            <div class="modal-gift__left-column">
+                <div class="modal-gift__center-block">
+                    <div class="modal-gift__inner">
+                        <div class="modal-gift__remain">Осталось</div>
+                        <div class="modal-gift__number">4</div>
+                        <div class="modal-gift__text">
+                            <span class="modal-gift__days">дня</span>
+                            <span class="modal-gift__presents">подарки</span>
+                            <span class="modal-gift__union">и</span>
+                            <span class="modal-gift__discount">скидки</span>
+                        </div>
+                        <p>
+                            Ко дню строителя! Только до <span>17 августа!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-gift__right-column">
+                <h3>Скидки и Подарки ко дню строителя</h3>
+                <p>Торопитесь! Компания &quot;Завод ЛСП&quot; продолжает отмечать день строителя до 21 августа включительно. В период ации Вы сможете приобрести дома с максимальной выгодой.</p>
+                <h5>Разнообразные подарки:</h5>
+                <ul class="modal-gift__list">
+                    <li>Кровля</li>
+                    <li>Входная дверь</li>
+                    <li>Пластиковые окна</li>
+                    <li>Отделка сайдингом</li>
+                    <li>Водосточная система</li>
+                    <li>Устройство септика</li>
+                    <li>Печь для бани</li>
+                    <li>Веранда или терасса</li>
+                </ul>
+                <div class="modal-gift__form">
+                <div class="modal-projects__form">
+                   <p>Подробности уточняйте позвонив по телефону, либо заполните форму и получите один из подарков на свой телефон.</p>
+                   <div class="modal-projects__inputs-wrapper">
+                      <form action="" method="get">
+                       <input type="text" name="tel" id="tel" placeholder="Ваш телефон*">
+                       <button type="submit" class="btn btn-red  btn-red--decor">Получить доступ</button>
+                      </form>
+                   </div>
+               </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    <!--MODAL 2 ----------------------------------------------------------------->
+    <div class="modal-general center">
+       <div class="modal-general__wrapper">
+        <p class="modal-general__header  modal-general__header--ic-1">Рекордно короткие сроки возведения</p>
+        <div class="modal-general__img">
+            <img src="img/modal-terms.jpg" alt="terms">
+        </div>
+        <div class="modal-general__descr">
+            <h3>Скорость монтажа и профессионализм</h3>
+            <p>Легкость сборки и отсутствие необходимости усадки позволяет построить дом в 3-4 раза быстрее классических методов. Отпадает потребность в привлечении сложной строительной техники. Слаженная работа проверенных опытных бригад сделает всё &quot;плд ключ&quot; за 30-60 дней.</p>
+            <h3>Отсутствие усадки</h3>
+            <p>В отличии от домов из традиционных стройматериалов, дому не потребуется годовая усадка перед началом отделочных работ</p>
+            <h3>Всесезонное строительство</h3>
+            <p>Сухой метод строительства позволяет возводить дома даже при минусовой тмпературе, в отличии от работ, связанных с раствором и бетоном. Наоборот, качество зимнего леса на порядок выше, чем лес, спиленный летом.</p>
+        </div>
+      </div>
+    </div>
 
 
     <script src="js/slick/slick/slick.min.js"></script>

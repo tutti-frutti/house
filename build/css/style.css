@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
 .header {
   height: 125px;
   line-height: 125px; }
@@ -7,7 +8,7 @@
     line-height: normal;
     vertical-align: middle; }
   .header__slogan {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
@@ -41,7 +42,7 @@
       background: url("../img/tel-icon.png") 0 0 no-repeat;
       z-index: 1; }
   .header__order {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 15px;
@@ -66,7 +67,7 @@
   background: url("../img/first-screen-bg.jpg") center center no-repeat;
   background-size: cover; }
   .first-screen h1 {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 44px;
@@ -103,7 +104,7 @@
   .first-screen__inner {
     display: table-row; }
   .first-screen__low-price {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 40px;
@@ -151,7 +152,7 @@
       height: 243px;
       background-image: url("../img/icon-block-green-2.png"); }
     .main-benefits__left h3 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 23px;
@@ -172,7 +173,7 @@
       .main-benefits__left p:nth-child(3) {
         border-bottom: 2px solid #fff; }
       .main-benefits__left p:last-child {
-        font-family: "Roboto Condensed";
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 20px;
@@ -197,7 +198,7 @@
       height: 239px;
       background-image: url("../img/icon-block-red.png"); }
     .main-benefits__right h3 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 23px;
@@ -221,7 +222,7 @@
       .main-benefits__right p:nth-child(3) {
         padding: 15px 0; }
       .main-benefits__right p:last-child {
-        font-family: "Roboto Condensed";
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 20px;
@@ -265,7 +266,7 @@
       background: url("../img/ic-stairs-1.png") 0 0 no-repeat;
       z-index: 1; }
     .main-benefits__list-first span {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 51px;
@@ -276,7 +277,7 @@
       vertical-align: middle;
       color: #85bc3d; }
     .main-benefits__list-first p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 26px;
@@ -303,7 +304,7 @@
       background: url("../img/ic-stairs-2.png") 0 0 no-repeat;
       z-index: 1; }
     .main-benefits__list-second span {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 51px;
@@ -314,7 +315,7 @@
       vertical-align: middle;
       color: #919191; }
     .main-benefits__list-second p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 26px;
@@ -342,7 +343,7 @@
       background: url("../img/ic-stairs-3.png") 0 0 no-repeat;
       z-index: 1; }
     .main-benefits__list-third span {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 51px;
@@ -353,7 +354,7 @@
       vertical-align: middle;
       color: #bc3d3d; }
     .main-benefits__list-third p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 26px;
@@ -364,7 +365,7 @@
       color: #1f1f1f; }
 
 .section-title {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 44px;
@@ -444,7 +445,7 @@
       height: 73px;
       background: url("../img/ic-line-long-arrow.png") 0 0 no-repeat; }
     .manufacture__item p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 21px;
@@ -452,7 +453,7 @@
       padding-top: 35px;
       color: #282828; }
   .manufacture__quote {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 27px;
@@ -489,7 +490,7 @@
     height: 8px;
     background: url("../img/ic-bg-line.png") 0 0 repeat; }
   .sip-details p {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
@@ -502,7 +503,7 @@
     height: 522px;
     line-height: 522px; }
   .sip-details__left {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 21px;
@@ -517,7 +518,7 @@
     vertical-align: middle;
     color: #5c5c5c; }
   .sip-details__right {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 21px;
@@ -550,7 +551,7 @@
       height: 45px;
       background: url("../img/ic-yes.jpg") 0 0 no-repeat; }
     .sip-details__block-green p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 27px;
@@ -573,7 +574,7 @@
       height: 45px;
       background: url("../img/ic-no.jpg") 0 0 no-repeat; }
     .sip-details__block-red p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 27px;
@@ -615,7 +616,7 @@
     display: inline-block;
     vertical-align: top; }
     .add-services__nomenclature h3 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 30px;
@@ -659,7 +660,7 @@
       background: url("../img/ic-form-bottom.png") 0 0 no-repeat;
       z-index: 1; }
     .add-services__form p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 20px;
@@ -791,7 +792,7 @@
   width: 675px; }
 
 .top-projects h3 {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 25px;
@@ -811,7 +812,7 @@
   text-align: center; }
 
 .top-projects h4 {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 30px;
@@ -865,7 +866,7 @@
       display: block;
       margin: 7px auto 0; }
     .house-preview__item h5 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 22px;
@@ -897,7 +898,7 @@
     vertical-align: middle;
     background: rgba(121, 156, 75, 0.8); }
     .projects-form__wrapper p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 34px;
@@ -937,7 +938,7 @@
     font-size: 42px;
     background: #3c5376; }
   .comparison__estate {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
@@ -967,7 +968,7 @@
       display: block;
       margin: 0 auto; }
     .comparison__img p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 22px;
@@ -986,7 +987,7 @@
       background: #7ab948;
       color: #fff; }
   .comparison__text {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 22px;
@@ -1020,7 +1021,7 @@
   text-transform: uppercase; }
 
 .top-reason__else {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 25px;
@@ -1046,7 +1047,7 @@
     height: 100px;
     top: 25%; }
   .top-reason__right p {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 25px;
@@ -1077,7 +1078,7 @@
       height: 58px;
       background: url("../img/bingo.png") 0 0 no-repeat; }
   .top-reason__right span {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 86px;
@@ -1101,7 +1102,7 @@
     padding: 0 15px;
     line-height: 80px; }
   .top-reason__left p {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 25px;
@@ -1132,7 +1133,7 @@
       height: 58px;
       background: url("../img/bingo.png") 0 0 no-repeat; }
   .top-reason__left span {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 86px;
@@ -1160,7 +1161,7 @@
     border-radius: 15px;
     background: #4b4b4b; }
     .grand-img__left h4 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 26px;
@@ -1194,7 +1195,7 @@
     border-radius: 15px;
     background: #4b4b4b; }
     .grand-img__right h4 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 26px;
@@ -1223,7 +1224,7 @@
   margin-bottom: 30px; }
 
 .compare-benefits__descr {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
@@ -1306,7 +1307,7 @@
     width: 455px;
     text-align: center; }
     .get-consult__form h3 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 50px;
@@ -1314,7 +1315,7 @@
       padding: 30px 0 0;
       color: #fff; }
     .get-consult__form p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 25px;
@@ -1366,7 +1367,7 @@
       display: block;
       border-radius: 4px; }
       .our-clients li a span {
-        font-family: "Roboto Condensed";
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 20px;
@@ -1421,7 +1422,7 @@
     display: block;
     margin: 0 auto; }
   .characteristics__text {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 25px;
@@ -1432,7 +1433,7 @@
   .characteristics__color {
     color: #6fab3e; }
   .characteristics__details {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
@@ -1634,7 +1635,7 @@
     width: 290px;
     margin-bottom: 30px; }
   .plant-concept p {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 31px;
@@ -1851,7 +1852,7 @@
       text-align: left;
       color: #6db03c; }
     .function-six__enumeration-right p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 17px;
@@ -1882,7 +1883,7 @@
       text-align: left;
       color: #6db03c; }
     .function-six__enumeration-left p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 17px;
@@ -1944,7 +1945,7 @@
     padding-top: 95px;
     margin: 0 auto; }
     .object-video__form p {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 31px;
@@ -2038,7 +2039,7 @@
 .guarantee {
   height: 435px; }
   .guarantee .section-title {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 44px;
@@ -2079,7 +2080,7 @@
     line-height: normal;
     vertical-align: middle; }
     .guarantee__descr h3 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 26px;
@@ -2477,7 +2478,7 @@
   background: url("../img/arrange-bg.jpg") center no-repeat;
   background-size: cover; }
   .arrange h3 {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 44px;
@@ -2560,7 +2561,7 @@
       line-height: 25px;
       color: #232323; }
   .footer__order {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 15px;
@@ -2627,7 +2628,7 @@
     margin-bottom: 30px;
     border-bottom: 1px solid #e8e8e8; }
     .our-houses__body h5 {
-      font-family: "Roboto Condensed";
+      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 700;
       font-style: normal;
       font-size: 14px;
@@ -2658,10 +2659,79 @@
     .our-houses__slider .slider-for {
       margin-bottom: 20px; }
 
+.modal-projects__list {
+  margin: 0 0 20px 5px;
+  height: 32px;
+  line-height: 32px; }
+  .modal-projects__list li {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    margin: 0 3px 0 30px;
+    width: 80px;
+    line-height: normal;
+    vertical-align: middle; }
+    .modal-projects__list li a {
+      text-decoration: underline;
+      color: #5c94b4; }
+      .modal-projects__list li a:hover {
+        text-decoration: none; }
+
+.modal-projects__ic-1 {
+  position: relative; }
+  .modal-projects__ic-1::before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: -40px;
+    width: 34px;
+    height: 28px;
+    background: url("../img/modal-ic1.jpg") 0 0 no-repeat; }
+
+.modal-projects__ic-2 {
+  position: relative; }
+  .modal-projects__ic-2::before {
+    position: absolute;
+    content: '';
+    top: -6px;
+    left: -40px;
+    width: 34px;
+    height: 28px;
+    background: url("../img/modal-ic2.jpg") 0 0 no-repeat; }
+
+.modal-projects__ic-3 {
+  position: relative; }
+  .modal-projects__ic-3::before {
+    position: absolute;
+    content: '';
+    top: -6px;
+    left: -40px;
+    width: 34px;
+    height: 28px;
+    background: url("../img/modal-ic3.jpg") 0 0 no-repeat; }
+
+.modal-projects__ic-4 {
+  position: relative; }
+  .modal-projects__ic-4::before {
+    position: absolute;
+    content: '';
+    top: -7px;
+    left: -40px;
+    width: 34px;
+    height: 28px;
+    background: url("../img/modal-ic4.jpg") 0 0 no-repeat; }
+
 .modal-projects__slider {
   display: inline-block;
   margin-right: 45px;
   width: 445px; }
+  .modal-projects__slider .modal-slider-for {
+    margin-bottom: 20px; }
+  .modal-projects__slider .modal-slider-nav div img {
+    margin: 0 auto; }
 
 .modal-projects__descr {
   display: inline-block;
@@ -2694,7 +2764,7 @@
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 30px; }
   .modal-projects__descr-1 h5 {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
@@ -2724,9 +2794,10 @@
     line-height: 24px; }
 
 .modal-projects__form {
-  background: #f3f3f3; }
+  background: #f3f3f3;
+  padding-bottom: 15px; }
   .modal-projects__form p {
-    font-family: "Roboto Condensed";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 16px;
@@ -2736,11 +2807,235 @@
     color: #000; }
 
 .modal-projects__inputs-wrapper {
-  width: 264px;
+  width: 260px;
   margin: 0 auto; }
   .modal-projects__inputs-wrapper input {
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7b7b7b;
     display: block;
-    width: 100%; }
+    margin-bottom: 10px;
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #b8b8b8;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 5px 0 #dcdcdc; }
+  .modal-projects__inputs-wrapper button {
+    width: 260px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none; }
+
+.modal-projects__notice {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  color: #5b5b5b; }
+
+.modal-gift__left-column {
+  display: inline-block;
+  margin-right: 35px;
+  width: 405px;
+  vertical-align: top; }
+
+.modal-gift__inner {
+  display: inline-block;
+  margin: 0 auto;
+  width: 315px;
+  height: 315px;
+  line-height: normal;
+  vertical-align: middle; }
+  .modal-gift__inner p {
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 15px;
+    text-align: center;
+    color: #696768; }
+    .modal-gift__inner p span {
+      color: #bc1721; }
+
+.modal-gift__remain {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #000; }
+
+.modal-gift__number {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 200px;
+  line-height: 150px;
+  display: inline-block;
+  color: #bc1721; }
+
+.modal-gift__text {
+  display: inline-block;
+  vertical-align: top; }
+
+.modal-gift__days {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 105px;
+  display: block;
+  text-transform: uppercase; }
+
+.modal-gift__presents {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  display: block;
+  text-transform: uppercase;
+  color: #bd1721; }
+
+.modal-gift__union {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  color: #7f8084; }
+
+.modal-gift__discount {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #bd1721; }
+
+.modal-gift__center-block {
+  width: 405px;
+  height: 405px;
+  line-height: 405px;
+  text-align: center;
+  background-image: radial-gradient(#fff, #d8d8d8); }
+
+.modal-gift__right-column {
+  display: inline-block;
+  width: 445px; }
+  .modal-gift__right-column h3 {
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #232323; }
+  .modal-gift__right-column p {
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    color: #232323; }
+  .modal-gift__right-column h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    color: #000; }
+
+.modal-gift__list li {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  list-style-image: url("../img/ic-dot-yellow.jpg"); }
+
+.modal-gift__form p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 15px 45px 0;
+  text-align: center;
+  overflow: hidden;
+  color: #000; }
+
+.modal-general {
+  padding-bottom: 45px; }
+  .modal-general__wrapper {
+    width: 875px;
+    margin: 0 auto; }
+  .modal-general__header {
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 50px 0;
+    text-align: center;
+    color: #000; }
+    .modal-general__header--ic-1 {
+      position: relative; }
+      .modal-general__header--ic-1::before {
+        position: absolute;
+        content: '';
+        left: 210px;
+        top: -16px;
+        width: 55px;
+        height: 55px;
+        background: url("../img/modal-terms-ic-1.jpg") 0 0 no-repeat;
+        z-index: 10; }
+  .modal-general__img {
+    display: inline-block;
+    width: 405px;
+    margin-right: 30px;
+    vertical-align: top; }
+  .modal-general__descr {
+    display: inline-block;
+    width: 430px;
+    vertical-align: top; }
+    .modal-general__descr h3 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 20px;
+      display: inline-block;
+      padding: 10px 25px;
+      margin: 20px 0;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 4px;
+      background: #719c61;
+      color: #fff; }
+      .modal-general__descr h3:first-child {
+        margin-top: 0; }
+    .modal-general__descr p {
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 17px;
+      line-height: 24px; }
 
 * {
   box-sizing: border-box; }
@@ -2826,7 +3121,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: "Roboto Condensed', sans-serif";
+  font-family: 'Roboto Condensed', sans-serif;
   width: 100%;
   height: 100%;
   margin: 0 auto; }
@@ -2858,7 +3153,7 @@ img {
   clear: both; }
 
 .btn {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 22px;
@@ -2915,7 +3210,7 @@ img {
     margin: 20px auto; }
 
 .btn-watch {
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
