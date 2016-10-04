@@ -2594,6 +2594,7 @@
     z-index: 1000; }
 
 .our-houses {
+  display: none;
   width: 940px;
   margin: 0 auto; }
   .our-houses__descr {
@@ -2665,187 +2666,177 @@
     .our-houses__slider .slider-for {
       margin-bottom: 20px; }
 
-.modal-projects__list {
-  margin: 0 0 20px 5px;
-  height: 32px;
-  line-height: 32px; }
-  .modal-projects__list li {
-    font-family: "Roboto Condensed";
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 14px;
+.modal-projects {
+  display: none; }
+  .modal-projects__list {
+    margin: 0 0 20px 5px;
+    height: 32px;
+    line-height: 32px; }
+    .modal-projects__list li {
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+      display: inline-block;
+      margin: 0 3px 0 30px;
+      width: 80px;
+      line-height: normal;
+      vertical-align: middle; }
+      .modal-projects__list li a {
+        text-decoration: underline;
+        color: #5c94b4; }
+        .modal-projects__list li a:hover {
+          text-decoration: none; }
+  .modal-projects__ic-1 {
+    position: relative; }
+    .modal-projects__ic-1::before {
+      position: absolute;
+      content: '';
+      top: 2px;
+      left: -40px;
+      width: 34px;
+      height: 28px;
+      background: url("../img/modal-ic1.jpg") 0 0 no-repeat; }
+  .modal-projects__ic-2 {
+    position: relative; }
+    .modal-projects__ic-2::before {
+      position: absolute;
+      content: '';
+      top: -6px;
+      left: -40px;
+      width: 34px;
+      height: 28px;
+      background: url("../img/modal-ic2.jpg") 0 0 no-repeat; }
+  .modal-projects__ic-3 {
+    position: relative; }
+    .modal-projects__ic-3::before {
+      position: absolute;
+      content: '';
+      top: -6px;
+      left: -40px;
+      width: 34px;
+      height: 28px;
+      background: url("../img/modal-ic3.jpg") 0 0 no-repeat; }
+  .modal-projects__ic-4 {
+    position: relative; }
+    .modal-projects__ic-4::before {
+      position: absolute;
+      content: '';
+      top: -7px;
+      left: -40px;
+      width: 34px;
+      height: 28px;
+      background: url("../img/modal-ic4.jpg") 0 0 no-repeat; }
+  .modal-projects__slider {
     display: inline-block;
-    margin: 0 3px 0 30px;
-    width: 80px;
-    line-height: normal;
-    vertical-align: middle; }
-    .modal-projects__list li a {
-      text-decoration: underline;
-      color: #5c94b4; }
-      .modal-projects__list li a:hover {
-        text-decoration: none; }
-
-.modal-projects__ic-1 {
-  position: relative; }
-  .modal-projects__ic-1::before {
-    position: absolute;
-    content: '';
-    top: 2px;
-    left: -40px;
-    width: 34px;
-    height: 28px;
-    background: url("../img/modal-ic1.jpg") 0 0 no-repeat; }
-
-.modal-projects__ic-2 {
-  position: relative; }
-  .modal-projects__ic-2::before {
-    position: absolute;
-    content: '';
-    top: -6px;
-    left: -40px;
-    width: 34px;
-    height: 28px;
-    background: url("../img/modal-ic2.jpg") 0 0 no-repeat; }
-
-.modal-projects__ic-3 {
-  position: relative; }
-  .modal-projects__ic-3::before {
-    position: absolute;
-    content: '';
-    top: -6px;
-    left: -40px;
-    width: 34px;
-    height: 28px;
-    background: url("../img/modal-ic3.jpg") 0 0 no-repeat; }
-
-.modal-projects__ic-4 {
-  position: relative; }
-  .modal-projects__ic-4::before {
-    position: absolute;
-    content: '';
-    top: -7px;
-    left: -40px;
-    width: 34px;
-    height: 28px;
-    background: url("../img/modal-ic4.jpg") 0 0 no-repeat; }
-
-.modal-projects__slider {
-  display: inline-block;
-  margin-right: 45px;
-  width: 445px; }
-  .modal-projects__slider .modal-slider-for {
+    margin-right: 45px;
+    width: 445px; }
+    .modal-projects__slider .modal-slider-for {
+      margin-bottom: 20px; }
+    .modal-projects__slider .modal-slider-nav div img {
+      margin: 0 auto; }
+  .modal-projects__descr {
+    display: inline-block;
+    width: 385px;
+    margin-right: 60px;
+    vertical-align: top; }
+  .modal-projects__header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e8e8e8; }
+    .modal-projects__header h3 {
+      font-family: "Roboto Condensed";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 21px;
+      line-height: 21px;
+      margin-bottom: 20px;
+      color: #232323; }
+    .modal-projects__header p {
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #232323; }
+      .modal-projects__header p:last-child {
+        margin-bottom: 20px; }
+  .modal-projects__descr-1 {
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 30px; }
+    .modal-projects__descr-1 h5 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      color: #000; }
+    .modal-projects__descr-1 p {
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #232323; }
+      .modal-projects__descr-1 p:last-child {
+        margin-bottom: 20px; }
+      .modal-projects__descr-1 p span {
+        font-weight: bold;
+        color: #5a9947; }
+  .modal-projects__descr-2 {
     margin-bottom: 20px; }
-  .modal-projects__slider .modal-slider-nav div img {
+    .modal-projects__descr-2 p {
+      font-family: "Roboto Condensed";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 24px; }
+  .modal-projects__form {
+    background: #f3f3f3;
+    padding-bottom: 15px; }
+    .modal-projects__form p {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 15px;
+      text-align: center;
+      color: #000; }
+  .modal-projects__inputs-wrapper {
+    width: 260px;
     margin: 0 auto; }
-
-.modal-projects__descr {
-  display: inline-block;
-  width: 385px;
-  margin-right: 60px;
-  vertical-align: top; }
-
-.modal-projects__header {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #e8e8e8; }
-  .modal-projects__header h3 {
-    font-family: "Roboto Condensed";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 21px;
-    line-height: 21px;
-    margin-bottom: 20px;
-    color: #232323; }
-  .modal-projects__header p {
-    font-family: "Roboto Condensed";
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #232323; }
-    .modal-projects__header p:last-child {
-      margin-bottom: 20px; }
-
-.modal-projects__descr-1 {
-  border-bottom: 1px solid #e8e8e8;
-  margin-bottom: 30px; }
-  .modal-projects__descr-1 h5 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 14px;
-    margin-bottom: 10px;
-    color: #000; }
-  .modal-projects__descr-1 p {
+    .modal-projects__inputs-wrapper input {
+      font-family: "Roboto Condensed";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #7b7b7b;
+      display: block;
+      margin-bottom: 10px;
+      width: 260px;
+      height: 40px;
+      text-align: center;
+      outline: none;
+      border: 1px solid #b8b8b8;
+      border-radius: 3px;
+      box-shadow: inset 0 2px 5px 0 #dcdcdc; }
+    .modal-projects__inputs-wrapper button {
+      width: 260px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      border: none; }
+  .modal-projects__notice {
     font-family: "Roboto Condensed";
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
-    line-height: 21px;
-    color: #232323; }
-    .modal-projects__descr-1 p:last-child {
-      margin-bottom: 20px; }
-    .modal-projects__descr-1 p span {
-      font-weight: bold;
-      color: #5a9947; }
-
-.modal-projects__descr-2 {
-  margin-bottom: 20px; }
-  .modal-projects__descr-2 p {
-    font-family: "Roboto Condensed";
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px; }
-
-.modal-projects__form {
-  background: #f3f3f3;
-  padding-bottom: 15px; }
-  .modal-projects__form p {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
-    padding: 15px;
-    text-align: center;
-    color: #000; }
-
-.modal-projects__inputs-wrapper {
-  width: 260px;
-  margin: 0 auto; }
-  .modal-projects__inputs-wrapper input {
-    font-family: "Roboto Condensed";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #7b7b7b;
     display: block;
-    margin-bottom: 10px;
-    width: 260px;
-    height: 40px;
     text-align: center;
-    outline: none;
-    border: 1px solid #b8b8b8;
-    border-radius: 3px;
-    box-shadow: inset 0 2px 5px 0 #dcdcdc; }
-  .modal-projects__inputs-wrapper button {
-    width: 260px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    border: none; }
-
-.modal-projects__notice {
-  font-family: "Roboto Condensed";
-  font-weight: 300;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 20px;
-  display: block;
-  text-align: center;
-  color: #5b5b5b; }
+    color: #5b5b5b; }
 
 .modal-gift {
   padding-top: 30px;
@@ -2979,6 +2970,7 @@
     color: #000; }
 
 .modal-general {
+  display: none;
   padding-bottom: 45px; }
   .modal-general__title--indent-1 {
     margin-top: 90px !important; }
@@ -3119,8 +3111,9 @@
       line-height: 24px; }
 
 .modal-simple {
+  display: none;
   width: 940px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   background: #fff; }
   .modal-simple__wrapper {
     width: 760px;
@@ -3161,6 +3154,8 @@
   .modal-simple__list a {
     text-decoration: underline;
     color: #0075a2; }
+    .modal-simple__list a:hover {
+      text-decoration: none; }
 
 .modal-form {
   display: none;
@@ -3394,6 +3389,10 @@ button {
     display: block;
     width: 330px;
     margin: 20px auto; }
+  .btn-form--width-2 {
+    display: inline-block;
+    width: 330px;
+    height: 60px; }
 
 .btn-watch {
   font-family: 'Roboto Condensed', sans-serif;

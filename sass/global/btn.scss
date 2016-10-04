@@ -75,7 +75,13 @@
         width: 330px;
         margin: 20px auto;
     }
+    &--width-2 {
+        display: inline-block;
+        width: 330px;
+        height: 60px;
+    }
 }
+
 
 .btn-watch {
     @include rob-bold(18px, 40px);

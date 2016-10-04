@@ -80,23 +80,21 @@ $(document).ready(function(){
     $(".various").click(function (event) {
         event.preventDefault();
     $(".various").fancybox({
-		maxWidth	: 800,
-		maxHeight	: 600,
-		fitToView	: false,
+		fitToView	: true,
 		width		: '340px',
 		height		: '280px',
-		autoSize	: false,
-		closeClick	: false,
 		openEffect	: 'fade',
 		closeEffect	: 'fade',
         padding     : false,
-        scroll      : 'no'
+        helpers: {
+        overlay: {
+        locked: false 
+        }
+    }
 	});
     });
     $(".present").fancybox({
-//		maxWidth	: 800,
-//		maxHeight	: 600,
-		fitToView	: false,
+		fitToView	: true,
 		width		: '60%',
 		height		: '80%',
 		autoSize	: false,
@@ -106,6 +104,73 @@ $(document).ready(function(){
         padding     : false,
         scroll      : 'no',
 	});
+    $(".see-project").fancybox({
+		fitToView	: true,
+		width		: '60%',
+		height		: '80%',
+		autoSize	: true,
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+        padding     : false,
+        helpers: {
+        overlay: {
+        locked: false 
+        }
+    }
+	});
+    $(".see-all").fancybox({
+		fitToView	: true,
+		width		: '60%',
+		height		: '80%',
+		autoSize	: true,
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+        padding     : false,
+        helpers: {
+        overlay: {
+        locked: false 
+        }
+    }
+	});
+    $(".cl-houses").fancybox({
+		fitToView	: true,
+		width		: '60%',
+		height		: '80%',
+		autoSize	: true,
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+        padding     : false,
+        helpers: {
+        overlay: {
+        locked: false 
+        }
+    }
+	});
+    $(".characteristics-block").fancybox({
+		fitToView	: true,
+		width		: '60%',
+		height		: '80%',
+		autoSize	: true,
+		openEffect	: 'fade',
+		closeEffect	: 'fade',
+        padding     : false,
+        helpers: {
+        overlay: {
+        locked: false 
+        }
+    }
+	});
+    $("#single-1").fancybox({
+    	openEffect	: 'elastic',
+    	closeEffect	: 'elastic',
+
+    	helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	}
+    });
+    
     
 });
 
