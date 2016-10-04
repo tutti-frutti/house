@@ -2982,6 +2982,8 @@
 
 .modal-general {
   padding-bottom: 45px; }
+  .modal-general__title--indent-1 {
+    margin-top: 90px !important; }
   .modal-general__wrapper {
     width: 875px;
     margin: 0 auto; }
@@ -2989,7 +2991,7 @@
     font-family: "Roboto Condensed";
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 26px;
     line-height: 22px;
     margin: 50px 0;
     text-align: center;
@@ -2999,11 +3001,44 @@
       .modal-general__header--ic-1::before {
         position: absolute;
         content: '';
-        left: 210px;
+        left: 18%;
         top: -16px;
         width: 55px;
         height: 55px;
-        background: url("../img/modal-terms-ic-1.jpg") 0 0 no-repeat;
+        background: url("../img/modal-win-ic-1.jpg") 0 0 no-repeat;
+        z-index: 10; }
+    .modal-general__header--ic-2 {
+      position: relative; }
+      .modal-general__header--ic-2::before {
+        position: absolute;
+        content: '';
+        left: 20%;
+        top: -16px;
+        width: 55px;
+        height: 55px;
+        background: url("../img/modal-win-ic-2.jpg") 0 0 no-repeat;
+        z-index: 10; }
+    .modal-general__header--ic-3 {
+      position: relative; }
+      .modal-general__header--ic-3::before {
+        position: absolute;
+        content: '';
+        left: 23%;
+        top: -16px;
+        width: 55px;
+        height: 55px;
+        background: url("../img/modal-win-ic-3.jpg") 0 0 no-repeat;
+        z-index: 10; }
+    .modal-general__header--ic-4 {
+      position: relative; }
+      .modal-general__header--ic-4::before {
+        position: absolute;
+        content: '';
+        left: 16%;
+        top: -16px;
+        width: 55px;
+        height: 55px;
+        background: url("../img/modal-win-ic-4.jpg") 0 0 no-repeat;
         z-index: 10; }
   .modal-general__img {
     display: inline-block;

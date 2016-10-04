@@ -1,11 +1,16 @@
 .modal-general {
     padding-bottom: 45px;
+    &__title {
+        &--indent-1 {
+        margin-top: 90px!important;
+    }
+}
     &__wrapper {
         width: 875px;
         margin: 0 auto;
     }
     &__header {
-        @include rob-reg(20px, 22px);
+        @include rob-reg(26px, 22px);
         margin: 50px 0;
         text-align: center;
         color: #000;
@@ -14,11 +19,50 @@
             &::before {
                 position: absolute;
                 content: '';
-                left: 210px;
+                left: 18%;
                 top: -16px;
                 width: 55px;
                 height: 55px;
-                background: url("../img/modal-terms-ic-1.jpg") 0 0 no-repeat;
+                background: url("../img/modal-win-ic-1.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+        &--ic-2 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 20%;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-win-ic-2.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+        &--ic-3 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 23%;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-win-ic-3.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+        &--ic-4 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 16%;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-win-ic-4.jpg") 0 0 no-repeat;
                 z-index: 10;
             }
         }
