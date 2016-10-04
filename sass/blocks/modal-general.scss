@@ -4,7 +4,12 @@
         &--indent-1 {
         margin-top: 90px!important;
     }
-}
+ }
+    &__dot {
+        margin-top: 65px;
+        padding-left: 20px;
+        background: url("../img/ic-dot-yellow.jpg") 0 9px no-repeat;
+    }
     &__wrapper {
         width: 875px;
         margin: 0 auto;
@@ -63,6 +68,58 @@
                 width: 55px;
                 height: 55px;
                 background: url("../img/modal-win-ic-4.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+        &--ic-5 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 290px;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-win-ic-5.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+        &--ic-6 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 230px;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-win-ic-6.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+        &--ic-7 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 230px;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-win-ic-7.jpg") 0 0 no-repeat;
+                z-index: 10;
+            }
+        }
+        &--ic-8 {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                left: 130px;
+                top: -16px;
+                width: 55px;
+                height: 55px;
+                background: url("../img/modal-win-ic-8.jpg") 0 0 no-repeat;
                 z-index: 10;
             }
         }

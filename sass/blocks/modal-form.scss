@@ -1,0 +1,39 @@
+.modal-form {
+    width: 847px;
+    padding-bottom: 40px;
+    border: 3px solid #349225;
+    border-radius: 7px;
+    &--narrow {
+        width: 340px;
+        margin: 0 auto;
+        border: none;
+    }
+    &__wrapper {
+        margin-top: 30px;
+        p {
+            @include rob-reg(18px, 24px);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+    &__line {
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ebebeb;
+    }
+    &__form {
+        width: 260px;
+        margin: 45px auto 0;
+        input {
+            @include rob-reg(18px, 24px);
+            text-align: center;
+            display: block;
+            width: 260px;
+            height: 50px;
+            margin-bottom: 20px;
+            outline: none;
+            border: 1px solid #b0c793;
+            border-radius: 4px;
+        }
+    }
+} 

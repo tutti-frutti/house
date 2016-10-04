@@ -13,6 +13,9 @@ body {
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
+    &--center {
+        width: 340px;
+    }
 }
 
 li {
@@ -30,6 +33,10 @@ a {
 
 img {
     max-width: 100%;
+}
+
+button {
+    border: none;
 }
 
 * {
