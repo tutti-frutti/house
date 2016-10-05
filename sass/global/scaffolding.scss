@@ -48,3 +48,23 @@ button {
     display: table;
     clear: both;
 }
+
+#upbutton {
+    background: url("../img/up-btn.png") no-repeat scroll;
+    height: 47px;
+    width: 45px;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    transition: .3s;
+    z-index: 9999;
+}
+
+input {
+    @include rob-reg(18px, 24px);
+    text-align: center;
+    color: #555554;
+}

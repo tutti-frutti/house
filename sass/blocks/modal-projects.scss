@@ -1,4 +1,5 @@
 .modal-projects {
+    padding: 30px;
     display: none;
     &__list {
         margin: 0 0 20px 5px;
@@ -71,7 +72,7 @@
     }
     &__slider {
         display: inline-block;
-        margin-right: 45px;
+        margin-right: 35px;
         width: 445px;
         .modal-slider-for {
             margin-bottom: 20px;
@@ -86,8 +87,8 @@
     }
     &__descr {
         display: inline-block;
-        width: 385px;
-        margin-right: 60px;
+        width: 360px;
+//        margin-right: 40px;
         vertical-align: top;
     }
     &__header {

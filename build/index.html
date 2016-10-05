@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=1140, user-scalable=yes">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+<!--    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">-->
     <link rel="stylesheet" href="js/slick/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="js/fancy/source/jquery.fancybox.css">
@@ -38,7 +40,7 @@
                     <div class="modal-form__form">
                         <form action="" method="get">
                             <div class="modal-form__inputs-wrapper">
-                                <input type="text" name="tel" id="tel-form" placeholder="Ваш телефон*">
+                                <input type="text" name="tel" id="phone" placeholder="Ваш телефон*">
                                 <button type="submit" class="btn btn-red btn-red--decor-3">Заказать расчет</button>
                             </div>
                         </form>
@@ -101,7 +103,7 @@
                             <p>Подробности уточняйте позвонив по телефону, либо заполните форму и получите один из подарков на свой телефон.</p>
                             <div class="modal-projects__inputs-wrapper">
                                 <form action="" method="get">
-                                    <input type="text" name="tel" id="tel" placeholder="Ваш телефон*">
+                                    <input class="tel-mask" type="text" name="tel" id="phone-call" placeholder="Ваш телефон*">
                                     <button type="submit" class="btn btn-red  btn-red--decor">Получить доступ</button>
                                 </form>
                             </div>
@@ -341,7 +343,7 @@
                             <span class="add-services__yellow">бесплатно</span>
                         </p>
                         <div class="add-services__inputs">
-                            <input type="tel" name="phone" id="tel" placeholder="Ваш телефон *">
+                            <input class="tel-mask" type="tel" name="phone" id="" placeholder="Ваш телефон *">
                             <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарии *"></textarea>
                             <button type="submit" class="btn btn-form">Получить проект дома</button>
                         </div>
@@ -479,7 +481,7 @@
                         <p>Введите номер мобильного телефона и получите доступ к смете и описанию комплектаций</p>
                         <div class="modal-projects__inputs-wrapper">
                             <form action="" method="get">
-                                <input type="text" name="tel" id="tel" placeholder="Ваш телефон*">
+                                <input class="tel-mask" type="text" name="tel" id="" placeholder="Ваш телефон*">
                                 <button type="submit" class="btn btn-red  btn-red--decor">Получить доступ</button>
                             </form>
                         </div>
@@ -496,7 +498,7 @@
                 <form action="" method="get">
                     <p>Введите мобильный номер телефона и получите доступ ко всем типовым проектам</p>
                     <div class="projects-form__inputs-wrapper">
-                        <input type="text" name="phone" id="your-phone" placeholder="Ваш телефон*">
+                        <input class="tel-mask" type="text" name="phone" id="insert-mob" placeholder="Ваш телефон*">
                         <a href="#all-projects" class="btn btn-form  btn-form--width-2 see-all">Смотреть все проекты</a>
                     </div>
                     <span class="projects-form__notice">Открыть и скачать можно сразу после заполнения формы</span>
@@ -782,7 +784,7 @@
                 <p>Получите консультацию прямо сейчас</p>
                 <form action="" method="">
                     <div class="get-consult__input-wrapper">
-                        <input type="text" name="consult" id="get-consult" placeholder="Ваш телефон*">
+                        <input class="tel-mask" type="text" name="consult" id="cons" placeholder="Ваш телефон*">
                         <button type="submit" class="btn btn-form">Получить консультацию</button>
                     </div>
                     <span class="get-consult__notice">
@@ -908,7 +910,7 @@
             <div class="modal-form__form">
                 <form action="" method="get">
                     <div class="modal-form__inputs-wrapper">
-                        <input type="text" name="tel" id="tel-form" placeholder="Ваш телефон*">
+                        <input class="tel-mask" type="text" name="tel" id="ins-tel" placeholder="Ваш телефон*">
                         <button type="submit" class="btn btn-red btn-red--decor-3">Заказать расчет</button>
                     </div>
                 </form>
@@ -1318,7 +1320,7 @@
                     <p>Запишитесь на <span>бесплатную</span> консультацию у нас в офисе прямо сейчас и получите <span>уникальное</span> предложение в ближайшие 5 минут</p>
                     <form action="" method="get">
                         <div class="object-video__input-wrapper">
-                            <input type="text" name="phone" id="tel" placeholder="Ваш телефон*">
+                            <input class="tel-mask" type="text" name="phone" id="get" placeholder="Ваш телефон*">
                             <button type="submit" class="btn btn-form">Записаться на консультацию</button>
                         </div>
                         <span class="object-video__notice">* Полученные контакты не будут переданы третьим лицам</span>
@@ -1565,7 +1567,7 @@
             <div class="modal-form__form">
                 <form action="" method="get">
                     <div class="modal-form__inputs-wrapper">
-                        <input type="text" name="tel" id="tel-form" placeholder="Ваш телефон*">
+                        <input class="tel-mask" type="text" name="tel" id="type" placeholder="Ваш телефон*">
                         <button type="submit" class="btn btn-red btn-red--decor-3">Оформить заявку</button>
                     </div>
                 </form>
@@ -1592,7 +1594,7 @@
                 <form action="" method="get">
                     <div class="arrange__inputs">
                         <input type="text" name="your-tel" id="phone-1" placeholder="Ваше имя*">
-                        <input type="text" name="your-tel" id="phone-2" placeholder="Ваш телефон*">
+                        <input class="tel-mask" type="text" name="your-tel" id="step" placeholder="Ваш телефон*">
                     </div>
                     <button type="submit" class="btn btn-form  btn-form--width">Записаться на встречу</button>
                     <span class="arrange__notice">Полученные контакты не будут переданы третьим лицам* </span>
@@ -1628,28 +1630,51 @@
     <script src="js/fancy/source/jquery.fancybox.pack.js"></script>
     <script src="js/fancy/source/helpers/jquery.fancybox-media.js"></script>
     <script>
-        var map;
+//        var map;
 
         function initMap() {
+            var myLatLng = {lat: 55.038303, lng: 82.913264};
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {
                     lat: 55.038396,
-                    lng: 82.913436
+                    lng: 82.911436
                 },
                 zoom: 16,
                 scrollwheel: false
             });
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
+            
+            var image = 'img/map-ic.png';
+            var beachMarker = new google.maps.Marker({
+                position: {lat: 55.037996, lng: 82.914395},
                 map: map,
-                title: 'Hello World!'
-            });
-        }
+                icon: image
+  });
+            var image = 'img/map-ic-window.png';
+            var beachMarker = new google.maps.Marker({
+                position: {lat: 55.035996, lng: 82.905295},
+                map: map,
+                icon: image
+  });
+//            var historicalOverlay;
+//            
+//            var imageBounds = {
+//    north: 55.038680,
+//    south: 55.037841,
+//    east: 82.910685,
+//    west: 82.908539
+//  };
+//            
+//            historicalOverlay = new google.maps.GroundOverlay(
+//      'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+//      imageBounds);
+//  historicalOverlay.setMap(map);
+}
+
+
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-YOfc0uWVC8vRXzIZDqMZ0lnkIitgwU&callback=initMap">
     </script>
-
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -5,7 +5,7 @@
     background: url("../img/house-bg.jpg") center no-repeat;
     background-size: cover;
     &__text {
-        @include rob-reg(27px, 173px);
+        @include rob-reg(25px, 173px);
         position: absolute;
         bottom: 85px;
         left: 50%;

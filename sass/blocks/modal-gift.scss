@@ -1,5 +1,5 @@
 .modal-gift {
-    padding-top: 30px;
+    padding: 30px;
     display: none;
     &__left-column {
         display: inline-block;
@@ -70,7 +70,7 @@
     }
     &__right-column {
         display: inline-block;
-        width: 445px;
+        width: 415px;
         h3 {
             @include rob-reg(30px, 30px);
             margin-bottom: 20px;

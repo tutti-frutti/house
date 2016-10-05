@@ -27,42 +27,76 @@ $(document).ready(function () {
             }
         }
     });
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
-    });
-    // slider for multiple page blocks
-    $('.modal-slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.modal-slider-nav'
-    });
-    $('.modal-slider-nav').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.modal-slider-for',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true
-    });
+    // ???
+    function openPop(el){
+  el.fancybox({
+   maxWidth : 800,
+   maxHeight : 600,
+  });
+ }  
+    // init slider at fancy ///////////////////////////
+    var optionsFancy = {
+  maxWidth : 800,
+  maxHeight : 600,
+  helpers: {
+   overlay: {
+    locked: false 
+   }
+  }
+ }
 
-    $('.accordion-tab>.accordion-descr').not(':first').hide();
+ $(".see-project , .cl-houses").on('click',function(e){
+  var el = $(this),
+      idModal = el.attr('href'),
+      $slider = $(idModal).find('.modal-slider-nav, .slider-nav');
+      $mainSlider = $(idModal).find('.modal-slider-for, .slider-for');
+     
+     
+     
+     var mainNav,
+         nav;
+     if($mainSlider.hasClass('slider-for')){
+         mainNav =  '.slider-for';
+         nav = '.slider-nav';
+     } else {
+          mainNav =  '.modal-slider-for';
+          nav = '.modal-slider-nav';
+     }
+     
+     
+     if (!($slider.hasClass('slick-initialized'))){
+         setTimeout(function(){
+            $slider.slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: mainNav,
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true
+            });
+         },100);
+     };
+     
+     
+     if (!($mainSlider.hasClass('slick-initialized'))){
+         setTimeout(function(){
+           $mainSlider.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: nav
+            });
+         },100);
+     }
+  $.fancybox.open( [el], optionsFancy );
+  e.preventDefault();
+ });
+    // accordion
+    $('.accordion-tab>.accordion-descr').hide();
     $('.accordion-tab>.accordion-link').click(function (event) {
         event.preventDefault();
-
+        $(this).toggleClass('active');
         var findArticle = $(this).next();
         var findWrapper = $(this).closest('.accordion-tab');
         if (findArticle.is(':visible')) {
@@ -76,11 +110,36 @@ $(document).ready(function () {
     $(".anchor").on("click", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top;
+            top = $(id).offset().top - 30;
         $('body,html').animate({
             scrollTop: top
         }, 1500);
     });
+    
+//    $('.accordion-tab>.accordion-descr').not(':first').hide();
+//    $('.accordion-tab>.accordion-link').click(function (event) {
+//        event.preventDefault();
+//        $(this).toggleClass('active');
+//        var findArticle = $(this).next();
+//        var findWrapper = $(this).closest('.accordion-tab');
+//        if (findArticle.is(':visible')) {
+//            findArticle.slideUp('slow');
+//        } else {
+//            findWrapper.find('>.accordion-descr').slideUp();
+//            findArticle.slideDown();
+//        }
+//    });
+//    // smooth scrolling
+//    $(".anchor").on("click", function (event) {
+//        event.preventDefault();
+//        var id = $(this).attr('href'),
+//            top = $(id).offset().top;
+//        $('body,html').animate({
+//            scrollTop: top
+//        }, 1500);
+//    });
+    
+    // fancybox
     $(".various").click(function (event) {
         event.preventDefault();
         $(".various").fancybox({
@@ -111,8 +170,8 @@ $(document).ready(function () {
     $(".see-project").fancybox({
         fitToView: true,
         width: '60%',
-        height: '80%',
-        autoSize: true,
+        height: '100%',
+        autoSize: false,
         openEffect: 'fade',
         closeEffect: 'fade',
         padding: false,
@@ -152,12 +211,12 @@ $(document).ready(function () {
     });
     $(".characteristics-block").fancybox({
         fitToView: true,
-        width: '60%',
+        width: '100%',
         height: '80%',
         autoSize: true,
         openEffect: 'fade',
         closeEffect: 'fade',
-        padding: false,
+        padding: true,
         helpers: {
             overlay: {
                 locked: false
@@ -193,6 +252,28 @@ $(document).ready(function () {
             }
         }
     });
+    // up btn
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 700) {
+      if ($('#upbutton').is(':hidden')) {
+        $('#upbutton').css({
+          opacity : 1
+        }).fadeIn('slow');
+      }
+    } else {
+      $('#upbutton').stop(true, false).fadeOut('slow');
+    }
+  });
+  $('#upbutton').click(function() {
+    $('html, body').stop().animate({
+      scrollTop : 0
+    }, 700);
+  });
+    
+
+    $(".tel-mask").mask("(+7999) 999-99-99");
+    
+    
 });
 
 
