@@ -3,12 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=1140, user-scalable=yes">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--    <meta name="viewport" content="width=1140, user-scalable=yes">-->
     <link rel="stylesheet" href="css/style.css">
-
-<!--    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">-->
     <link rel="stylesheet" href="js/slick/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="js/fancy/source/jquery.fancybox.css">
@@ -345,7 +343,7 @@
                         <div class="add-services__inputs">
                             <input class="tel-mask" type="tel" name="phone" id="" placeholder="Ваш телефон *">
                             <textarea name="comment" id="" cols="30" rows="10" placeholder="Комментарии *"></textarea>
-                            <button type="submit" class="btn btn-form">Получить проект дома</button>
+                            <button data-href="thanks-general" id="submit" type="submit" class="btn btn-form form-send">Получить проект дома</button>
                         </div>
                         <span class="add-services__notice">*Полученные контакты не будут переданы третьим лицам</span>
                     </form>
@@ -367,6 +365,16 @@
             </div>
         </div>
     </section>
+    
+    <!--MODAL THANKS-->
+    <div class="modal-simple center" id="thanks-general">
+        <div class="modal-simple__wrapper  modal-simple__wrapper--center">
+            <h3>Благодарим за проявленный интерес к Заводу ЛСП</h3>
+            <p>Ожидайте звонка в ближайшее время</p>
+            <p>Чтобы открыть смету, просто нажмите на кнопку</p>
+            <a href="#" class="btn btn-red btn-red--decor-2">Открыть</a>
+        </div>
+    </div>
 
     <section class="top-projects center">
         <h2 class="section-title">ТОП проектов уютных домов</h2>
@@ -785,7 +793,7 @@
                 <form action="" method="">
                     <div class="get-consult__input-wrapper">
                         <input class="tel-mask" type="text" name="consult" id="cons" placeholder="Ваш телефон*">
-                        <button type="submit" class="btn btn-form">Получить консультацию</button>
+                        <button data-href="thanks-general" type="submit" id="submit4" class="btn btn-form">Получить консультацию</button>
                     </div>
                     <span class="get-consult__notice">
                         * Полученные контактные данные не будут переданы третьим лицам
@@ -899,8 +907,8 @@
         <p class="characteristics__text">Закажите <span class="characteristics__color">бесплатный расчет проекта дома</span> своей мечты прямо сейчас</p>
         <a href="#calculation" class="btn btn-red  btn-red--wide characteristics-block">Заказать расчет</a>
     </section>
-    
-    
+
+
     <!--MODAL FOR CALCULATION-->
     <div class="modal-form center" id="calculation">
         <div class="modal-form__wrapper  modal-form__wrapper--center">
@@ -935,115 +943,115 @@
     </div>
     <!--MODAL FOR SCOPE-->
     <div class="modal-general center" id="scope">
-       <div class="modal-general__wrapper">
-        <p class="modal-general__header  modal-general__header--ic-3">Простор в буквальном смысле</p>
-        <div class="modal-general__img">
-            <img src="img/modal-scope.jpg" alt="terms">
+        <div class="modal-general__wrapper">
+            <p class="modal-general__header  modal-general__header--ic-3">Простор в буквальном смысле</p>
+            <div class="modal-general__img">
+                <img src="img/modal-scope.jpg" alt="terms">
+            </div>
+            <div class="modal-general__descr">
+                <h3 class="modal-general__title  modal-general__title--indent-1">Тоньше стены - больше площадь</h3>
+                <p>Канадские дома позволяют увеличивать внутрений объем помещений, чем дома из кирпича, пенобетона или бруса, благодаря меньшей толщине высокопрочных стен.</p>
+            </div>
         </div>
-        <div class="modal-general__descr">
-            <h3 class="modal-general__title  modal-general__title--indent-1">Тоньше стены - больше площадь</h3>
-            <p>Канадские дома позволяют увеличивать внутрений объем помещений, чем дома из кирпича, пенобетона или бруса, благодаря меньшей толщине высокопрочных стен.</p>
-        </div>
-      </div>
     </div>
     <!--MODAL FOR FIRE-->
     <div class="modal-general center" id="fire">
-       <div class="modal-general__wrapper">
-        <p class="modal-general__header  modal-general__header--ic-2">А что насчет пожаробезопасности?</p>
-        <div class="modal-general__img">
-            <img src="img/modal-fire.jpg" alt="terms">
+        <div class="modal-general__wrapper">
+            <p class="modal-general__header  modal-general__header--ic-2">А что насчет пожаробезопасности?</p>
+            <div class="modal-general__img">
+                <img src="img/modal-fire.jpg" alt="terms">
+            </div>
+            <div class="modal-general__descr">
+                <h3>Пожаробезопасный</h3>
+                <p>Средняя температура возгорания OSB-плиты (из которой изготавливается СИП-панель) +191С&ordm;. Для повышения этого показателя панели обрабатывают огнеупорными пропитками.</p>
+                <h3>Пенополистирол</h3>
+                <p>Применяют в качестве утеплителя панелей, несмотря на воздушную структуру, характеризует способность к самозатуханию. Поэтому этот материал предотвращает распространения огня.</p>
+            </div>
         </div>
-        <div class="modal-general__descr">
-            <h3>Пожаробезопасный</h3>
-            <p>Средняя температура возгорания OSB-плиты (из которой изготавливается СИП-панель) +191С&ordm;. Для повышения этого показателя панели обрабатывают огнеупорными пропитками.</p>
-            <h3>Пенополистирол</h3>
-            <p>Применяют в качестве утеплителя панелей, несмотря на воздушную структуру, характеризует способность к самозатуханию. Поэтому этот материал предотвращает распространения огня.</p>
-        </div>
-      </div>
     </div>
     <!--MODAL FOR LONGTERM-->
     <div class="modal-general center" id="longterm">
-       <div class="modal-general__wrapper">
-        <p class="modal-general__header  modal-general__header--ic-4">Повышенная прочность и долговечность</p>
-        <div class="modal-general__img">
-            <img src="img/modal-durability.jpg" alt="terms">
+        <div class="modal-general__wrapper">
+            <p class="modal-general__header  modal-general__header--ic-4">Повышенная прочность и долговечность</p>
+            <div class="modal-general__img">
+                <img src="img/modal-durability.jpg" alt="terms">
+            </div>
+            <div class="modal-general__descr">
+                <h3>Заводское качество панелей</h3>
+                <p>Изготавливаем все элементы конструкции будущего дома (стены и перегородки, полы, перекрытия, кровля) на собственном сертифицированном производстве СИП-панелей.</p>
+                <h3>Прочность</h3>
+                <p>При своей внешней воздушности, панель толщиной 174мм выдерживает нагрузку 2 тонны на 1 погонный метр (что в 10 раз больше средней нагрузки жилого помещения)</p>
+                <h3>Гарантированное качество</h3>
+                <p>Строим дома в соответствии со всеми требованиями строительных норм под пристальным контролем квалифицированных специалистов. Предоставляем своим клиентам гарантию 5 лет на конструкцию дома и все виды работ.</p>
+            </div>
         </div>
-        <div class="modal-general__descr">
-            <h3>Заводское качество панелей</h3>
-            <p>Изготавливаем все элементы конструкции будущего дома (стены и перегородки, полы, перекрытия, кровля) на собственном сертифицированном производстве СИП-панелей.</p>
-            <h3>Прочность</h3>
-            <p>При своей внешней воздушности, панель толщиной 174мм выдерживает нагрузку 2 тонны на 1 погонный метр (что в 10 раз больше средней нагрузки жилого помещения)</p>
-            <h3>Гарантированное качество</h3>
-            <p>Строим дома в соответствии со всеми требованиями строительных норм под пристальным контролем квалифицированных специалистов. Предоставляем своим клиентам гарантию 5 лет на конструкцию дома и все виды работ.</p>
-        </div>
-      </div>
     </div>
     <!--MODAL FOR MODERN-->
     <div class="modal-general center" id="modern">
-       <div class="modal-general__wrapper">
-        <p class="modal-general__header  modal-general__header--ic-5">Современный</p>
-        <div class="modal-general__img">
-            <img src="img/modal-modern.jpg" alt="terms">
+        <div class="modal-general__wrapper">
+            <p class="modal-general__header  modal-general__header--ic-5">Современный</p>
+            <div class="modal-general__img">
+                <img src="img/modal-modern.jpg" alt="terms">
+            </div>
+            <div class="modal-general__descr">
+                <p class="modal-general__dot">К дому подведены все необходимые коммуникации для жизни: вода, канализация, электричество.</p>
+                <h3>Легко достроить и пристроить</h3>
+                <p>Если нужно, можно без лишних затрат времени и средств, пристроить к дому ещё один модуль, без риска проседания и растрескивания фундаментов.</p>
+            </div>
         </div>
-        <div class="modal-general__descr">
-           <p class="modal-general__dot">К дому подведены все необходимые коммуникации для жизни: вода, канализация, электричество.</p>
-            <h3>Легко достроить и пристроить</h3>
-            <p>Если нужно, можно без лишних затрат времени и средств, пристроить к дому ещё один модуль, без риска проседания и растрескивания фундаментов.</p>
-        </div>
-      </div>
     </div>
     <!--MODAL FOR ECONOMY-->
     <div class="modal-general center" id="economy">
-       <div class="modal-general__wrapper">
-        <p class="modal-general__header  modal-general__header--ic-7">Ваша экономия на лицо</p>
-        <div class="modal-general__img">
-            <img src="img/modal-economy.jpg" alt="terms">
+        <div class="modal-general__wrapper">
+            <p class="modal-general__header  modal-general__header--ic-7">Ваша экономия на лицо</p>
+            <div class="modal-general__img">
+                <img src="img/modal-economy.jpg" alt="terms">
+            </div>
+            <div class="modal-general__descr">
+                <h3>Экономия на электричестве</h3>
+                <p>Использование электрокотла и теплостойкость панелей значительно снижают затраты на энергию</p>
+                <h3>Экономия на отоплении</h3>
+                <p>Температурный диапазон СИП-панелей от +50 до -50С&deg;, что позволяет использовать их в условиях крайнего Севера и отказаться от газового оборудования</p>
+                <h3>Экономия на стоимости материалов</h3>
+                <p>Стоимость строительства домов из SIP-панелей на 30-40% ниже стоимости блочного и на 50% дешевле кирпичного.</p>
+                <h3>Экономия на трудозатратах</h3>
+                <p>Быстрый монтаж (до сдачи &quot;под ключ&quot; потребуется в среднем пара месяцев) и низкая трудоёмкость строительства - существенно сокращает расходы на оплату рабочим.</p>
+                <h3>Экономия на фундаменте</h3>
+                <p>Легкий вес конструкции дома позволяет удешевить процесс возведения фундамента. Дом можно построить на участке с любым ландшафтом и грунтом.</p>
+            </div>
         </div>
-        <div class="modal-general__descr">
-            <h3>Экономия на электричестве</h3>
-            <p>Использование электрокотла и теплостойкость панелей значительно снижают затраты на энергию</p>
-            <h3>Экономия на отоплении</h3>
-            <p>Температурный диапазон СИП-панелей от +50 до -50С&deg;, что позволяет использовать их в условиях крайнего Севера и отказаться от газового оборудования</p>
-            <h3>Экономия на стоимости материалов</h3>
-            <p>Стоимость строительства домов из SIP-панелей на 30-40% ниже стоимости блочного и на 50% дешевле кирпичного.</p>
-            <h3>Экономия на трудозатратах</h3>
-            <p>Быстрый монтаж (до сдачи &quot;под ключ&quot; потребуется в среднем пара месяцев) и низкая трудоёмкость строительства - существенно сокращает расходы на оплату рабочим.</p>
-            <h3>Экономия на фундаменте</h3>
-            <p>Легкий вес конструкции дома позволяет удешевить процесс возведения фундамента. Дом можно построить на участке с любым ландшафтом и грунтом.</p>
-        </div>
-      </div>
     </div>
     <!--MODAL FOR WARM-->
     <div class="modal-general center" id="warm">
-       <div class="modal-general__wrapper">
-        <p class="modal-general__header  modal-general__header--ic-8">Уникальная энергосберегающая технология</p>
-        <div class="modal-general__img">
-            <img src="img/modal-energy.jpg" alt="terms">
+        <div class="modal-general__wrapper">
+            <p class="modal-general__header  modal-general__header--ic-8">Уникальная энергосберегающая технология</p>
+            <div class="modal-general__img">
+                <img src="img/modal-energy.jpg" alt="terms">
+            </div>
+            <div class="modal-general__descr">
+                <h3>Теплостойкость панелей</h3>
+                <p>В доме РЕАЛЬНО ОЧЕНЬ тепло! Инновационные СИП-панели для дома призводим на собственном заводе &laquo;ЛСП&raquo;. Промышленная линия, работающая на пневматическом и автоматическом оборудовании фирмы CAMOZZI (Италия) &mdash; это гарантия безупречной теплоизоляции каждой панели. Дом удерживает тепло, словно термос. По своей теплопроводности панели OSB с утеплителем (пенопласт ПСБ-С-25) заменяют 1,5 метровую кладку кирпича. Дом такого типа отлично сохраняет тепло зимой и прохладу летом.</p>
+                <h3>Умное отопление</h3>
+                <p>В доме установленно инфракрасное отопление, для установки которого не нужна система с трубопроводом или котёл. Не думайте, что электроотопление потянет за собой большие денежные затраты. При достижении необходимого уровня температуры питание отключается (работает как утюг). Кгда температура воздуха падает - включается. Оно экологичное, безопасное и экономичное.</p>
+            </div>
         </div>
-        <div class="modal-general__descr">
-            <h3>Теплостойкость панелей</h3>
-            <p>В доме РЕАЛЬНО ОЧЕНЬ тепло! Инновационные СИП-панели для дома призводим на собственном заводе &laquo;ЛСП&raquo;. Промышленная линия, работающая на пневматическом и автоматическом оборудовании фирмы CAMOZZI (Италия) &mdash; это гарантия безупречной теплоизоляции каждой панели. Дом удерживает тепло, словно термос. По своей теплопроводности панели OSB с утеплителем (пенопласт ПСБ-С-25) заменяют 1,5 метровую кладку кирпича. Дом такого типа отлично сохраняет тепло зимой и прохладу летом.</p>
-            <h3>Умное отопление</h3>
-            <p>В доме установленно инфракрасное отопление, для установки которого не нужна система с трубопроводом или котёл. Не думайте, что электроотопление потянет за собой большие денежные затраты. При достижении необходимого уровня температуры питание отключается (работает как утюг). Кгда температура воздуха падает - включается. Оно экологичное, безопасное и экономичное.</p>
-        </div>
-      </div>
     </div>
     <!--MODAL FOR FAST-->
     <div class="modal-general center" id="fast">
-       <div class="modal-general__wrapper">
-        <p class="modal-general__header  modal-general__header--ic-1">Рекордно короткие сроки возведения</p>
-        <div class="modal-general__img">
-            <img src="img/modal-terms.jpg" alt="terms">
+        <div class="modal-general__wrapper">
+            <p class="modal-general__header  modal-general__header--ic-1">Рекордно короткие сроки возведения</p>
+            <div class="modal-general__img">
+                <img src="img/modal-terms.jpg" alt="terms">
+            </div>
+            <div class="modal-general__descr">
+                <h3>Скорость монтажа и профессионализм</h3>
+                <p>Легкость сборки и отсутствие необходимости усадки позволяет построить дом в 3-4 раза быстрее классических методов. Отпадает потребность в привлечении сложной строительной техники. Слаженная работа проверенных опытных бригад сделает всё &quot;плд ключ&quot; за 30-60 дней.</p>
+                <h3>Отсутствие усадки</h3>
+                <p>В отличии от домов из традиционных стройматериалов, дому не потребуется годовая усадка перед началом отделочных работ</p>
+                <h3>Всесезонное строительство</h3>
+                <p>Сухой метод строительства позволяет возводить дома даже при минусовой тмпературе, в отличии от работ, связанных с раствором и бетоном. Наоборот, качество зимнего леса на порядок выше, чем лес, спиленный летом.</p>
+            </div>
         </div>
-        <div class="modal-general__descr">
-            <h3>Скорость монтажа и профессионализм</h3>
-            <p>Легкость сборки и отсутствие необходимости усадки позволяет построить дом в 3-4 раза быстрее классических методов. Отпадает потребность в привлечении сложной строительной техники. Слаженная работа проверенных опытных бригад сделает всё &quot;плд ключ&quot; за 30-60 дней.</p>
-            <h3>Отсутствие усадки</h3>
-            <p>В отличии от домов из традиционных стройматериалов, дому не потребуется годовая усадка перед началом отделочных работ</p>
-            <h3>Всесезонное строительство</h3>
-            <p>Сухой метод строительства позволяет возводить дома даже при минусовой тмпературе, в отличии от работ, связанных с раствором и бетоном. Наоборот, качество зимнего леса на порядок выше, чем лес, спиленный летом.</p>
-        </div>
-      </div>
     </div>
 
     <section class="plant-concept">
@@ -1321,7 +1329,7 @@
                     <form action="" method="get">
                         <div class="object-video__input-wrapper">
                             <input class="tel-mask" type="text" name="phone" id="get" placeholder="Ваш телефон*">
-                            <button type="submit" class="btn btn-form">Записаться на консультацию</button>
+                            <button data-href="thanks-general" type="submit" class="btn btn-form" id="submit2">Записаться на консультацию</button>
                         </div>
                         <span class="object-video__notice">* Полученные контакты не будут переданы третьим лицам</span>
                     </form>
@@ -1333,8 +1341,9 @@
         </div>
     </section>
 
+        <h2 class="section-title  section-title--width-4">Преимущества работы с нами</h2>
     <section class="adv-slider">
-        <h2 class="section-title">Преимущества работы с нами</h2>
+       <div class="center">
         <div class="slider-content">
             <div style="background-image: url(img/sl-1.png)" class="slider-content__img">
             </div>
@@ -1363,17 +1372,30 @@
             <div style="background-image: url(img/sl-9.jpg)" class="slider-content__img">
             </div>
         </div>
+      </div>
     </section>
 
     <section class="certificates">
         <h2 class="section-title">Наши документы и сертификаты</h2>
         <div class="certificates__multiple">
-            <div><a class="img-to-large" rel="certificates-g" href="img/certificate-1-lg.jpg"><img src="img/certificate-1.jpg" alt="certificate"></a></div>
-            <div><a class="img-to-large" rel="certificates-g" href="img/certificate-2-lg.jpg"><img src="img/certificate-2.jpg" alt="certificate"></a></div>
-            <div><a class="img-to-large" rel="certificates-g" href="img/certificate-1-lg.jpg"><img src="img/certificate-1.jpg" alt="certificate"></a></div>
-            <div><a class="img-to-large" rel="certificates-g" href="img/certificate-2-lg.jpg"><img src="img/certificate-2.jpg" alt="certificate"></a></div>
-            <div><a class="img-to-large" rel="certificates-g" href="img/certificate-1-lg.jpg"><img src="img/certificate-1.jpg" alt="certificate"></a></div>
-            <div><a class="img-to-large" rel="certificates-g" href="img/certificate-2-lg.jpg"><img src="img/certificate-2.jpg" alt="certificate"></a></div>
+            <div>
+                <a class="img-to-large" rel="certificates-g" href="img/certificate-1-lg.jpg"><img src="img/certificate-1.jpg" alt="certificate"></a>
+            </div>
+            <div>
+                <a class="img-to-large" rel="certificates-g" href="img/certificate-2-lg.jpg"><img src="img/certificate-2.jpg" alt="certificate"></a>
+            </div>
+            <div>
+                <a class="img-to-large" rel="certificates-g" href="img/certificate-1-lg.jpg"><img src="img/certificate-1.jpg" alt="certificate"></a>
+            </div>
+            <div>
+                <a class="img-to-large" rel="certificates-g" href="img/certificate-2-lg.jpg"><img src="img/certificate-2.jpg" alt="certificate"></a>
+            </div>
+            <div>
+                <a class="img-to-large" rel="certificates-g" href="img/certificate-1-lg.jpg"><img src="img/certificate-1.jpg" alt="certificate"></a>
+            </div>
+            <div>
+                <a class="img-to-large" rel="certificates-g" href="img/certificate-2-lg.jpg"><img src="img/certificate-2.jpg" alt="certificate"></a>
+            </div>
         </div>
     </section>
 
@@ -1558,24 +1580,24 @@
             </div>
             <a href="#calculation-2" class="btn btn-red characteristics-block">Оформить заявку</a>
         </div>
-    <!--MODAL FOR CALCULATION-->
-    <div class="modal-form center" id="calculation-2">
-        <div class="modal-form__wrapper  modal-form__wrapper--center">
-            <p>Введите свой номер телефона прямо сейчас!</p>
-            <p>Ожидайте звонка в ближайшее время</p>
-            <p>Назовите консультанту желаемые параметры дома вашей мечты!</p>
-            <div class="modal-form__form">
-                <form action="" method="get">
-                    <div class="modal-form__inputs-wrapper">
-                        <input class="tel-mask" type="text" name="tel" id="type" placeholder="Ваш телефон*">
-                        <button type="submit" class="btn btn-red btn-red--decor-3">Оформить заявку</button>
-                    </div>
-                </form>
+        <!--MODAL FOR CALCULATION-->
+        <div class="modal-form center" id="calculation-2">
+            <div class="modal-form__wrapper  modal-form__wrapper--center">
+                <p>Введите свой номер телефона прямо сейчас!</p>
+                <p>Ожидайте звонка в ближайшее время</p>
+                <p>Назовите консультанту желаемые параметры дома вашей мечты!</p>
+                <div class="modal-form__form">
+                    <form action="" method="get">
+                        <div class="modal-form__inputs-wrapper">
+                            <input class="tel-mask" type="text" name="tel" id="type" placeholder="Ваш телефон*">
+                            <button type="submit" class="btn btn-red btn-red--decor-3">Оформить заявку</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
     </section>
-    
+
 
     <section class="dreams">
         <div class="dreams__text">Мечты становятся реальностью, когда мысли превращаются в действие</div>
@@ -1596,13 +1618,13 @@
                         <input type="text" name="your-tel" id="phone-1" placeholder="Ваше имя*">
                         <input class="tel-mask" type="text" name="your-tel" id="step" placeholder="Ваш телефон*">
                     </div>
-                    <button type="submit" class="btn btn-form  btn-form--width">Записаться на встречу</button>
+                    <button data-href="thanks-general" type="submit" id="submit3" class="btn btn-form  btn-form--width">Записаться на встречу</button>
                     <span class="arrange__notice">Полученные контакты не будут переданы третьим лицам* </span>
                 </form>
             </div>
         </div>
     </section>
-    
+
     <div id="upbutton"></div>
 
     <footer class="footer center">
@@ -1630,10 +1652,13 @@
     <script src="js/fancy/source/jquery.fancybox.pack.js"></script>
     <script src="js/fancy/source/helpers/jquery.fancybox-media.js"></script>
     <script>
-//        var map;
+        //        var map;
 
         function initMap() {
-            var myLatLng = {lat: 55.038303, lng: 82.913264};
+            var myLatLng = {
+                lat: 55.038303,
+                lng: 82.913264
+            };
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {
                     lat: 55.038396,
@@ -1642,35 +1667,39 @@
                 zoom: 16,
                 scrollwheel: false
             });
-            
+
             var image = 'img/map-ic.png';
             var beachMarker = new google.maps.Marker({
-                position: {lat: 55.037996, lng: 82.914395},
+                position: {
+                    lat: 55.037996,
+                    lng: 82.914395
+                },
                 map: map,
                 icon: image
-  });
+            });
             var image = 'img/map-ic-window.png';
             var beachMarker = new google.maps.Marker({
-                position: {lat: 55.035996, lng: 82.905295},
+                position: {
+                    lat: 55.035996,
+                    lng: 82.905295
+                },
                 map: map,
                 icon: image
-  });
-//            var historicalOverlay;
-//            
-//            var imageBounds = {
-//    north: 55.038680,
-//    south: 55.037841,
-//    east: 82.910685,
-//    west: 82.908539
-//  };
-//            
-//            historicalOverlay = new google.maps.GroundOverlay(
-//      'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
-//      imageBounds);
-//  historicalOverlay.setMap(map);
-}
-
-
+            });
+            //            var historicalOverlay;
+            //            
+            //            var imageBounds = {
+            //    north: 55.038680,
+            //    south: 55.037841,
+            //    east: 82.910685,
+            //    west: 82.908539
+            //  };
+            //            
+            //            historicalOverlay = new google.maps.GroundOverlay(
+            //      'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+            //      imageBounds);
+            //  historicalOverlay.setMap(map);
+        }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-YOfc0uWVC8vRXzIZDqMZ0lnkIitgwU&callback=initMap">
     </script>

@@ -1,5 +1,7 @@
 .adv-slider {
     position: relative;
+        background: url("../img/slider-bg.png") center no-repeat;
+        background-size: cover;
     .section-title {
         width: 635px;
         margin: 0 auto 50px;
@@ -7,7 +9,7 @@
     .adv-button-left {
         position: absolute;
         top: 230px;
-        left: 60px;
+        left: -90px;
         cursor: pointer;
         z-index: 100;
         &:hover {
@@ -17,7 +19,7 @@
     .adv-button-right {
         position: absolute;
         top: 230px;
-        right: 60px;
+        right: -90px;
         cursor: pointer;
         z-index: 100;
         &:hover {
@@ -26,9 +28,9 @@
     }
     .slider-content {
         height: 550px;
-        background: url("../img/slider-bg.png") center no-repeat;
-        background-size: cover;
-            overflow: hidden;
+        width: 780px;
+        margin: 0 auto;
+//            overflow: hidden;
         &__img {
             height: 468px;
             width: 917px;

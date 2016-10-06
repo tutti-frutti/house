@@ -110,7 +110,7 @@ $(document).ready(function () {
     $(".anchor").on("click", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top - 30;
+            top = $(id).offset().top - 30; // высота отступа от верхней границы
         $('body,html').animate({
             scrollTop: top
         }, 1500);
@@ -138,6 +138,22 @@ $(document).ready(function () {
 //            scrollTop: top
 //        }, 1500);
 //    });
+    
+    $("#submit, #submit2, #submit3, #submit4").click(function(e){        
+        $.fancybox.open( [$("#" + $(this).data('href'))], { 
+            fitToView: true,
+            width: '340px',
+            height: '280px',
+            openEffect: 'fade',
+            closeEffect: 'fade',
+            padding: false,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+        });
+    });
     
     // fancybox
     $(".various").click(function (event) {
@@ -270,7 +286,7 @@ $(document).ready(function () {
     }, 700);
   });
     
-
+    // tel mask
     $(".tel-mask").mask("(+7999) 999-99-99");
     
     

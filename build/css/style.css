@@ -392,6 +392,9 @@
   .section-title--width-3 {
     width: 585px;
     margin: 0 auto 50px; }
+  .section-title--width-4 {
+    width: 640px;
+    margin: 0 auto 50px; }
 
 .manufacture {
   position: relative;
@@ -863,9 +866,6 @@
     margin-bottom: 20px;
     border: 1px solid #d9d9d9;
     border-radius: 3px; }
-    @media (max-width: 767px) {
-      .house-preview__item {
-        width: 100px; } }
     .house-preview__item:nth-child(3n) {
       margin-right: 0; }
     .house-preview__item img {
@@ -1918,10 +1918,10 @@
 
 .object-video {
   position: relative;
-  margin-bottom: 50px;
   height: 585px;
   background: url("../img/bg-object-video.jpg") center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 50px; }
   .object-video__left {
     position: absolute;
     left: 0;
@@ -1980,14 +1980,16 @@
     color: #fff; }
 
 .adv-slider {
-  position: relative; }
+  position: relative;
+  background: url("../img/slider-bg.png") center no-repeat;
+  background-size: cover; }
   .adv-slider .section-title {
     width: 635px;
     margin: 0 auto 50px; }
   .adv-slider .adv-button-left {
     position: absolute;
     top: 230px;
-    left: 60px;
+    left: -90px;
     cursor: pointer;
     z-index: 100; }
     .adv-slider .adv-button-left:hover {
@@ -1995,16 +1997,15 @@
   .adv-slider .adv-button-right {
     position: absolute;
     top: 230px;
-    right: 60px;
+    right: -90px;
     cursor: pointer;
     z-index: 100; }
     .adv-slider .adv-button-right:hover {
       opacity: .5; }
   .adv-slider .slider-content {
     height: 550px;
-    background: url("../img/slider-bg.png") center no-repeat;
-    background-size: cover;
-    overflow: hidden; }
+    width: 780px;
+    margin: 0 auto; }
     .adv-slider .slider-content__img {
       height: 468px;
       width: 917px;
@@ -3368,7 +3369,8 @@ button {
   transition: .3s;
   z-index: 9999; }
 
-input {
+input,
+textarea {
   font-family: "Roboto Condensed";
   font-weight: normal;
   font-style: normal;
@@ -3376,6 +3378,9 @@ input {
   line-height: 24px;
   text-align: center;
   color: #555554; }
+
+textarea {
+  margin-top: 30px; }
 
 .btn {
   font-family: 'Roboto Condensed', sans-serif;
