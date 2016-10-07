@@ -9,13 +9,13 @@
 
 .btn-red {
     position: relative;
-    display: block;
+//    display: block;
     margin: 0 auto;
     width: 320px;
     height: 60px;
     cursor: pointer;
     border-radius: 4px;
-	background-image: linear-gradient(to bottom, #f64242, #ce2a2a);
+//	background-image: linear-gradient(to bottom, #f64242, #ce2a2a);
     box-shadow: 0 3px 0 0 #ae2323;
     &--wide {
         width: 340px;
