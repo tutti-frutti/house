@@ -1,4 +1,98 @@
+function initMap() {
+    var myLatLng = {
+        lat: 55.038303,
+        lng: 82.913264
+    };
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+            lat: 55.038396,
+            lng: 82.911436
+        },
+        zoom: 16,
+        scrollwheel: false
+    });
+
+    var image = 'img/map-ic.png';
+    var beachMarker = new google.maps.Marker({
+        position: {
+            lat: 55.037996,
+            lng: 82.914395
+        },
+        map: map,
+        icon: image
+    });
+    var image = 'img/map-ic-window.png';
+    var beachMarker = new google.maps.Marker({
+        position: {
+            lat: 55.035996,
+            lng: 82.905295
+        },
+        map: map,
+        icon: image
+    });
+}
+function init3dview() {
+    var $threeSixty = $('.threesixty');
+    $threeSixty.threeSixty({
+        dragDirection: 'horizontal', // horizontal OR vertical
+        useKeys: true, // true OR false
+        draggable: true // true OR false
+    });
+}
 $(document).ready(function () {
+    $(".js-tabs").on('click', 'a', function(e){
+        var $el = $(this);
+        var tab = $(this).attr("href");
+        
+        $el.parent().addClass("_current");
+        $el.parent().siblings().removeClass("_current");
+        $(".modal-tabs__pane").not($(tab)).removeClass('_active');
+        $(tab).addClass('_active');
+
+        // console.log($tab);
+
+        if ( $(this).attr("href") == '#3d') {
+            // init3dview();
+            // console.log('3d');
+        } else {
+           //  $sliderTab = $($tab).find('.modal-slider-nav');
+           //  $mainSliderTab = $($tab).find('.modal-slider-for');
+
+
+           //  function destroyThumbnailBarSlick() {
+           //      $($sliderTab).slick('unslick');
+           //      $($mainSliderTab).slick('unslick');
+           //  }
+
+           //  if ( $($sliderTab).hasClass('slick-initialized') || $($mainSliderTab).hasClass('slick-initialized') ) {
+           //      destroyThumbnailBarSlick();
+           //  }
+
+           //   var mainNavTab = '.modal-slider-for',
+           //       navTab = '.modal-slider-nav';
+            
+           //  $sliderTab.slick({
+           //      slidesToShow: 4,
+           //      slidesToScroll: 1,
+           //      asNavFor: mainNavTab,
+           //      dots: false,
+           //      centerMode: false,
+           //      focusOnSelect: true
+           //  });
+
+           // $mainSliderTab.slick({
+           //      slidesToShow: 1,
+           //      slidesToScroll: 1,
+           //      arrows: false,
+           //      fade: true,
+           //      asNavFor: navTab
+           //  });
+
+        }
+        
+        e.preventDefault();
+    });
+
     $('.slider-content').slick({
         arrows: true,
         prevArrow: '<img class="adv-button-left" src="img/ic-arr-left.png">',
@@ -45,53 +139,62 @@ $(document).ready(function () {
   }
  }
 
- $(".see-project , .cl-houses").on('click',function(e){
-  var el = $(this),
-      idModal = el.attr('href'),
-      $slider = $(idModal).find('.modal-slider-nav, .slider-nav');
-      $mainSlider = $(idModal).find('.modal-slider-for, .slider-for');
-     
-     
-     
-     var mainNav,
-         nav;
-     if($mainSlider.hasClass('slider-for')){
+ $(".see-project, .cl-houses").on('click',function(e){
+    var el = $(this),
+        idModal = el.attr('href'),
+        idTab = $(idModal + ' ._active'),
+        $slider = $(idTab).find('.modal-slider-nav, .slider-nav');
+        $mainSlider = $(idTab).find('.modal-slider-for, .slider-for');
+
+    // console.log($slider);
+    // console.log($mainSlider);
+
+    var mainNav,
+    nav;
+
+    if ( $mainSlider.hasClass('slider-for') ) {
          mainNav =  '.slider-for';
          nav = '.slider-nav';
-     } else {
-          mainNav =  '.modal-slider-for';
-          nav = '.modal-slider-nav';
-     }
-     
-     
-     if (!($slider.hasClass('slick-initialized'))){
-         setTimeout(function(){
-            $slider.slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                asNavFor: mainNav,
-                dots: false,
-                centerMode: false,
-                focusOnSelect: true
-            });
-         },100);
-     };
-     
-     
-     if (!($mainSlider.hasClass('slick-initialized'))){
-         setTimeout(function(){
-           $mainSlider.slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: nav
-            });
-         },100);
-     }
-  $.fancybox.open( [el], optionsFancy );
-  e.preventDefault();
- });
+    } else {
+      mainNav =  '.modal-slider-for';
+      nav = '.modal-slider-nav';
+    }
+
+    // function destroyThumbnailBarSlick() {
+    //     $slider.slick('unslick');
+    //     $mainSlider.slick('unslick');
+    // }
+
+    // if ( $slider.hasClass('slick-initialized') || $mainSlider.hasClass('slick-initialized') ) {
+    //     console.log(true);
+    //     destroyThumbnailBarSlick();
+    // }
+ 
+    //if ( !($slider.hasClass('slick-initialized'))){
+        // $slider.slick({
+        //     slidesToShow: 4,
+        //     slidesToScroll: 1,
+        //     asNavFor: mainNav,
+        //     dots: false,
+        //     centerMode: false,
+        //     focusOnSelect: true
+        // });
+    // };
+ 
+    // if (!($mainSlider.hasClass('slick-initialized'))){
+        // $mainSlider.slick({
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     arrows: false,
+        //     fade: true,
+        //     asNavFor: nav
+        // });
+    // }
+    
+    $.fancybox.open( [el], optionsFancy );
+
+    e.preventDefault();
+});
     // accordion
     $('.accordion-tab>.accordion-descr').hide();
     $('.accordion-tab>.accordion-link').click(function (event) {
@@ -299,12 +402,5 @@ $(document).ready(function () {
     // tel mask
     $(".tel-mask").mask("(+7999) 999-99-99");
     
-    
+    initMap();
 });
-
-
-
-//  KEY API 1
-//    AIzaSyAA-YOfc0uWVC8vRXzIZDqMZ0lnkIitgwU
-//    $('.accordion-tab>.left__subitem').hide();
-//$('.accordion-tab>.accordion-link').addClass('active');

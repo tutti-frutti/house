@@ -10,17 +10,11 @@
     <link rel="stylesheet" href="js/slick/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick/slick-theme.css">
     <link rel="stylesheet" href="js/fancy/source/jquery.fancybox.css">
-
-
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <title>Канадские дома1</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-YOfc0uWVC8vRXzIZDqMZ0lnkIitgwU"></script>
 </head>
 
 <body>
-            <div class="threesixty" data-path="img/3dviews/item-6/{index}.jpg" data-count="22">
-                <ol class="threesixty_images"></ol>
-            </div>
     <div class="first-screen-wrapper">
         <header class="header center">
             <div class="header__logo">
@@ -52,15 +46,11 @@
 
         <section class="first-screen">
             <div class="center">
-                <h1>
-            Как построить<br>эко-дом для круглогодичного проживания<br>по цене однушки?
-        </h1>
-
+                <h1>Как построить<br>эко-дом для круглогодичного проживания<br>по цене однушки?</h1>
                 <p>
                     Каждому покупателю дарим разнообразные и изумительные подарки!
                 </p>
             </div>
-
             <a href="#presents" class="btn btn-red  btn-red--icon present">Посмотреть подарки</a>
         </section>
 
@@ -397,7 +387,7 @@
                 <span class="house-preview__detail">Размеры: <span>6 x 6м</span></span>
                 <span class="house-preview__detail">Площадь: <span>60 м 2</span></span>
                 <span class="house-preview__detail">Цена: <span>от 318 000 р</span></span>
-                <a href="#top-project" class="btn btn-watch see-project">Смотреть планировку</a>
+                <a href="#veronika-house" class="btn btn-watch see-project">Смотреть планировку</a>
             </li>
 
             <li class="house-preview__item">
@@ -406,7 +396,7 @@
                 <span class="house-preview__detail">Размеры: <span>6 x 6м</span></span>
                 <span class="house-preview__detail">Площадь: <span>60 м 2</span></span>
                 <span class="house-preview__detail">Цена: <span>от 318 000 р</span></span>
-                <a href="#top-project" class="btn btn-watch see-project">Смотреть планировку</a>
+                <a href="#victorija-house" class="btn btn-watch see-project">Смотреть планировку</a>
             </li>
 
             <li class="house-preview__item">
@@ -447,60 +437,95 @@
         </ul>
         <!--separate block end-->
 
-        <!--MODAL TOP PROJECTS-->
+        <!--MODAL VERONIKA HOUSE PROJECTS-->
 
-        <div class="modal-projects center" id="top-project">
+        <div class="modal-projects center" id="veronika-house">
             <div class="modal-projects__wrapper">
                 <div class="modal-projects__links">
-                    <ul class="modal-projects__list">
-                        <li class="modal-projects__ic-1"><a href="#">Фото и планировки</a></li>
-                        <li class="modal-projects__ic-2"><a href="#">3D проекция</a></li>
-                        <li class="modal-projects__ic-3"><a href="#">Интерьер</a></li>
-                        <li class="modal-projects__ic-4"><a href="#">Экстерьер</a></li>
+                    <ul class="modal-projects__list js-tabs">
+                        <li class="modal-projects__ic-1 _current"><a href="#photo">Фото и планировки</a></li>
+                        <li class="modal-projects__ic-2"><a href="#3d">3D проекция</a></li>
+                        <li class="modal-projects__ic-3"><a href="#interior">Интерьер</a></li>
+                        <li class="modal-projects__ic-4"><a href="#exterior">Экстерьер</a></li>
                     </ul>
                 </div>
-                <div class="modal-projects__slider">
-                    <div class="modal-slider-for">
-                        <div><img src="img/fancy-sl-1-big.jpg" alt="house"></div>
-                        <div><img src="img/fancy-sl-2-big.jpg" alt="house"></div>
-                        <div><img src="img/fancy-sl-3-big.jpg" alt="house"></div>
-                        <div><img src="img/fancy-sl-5-big.jpg" alt="house"></div>
-                    </div>
-                    <div class="modal-slider-nav">
-                        <div><img src="img/fancy-sl-1-thumb.jpg" alt="house"></div>
-                        <div><img src="img/fancy-sl-2-thumb.jpg" alt="house"></div>
-                        <div><img src="img/fancy-sl-3-thumb.jpg" alt="house"></div>
-                        <div><img src="img/fancy-sl-5-thumb.jpg" alt="house"></div>
-                    </div>
-                </div>
-                <div class="modal-projects__descr">
-                    <div class="modal-projects__header">
-                        <h3>Дом Кристина</h3>
-                        <p>Размеры: 6 х 6 м</p>
-                        <p>Площадь: 60 м 2</p>
-                    </div>
-                    <div class="modal-projects__descr-1">
-                        <h5>Комплектация</h5>
-                        <p>Цена эконом <span>от 318 000 р</span></p>
-                        <p>Цена эконом + <span>от 518 000 р</span></p>
-                        <p>Цена стандарт <span>от 718 000 р</span></p>
-                    </div>
-                    <div class="modal-projects__descr-2">
-                        <p>Просторный двухэтажный дом в европейском стиле прекрасно подходит для большой семьи. Гостинная совмещена с кухней для удобного пребывания всей семьи. Также в доме расположены: кабинет на первом этаже, 3 уютные спальни и вместительная гардеробная на втором, комфортный санузел на каждом этаже, техпомещение. Дом расчитан на комфортное проживание семьи из 3-4-х человек.</p>
-                    </div>
-                    <div class="modal-projects__form">
-                        <p>Введите номер мобильного телефона и получите доступ к смете и описанию комплектаций</p>
-                        <div class="modal-projects__inputs-wrapper">
-                            <form action="" method="get">
-                                <input class="tel-mask" type="text" name="tel" id="" placeholder="Ваш телефон*">
-                                <button type="submit" class="btn btn-red  btn-red--decor">Получить доступ</button>
-                            </form>
+                <div class="modal-projects__cf">
+                    <div class="modal-tabs">
+                        <div id="photo" class="modal-projects__slider modal-tabs__pane _active">
+                            <div class="modal-slider-for">
+                                <div><img src="img/fancy-sl-1-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-2-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-3-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-5-big.jpg" alt="house"></div>
+                            </div>
+                            <div class="modal-slider-nav">
+                                <div><img src="img/fancy-sl-1-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-2-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-3-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-5-thumb.jpg" alt="house"></div>
+                            </div>
                         </div>
-                        <span class="modal-projects__notice">Открыть и скачать можно сразу после заполнения формы
-                       </span>
-                    </div>
-                </div>
-            </div>
+                        <div id="3d" class="modal-tabs__pane _3d">
+                            <div class="threesixty" data-path="img/3dviews/item-6/{index}.jpg" data-count="22"></div>
+                        </div>
+                        <div id="interior" class="modal-projects__slider modal-tabs__pane _interior">
+                            <div class="modal-slider-for">
+                                <div><img src="img/fancy-sl-5-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-1-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-2-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-3-big.jpg" alt="house"></div>
+                            </div>
+                            <div class="modal-slider-nav">
+                                <div><img src="img/fancy-sl-5-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-1-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-2-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-3-thumb.jpg" alt="house"></div>
+                            </div>
+                        </div>
+                        <div id="exterior" class="modal-projects__slider modal-tabs__pane _exterior">
+                            <div class="modal-slider-for">
+                                <div><img src="img/fancy-sl-3-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-1-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-2-big.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-5-big.jpg" alt="house"></div>
+                            </div>
+                            <div class="modal-slider-nav">
+                                <div><img src="img/fancy-sl-3-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-1-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-2-thumb.jpg" alt="house"></div>
+                                <div><img src="img/fancy-sl-5-thumb.jpg" alt="house"></div>
+                            </div>
+                        </div>
+                    </div><!-- /. modal-tabs -->
+                    <div class="modal-projects__descr">
+                        <div class="modal-projects__header">
+                            <h3>Дом Кристина</h3>
+                            <p>Размеры: 6 х 6 м</p>
+                            <p>Площадь: 60 м 2</p>
+                        </div>
+                        <div class="modal-projects__descr-1">
+                            <h5>Комплектация</h5>
+                            <p>Цена эконом <span>от 318 000 р</span></p>
+                            <p>Цена эконом + <span>от 518 000 р</span></p>
+                            <p>Цена стандарт <span>от 718 000 р</span></p>
+                        </div>
+                        <div class="modal-projects__descr-2">
+                            <p>Просторный двухэтажный дом в европейском стиле прекрасно подходит для большой семьи. Гостинная совмещена с кухней для удобного пребывания всей семьи. Также в доме расположены: кабинет на первом этаже, 3 уютные спальни и вместительная гардеробная на втором, комфортный санузел на каждом этаже, техпомещение. Дом расчитан на комфортное проживание семьи из 3-4-х человек.</p>
+                        </div>
+                        <div class="modal-projects__form">
+                            <p>Введите номер мобильного телефона и получите доступ к смете и описанию комплектаций</p>
+                            <div class="modal-projects__inputs-wrapper">
+                                <form action="" method="get">
+                                    <input class="tel-mask" type="text" name="tel" id="" placeholder="Ваш телефон*">
+                                    <button type="submit" class="btn btn-red  btn-red--decor">Получить доступ</button>
+                                </form>
+                            </div>
+                            <span class="modal-projects__notice">Открыть и скачать можно сразу после заполнения формы
+                           </span>
+                        </div>
+                    </div><!-- /. modal-projects__descr -->
+                </div><!-- /. modal-projects__cf -->
+            </div><!-- /. modal-projects__wrapper -->
         </div>
 
         <!--separate block all-project form-->
@@ -1665,62 +1690,10 @@
         </div>
     </footer>
 
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script src="js/slick/slick/slick.min.js"></script>
     <script src="js/fancy/source/jquery.fancybox.pack.js"></script>
     <script src="js/fancy/source/helpers/jquery.fancybox-media.js"></script>
-    <script>
-        //        var map;
-
-        function initMap() {
-            var myLatLng = {
-                lat: 55.038303,
-                lng: 82.913264
-            };
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: 55.038396,
-                    lng: 82.911436
-                },
-                zoom: 16,
-                scrollwheel: false
-            });
-
-            var image = 'img/map-ic.png';
-            var beachMarker = new google.maps.Marker({
-                position: {
-                    lat: 55.037996,
-                    lng: 82.914395
-                },
-                map: map,
-                icon: image
-            });
-            var image = 'img/map-ic-window.png';
-            var beachMarker = new google.maps.Marker({
-                position: {
-                    lat: 55.035996,
-                    lng: 82.905295
-                },
-                map: map,
-                icon: image
-            });
-            //            var historicalOverlay;
-            //            
-            //            var imageBounds = {
-            //    north: 55.038680,
-            //    south: 55.037841,
-            //    east: 82.910685,
-            //    west: 82.908539
-            //  };
-            //            
-            //            historicalOverlay = new google.maps.GroundOverlay(
-            //      'https://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
-            //      imageBounds);
-            //  historicalOverlay.setMap(map);
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA-YOfc0uWVC8vRXzIZDqMZ0lnkIitgwU&callback=initMap">
-    </script>
     <script src="js/jquery.maskedinput.js"></script>
     <script src="js/threesixty.min.js"></script>
     <script src="js/script.js"></script>

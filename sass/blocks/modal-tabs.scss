@@ -1,0 +1,24 @@
+.threesixty {}
+.modal {
+
+    &-tabs {
+        float: left;
+        width: 50%;
+
+        &__pane {
+            display: none;
+
+            .threesixty {
+                cursor: move;
+                min-height: 200px;
+            }
+
+            &._active {
+                display: block;
+            }
+
+        }
+
+    }
+
+}
