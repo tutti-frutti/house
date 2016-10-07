@@ -15,7 +15,7 @@
         vertical-align: top;
     }
     &__top-left {
-        @include rob-reg(20px, 23px);
+        @include rob-reg(17px, 23px);
         margin-bottom: 20px;
         height: 45px;
         overflow: hidden;
@@ -30,7 +30,7 @@
         }
     }
     &__top-right {
-        @include rob-reg(20px, 23px);
+        @include rob-reg(17px, 23px);
         margin-bottom: 20px;
         height: 45px;
         overflow: hidden;

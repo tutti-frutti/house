@@ -156,6 +156,16 @@ $(document).ready(function () {
     });
     
     // fancybox
+    $(".compare-img").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none',
+        helpers: {
+                overlay: {
+                    locked: false
+                }
+            }
+	});
+    
     $(".various").click(function (event) {
         event.preventDefault();
         $(".various").fancybox({
