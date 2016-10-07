@@ -125,15 +125,16 @@
         &--icon-1 {
             position: relative;
             &:before {
-                position: absolute;
-                content: '';
-                top: -140px;
-                left: 50%;
-                margin-left: -57.5px;
-                width: 115px;
-                height: 115px;
-                border-radius: 100px;
-                background: #51a40d;
+                @include round(30px, 20px);
+//                position: absolute;
+//                content: '';
+//                top: -140px;
+//                left: 50%;
+//                margin-left: -57.5px;
+//                width: 115px;
+//                height: 115px;
+//                border-radius: 100px;
+//                background: #51a40d;
             }
             &:after {
                 position: absolute;

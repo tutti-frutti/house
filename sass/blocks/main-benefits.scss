@@ -154,7 +154,7 @@
             display: inline-block;
             line-height: normal;
             vertical-align: middle;
-            color: #1f1f1f;
+            color: $blue;
         }
         
     }
@@ -190,7 +190,10 @@
             width: 600px;
             line-height: normal;
             vertical-align: middle;
-            color: #1f1f1f;
+            color: $blue;
+            &:hover {
+                color: darken($blue, 20%);
+            }
         }
     }
     &__list-third {
@@ -224,7 +227,7 @@
             display: inline-block;
             line-height: normal;
             vertical-align: middle;
-            color: #1f1f1f;
+            color: $blue;
         }
     }
 }

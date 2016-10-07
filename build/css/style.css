@@ -288,7 +288,7 @@
       display: inline-block;
       line-height: normal;
       vertical-align: middle;
-      color: #1f1f1f; }
+      color: #2543fc; }
   .main-benefits__list-second {
     position: relative;
     width: 832px;
@@ -327,7 +327,9 @@
       width: 600px;
       line-height: normal;
       vertical-align: middle;
-      color: #1f1f1f; }
+      color: #2543fc; }
+      .main-benefits__list-second p:hover {
+        color: #031cb8; }
   .main-benefits__list-third {
     position: relative;
     width: 940px;
@@ -365,7 +367,7 @@
       display: inline-block;
       line-height: normal;
       vertical-align: middle;
-      color: #1f1f1f; }
+      color: #2543fc; }
 
 .section-title {
   font-family: 'Roboto Condensed', sans-serif;
@@ -861,9 +863,9 @@
   margin-bottom: 50px; }
   .house-preview__item {
     display: inline-block;
+    list-style: none;
+    margin: 10px 10px 0 0;
     width: 300px;
-    margin-right: 10px;
-    margin-bottom: 20px;
     border: 1px solid #d9d9d9;
     border-radius: 3px; }
     .house-preview__item:nth-child(3n) {
@@ -2325,13 +2327,12 @@
       .steps__text--icon-1:before {
         position: absolute;
         content: '';
-        top: -140px;
-        left: 50%;
-        margin-left: -57.5px;
-        width: 115px;
-        height: 115px;
+        top: 30px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
         border-radius: 100px;
-        background: #51a40d; }
+        background: red; }
       .steps__text--icon-1:after {
         position: absolute;
         content: '';
@@ -3424,12 +3425,12 @@ textarea {
   height: 60px;
   cursor: pointer;
   border-radius: 4px;
-  background-image: linear-gradient(to bottom, #f64242, #ce2a2a);
+  background: #f64242;
   box-shadow: 0 3px 0 0 #ae2323; }
   .btn-red--wide {
     width: 340px; }
   .btn-red:hover {
-    opacity: .85; }
+    background: darken #f64242, 10%; }
   .btn-red--icon {
     padding-left: 40px; }
     .btn-red--icon::before {
@@ -3440,8 +3441,6 @@ textarea {
       top: 10px;
       left: 20px;
       background-image: url("../img/ic-gift.png"); }
-    .btn-red--icon:hover {
-      opacity: .85; }
   .btn-red--decor {
     width: 260px;
     height: 40px;
