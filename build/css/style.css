@@ -288,7 +288,7 @@
       display: inline-block;
       line-height: normal;
       vertical-align: middle;
-      color: #2543fc; }
+      color: #1f1f1f; }
   .main-benefits__list-second {
     position: relative;
     width: 832px;
@@ -327,9 +327,7 @@
       width: 600px;
       line-height: normal;
       vertical-align: middle;
-      color: #2543fc; }
-      .main-benefits__list-second p:hover {
-        color: #031cb8; }
+      color: #1f1f1f; }
   .main-benefits__list-third {
     position: relative;
     width: 940px;
@@ -367,7 +365,7 @@
       display: inline-block;
       line-height: normal;
       vertical-align: middle;
-      color: #2543fc; }
+      color: #1f1f1f; }
 
 .section-title {
   font-family: 'Roboto Condensed', sans-serif;
@@ -389,10 +387,9 @@
     width: 821px;
     margin: 0 auto 50px; }
   .section-title--width-3 {
-    width: 821px;
+    width: 823px;
     margin: 0 auto 80px; }
   .section-title--width-3 {
-    width: 585px;
     margin: 0 auto 50px; }
   .section-title--width-4 {
     width: 640px;
@@ -2065,7 +2062,8 @@
     margin: 100px auto 0;
     text-align: center; }
     .certificates__multiple div img {
-      margin: 0 auto; }
+      margin: 0 auto;
+      cursor: zoom-in; }
 
 .guarantee {
   height: 435px; }
@@ -2327,12 +2325,13 @@
       .steps__text--icon-1:before {
         position: absolute;
         content: '';
-        top: 30px;
-        left: 20px;
-        width: 50px;
-        height: 50px;
+        top: -140px;
+        left: 50%;
+        margin-left: -57.5px;
+        width: 115px;
+        height: 115px;
         border-radius: 100px;
-        background: red; }
+        background: #51a40d; }
       .steps__text--icon-1:after {
         position: absolute;
         content: '';
